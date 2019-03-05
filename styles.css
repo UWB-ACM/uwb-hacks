@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: #1b0925;
-  color: #ccc;
+  color: white;
 }
 
 .navigation-bar {
@@ -176,7 +176,7 @@ body {
 
 .contact p, .contact a {
   line-height: 200%;
-  color: #ccc;
+  color: white;
   width: 95%;
   max-width: 800px;
 }
@@ -187,7 +187,7 @@ body {
 }
 
 p {
-  color: #ccc;
+  color: white;
 }
 
 b, i, em, strong {
@@ -211,7 +211,7 @@ a {
 h1, h2 {
   font-weight: 800;
   text-transform: uppercase;
-  color: #ccc;
+  color: white;
 }
 
 h1 b, h2 b {
@@ -219,6 +219,7 @@ h1 b, h2 b {
 }
 
 h3, h4 {
+  color: white;
   font-weight: 400;
 }
 

@@ -1,5 +1,5 @@
 $background: rgb(27, 9, 37);
-$foreground: #ccc;
+$foreground: white;
 $text-highlight: rgb(80, 233, 253);
 $neon-pink: #fcb3ff;
 $glow-pink: #ad3eff;
@@ -200,6 +200,7 @@ h1, h2
 
 h3, h4
 {
+    color: $foreground;
     font-weight: 400;
     b
     {
