@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background: #1b0925;
-  color: white;
+  color: #ddd;
 }
 
 .navigation-bar {
@@ -24,9 +24,9 @@ body {
   background-color: #222222;
 }
 
-.navigation-bar div, .navigation-bar a, .navigation-bar h2 {
+.navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar h3 {
   display: inline-block;
-  color: white;
+  color: #ddd;
   margin: 5pt;
 }
 
@@ -38,8 +38,12 @@ body {
           filter: none;
 }
 
+.navigation-bar h3 {
+  font-size: 14pt;
+}
+
 .button, .navigation-bar .nav-register, .top-fold .top-fold__register {
-  color: white;
+  color: #ddd;
   background-color: #ad3eff;
   padding: 8px 15px;
   display: table;
@@ -145,12 +149,12 @@ body {
 
 .faq strong {
   font-weight: 600;
-  color: white;
+  color: #ddd;
   font-size: 1.4rem;
 }
 
 .faq p {
-  color: white;
+  color: #ddd;
   margin-top: 5px;
   font-size: 1.3rem;
   padding: 8px 10px;
@@ -176,7 +180,7 @@ body {
 
 .contact p, .contact a {
   line-height: 200%;
-  color: white;
+  color: #ddd;
   width: 95%;
   max-width: 800px;
 }
@@ -187,7 +191,7 @@ body {
 }
 
 p {
-  color: white;
+  color: #ddd;
 }
 
 b, i, em, strong {
@@ -211,7 +215,7 @@ a {
 h1, h2 {
   font-weight: 800;
   text-transform: uppercase;
-  color: white;
+  color: #ddd;
 }
 
 h1 b, h2 b {
@@ -219,7 +223,7 @@ h1 b, h2 b {
 }
 
 h3, h4 {
-  color: white;
+  color: #ddd;
   font-weight: 400;
 }
 
@@ -255,5 +259,41 @@ h3 {
 
 h4 {
   font-size: 20pt;
+}
+
+@media (max-width: 850px) {
+  .top-fold__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-fold__center img {
+    margin-top: 18pt;
+    display: block;
+    max-width: 50%;
+  }
+  .top-fold__center .top-fold__left {
+    display: block;
+    margin-left: 0;
+  }
+  .navigation-bar {
+    padding: 3pt;
+  }
+  .navigation-bar h2, .navigation-bar a {
+    margin: 0;
+  }
+  .navigation-bar h2 {
+    font-size: 13pt;
+  }
+  .navigation-bar h3 {
+    display: none;
+  }
+  .navigation-bar a {
+    font-size: 10pt;
+  }
+  .top-fold {
+    background: #1b0925;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

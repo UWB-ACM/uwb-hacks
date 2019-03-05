@@ -1,12 +1,12 @@
 $background: rgb(27, 9, 37);
-$foreground: white;
+$foreground: #ddd;
 $text-highlight: rgb(80, 233, 253);
 $neon-pink: #fcb3ff;
 $glow-pink: #ad3eff;
 
 $nav-background: rgb(34, 34, 34);
-$nav-foreground: white;
-$button-foreground: white;
+$nav-foreground: $foreground;
+$button-foreground: $foreground;
 
 body
 {
@@ -28,7 +28,7 @@ body
     justify-content: space-between;
     z-index: 1000;
     background-color: $nav-background;
-    div, a, h2
+    div, a, h2, h3
     {
         display: inline-block;
         color: $nav-foreground;
@@ -40,6 +40,10 @@ body
         -webkit-text-stroke: none;
         -moz-text-stroke: none;
         filter: none;
+    }
+    h3
+    {
+        font-size: 14pt;
     }
     .nav-register
     {
@@ -127,11 +131,11 @@ body
     }
     strong {
         font-weight: 600;
-        color: white;
+        color: $foreground;
         font-size: 1.4rem;
     }
     p {
-        color: white;
+        color: $foreground;
         margin-top: 5px;
         font-size: 1.3rem;
         padding: 8px 10px;
@@ -237,4 +241,47 @@ h3
 h4
 {
     font-size: 20pt;
+}
+
+@media(max-width: 850px)
+{
+    .top-fold__center
+    {
+        flex-direction: column;
+        img
+        {
+            margin-top: 18pt;
+            display: block;
+            max-width: 50%;
+        }
+        .top-fold__left
+        {
+            display: block;
+            margin-left: 0;
+        }
+    }
+    .navigation-bar
+    {
+        padding: 3pt;
+        h2, a
+        {
+            margin: 0;
+        }
+        h2
+        {
+            font-size: 13pt;
+        }
+        h3 
+        {
+            display: none;
+        }
+        a
+        {
+            font-size: 10pt;
+        }
+    }
+    .top-fold
+    {
+        background: $background;
+    }
 }
