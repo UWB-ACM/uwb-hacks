@@ -161,6 +161,7 @@ body {
 }
 
 .contact {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
