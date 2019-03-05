@@ -1,11 +1,12 @@
-$background: #111;
+$background: rgb(27, 9, 37);
 $foreground: #ccc;
-$text-highlight: rgb(106, 80, 253);
-$neon-pink: #e0b3ff;
+$text-highlight: rgb(80, 233, 253);
+$neon-pink: #fcb3ff;
 $glow-pink: #ad3eff;
 
-$nav-background: #333;
+$nav-background: rgb(34, 34, 34);
 $nav-foreground: white;
+$button-foreground: white;
 
 body
 {
@@ -42,13 +43,19 @@ body
     }
     .nav-register
     {
-        background-color: $glow-pink;
-        padding: 8px 15px;
-        display: table;
-        border-radius: 2px;
-        border: 1px solid rgba(black, .5);
-        box-shadow: 0 2px 5px $glow-pink;
+        @extend .button;
     }
+}
+
+.button
+{
+    color: $button-foreground;
+    background-color: $glow-pink;
+    padding: 8px 15px;
+    display: table;
+    border-radius: 2px;
+    border: 1px solid rgba(black, .5);
+    box-shadow: 0 2px 5px $glow-pink;
 }
 
 .top-fold__center
@@ -75,11 +82,84 @@ body
         width: 700px;
         display: block;
     }
+
+    background: #111;
+    background: linear-gradient($background 70%, $glow-pink 71%, $background 90%);
+
+    .top-fold__register
+    {
+        margin-top: 15pt;
+        @extend .button;
+    }
 }
 
 .top-fold__left
 {
     margin-left: 50px;
+}
+
+.faq
+{
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    .center 
+    {
+        width: 95%;
+        max-width: 800px;
+    }
+    .question {
+        background-color: rgba(white, .1);
+        padding: 8px 10px;
+        border-radius: 3px;
+        width: 100%;
+        display: flex;
+        color: white;
+        font-size: 1.4rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li {
+        margin-top: 15pt;
+        margin-bottom: 15pt;
+    }
+    strong {
+        font-weight: 600;
+        color: white;
+        font-size: 1.4rem;
+    }
+    p {
+        color: white;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        padding: 8px 10px;
+    }
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    h2
+    {
+        margin-bottom: 15px;
+    }
+    p, a{
+        line-height: 200%;
+        color: $foreground;
+        width: 95%;
+        max-width: 800px;
+    }
+    a 
+    {
+        color: $text-highlight;
+        text-decoration: underline; 
+    }
 }
 
 p
@@ -107,7 +187,7 @@ a
     text-decoration: underline;
 }
 
-h1, h2, h3, h4
+h1, h2
 {
     font-weight: 800;
     text-transform: uppercase;
@@ -115,6 +195,16 @@ h1, h2, h3, h4
     b 
     {
         font-size: unset;
+    }
+}
+
+h3, h4
+{
+    font-weight: 400;
+    b
+    {
+        font-size: unset;
+        font-weight: 400;
     }
 }
 
