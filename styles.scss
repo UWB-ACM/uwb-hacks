@@ -4,7 +4,7 @@ $text-highlight: rgb(106, 80, 253);
 $neon-pink: #e0b3ff;
 $glow-pink: #ad3eff;
 
-$nav-background: rgba(255, 255, 255, 0.2);
+$nav-background: #333;
 $nav-foreground: white;
 
 body
@@ -12,6 +12,74 @@ body
     font-family: 'Open Sans', sans-serif;
     background: $background;
     color: $foreground;
+}
+
+.navigation-bar
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: $nav-background;
+    div, a, h2
+    {
+        display: inline-block;
+        color: $nav-foreground;
+        margin: 5pt;
+    }
+    h2
+    {
+        font-size: 20pt;
+        -webkit-text-stroke: none;
+        -moz-text-stroke: none;
+        filter: none;
+    }
+    .nav-register
+    {
+        background-color: $glow-pink;
+        padding: 8px 15px;
+        display: table;
+        border-radius: 2px;
+        border: 1px solid rgba(black, .5);
+        box-shadow: 0 2px 5px $glow-pink;
+    }
+}
+
+.top-fold__center
+{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    max-width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-fold
+{
+    width: 100%;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img
+    {
+        width: 700px;
+        display: block;
+    }
+}
+
+.top-fold__left
+{
+    margin-left: 50px;
 }
 
 p
@@ -78,30 +146,4 @@ h3
 h4
 {
     font-size: 20pt;
-}
-
-.navigation-bar
-{
-    background-color: $nav-background;
-    div, a, h2
-    {
-        display: inline-block;
-        color: $nav-foreground;
-        margin: 5pt;
-    }
-    h2
-    {
-        font-size: 20pt;
-        -webkit-text-stroke: none;
-        -moz-text-stroke: none;
-        filter: none;
-    }
-    .nav-register
-    {
-        background-color: $glow-pink;
-        padding: 5pt;
-        border-radius: 5px;
-        border: 1px solid darken($color: $glow-pink, $amount: 50%);
-        box-shadow: 0 0 5px $glow-pink;
-    }
 }
