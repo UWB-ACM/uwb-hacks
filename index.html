@@ -4,26 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Cabin:300,400,500,700,900|Source+Sans+Pro:400|Droid+Sans:200,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="./reset.css">
 	<link href="./static/fa-all-min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
+
+	<!-- favicon stuff from https://www.favicon-generator.org/ -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ad3eff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	
 	<!-- metadata for better embedding in discord -->
-	<meta property="og:title" content="UWB Hacks 2019" />
-	<meta property="og:description" content="Join us for UWB Hacks 2019 on April 19th 2019!" />
-	<meta name="theme-color" content="#2B78FF" />
+	<meta property="og:title" content="UWB Hacks The Internet" />
+	<meta property="og:description" content="Join us for a 13 hour hackathon hosted at UWB on April 19th 2019!" />
+	<meta property="og:image" content="/images/logo.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:alt" content="Logo for UWB Hacks the Internet" />
+	<meta name="theme-color" content="#ad3eff" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="uwbhacks.com" />
 	<!-- google-specific meta tag -->
 	<meta name="google" content="nositelinkssearchbox" />
 	<title>UWB Hacks 2019</title>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800i" rel="stylesheet"> 
 </head>
 <body>
 <div id="app">
 	<div class="navigation-bar">
 		<div>
-			<h2>UWB Hacks 2019</h2>
+			<h2>UWB Hacks the Internet</h2>
+			<h3>April 19, 2019</h3>
 		</div>
 		<div class="register">
 			<a href="#" class="nav-register">
@@ -33,11 +57,12 @@
 	</div>
 	<div class="top-fold">
 		<div class="top-fold__center">
+			<img src="./images/logo.svg" alt="UWB Hacks the Internet Logo">
 			<div class="top-fold__left">
-				<h1>Introducing UWB Hacks 2019</h1>
-				<h2>13 hours of hacking, experimentation, and snacks</h2>
-				<h3><b>Friday April 19th, 2019</b> from <b>9 AM to 10PM</b> in <b>the North Creek Event
-					Center & 2nd floor of the ARC</b>
+				<h1>UWB Hacks</h1>
+				<h2>13 hours of hacking, experimenting, and snacks</h2>
+				<h3>Friday <b>April 19th</b>, 2019 from <b>9 AM to 10PM</b> in the North Creek Event
+					Center & 2nd floor of the ARC
 				</h3>
 				<a href="#" class="top-fold__register">
 					Registration Coming Soon!
@@ -47,12 +72,11 @@
 	</div>
 	<div class="faq">
 		<div class="center">
-			<h2>Frequently asked question</h2>
+			<h2>Questions and Answers</h2>
 			<ul>
 				<li>
 					<div class="question">
 						<strong>How much does this cost?</strong>
-						<i class="far fa-angle-down"></i>
 					</div>
 					<p>
 						Admission is completely free. Food, workspace, and WiFi are provided at no
@@ -62,21 +86,18 @@
 				<li>
 					<div class="question">
 						<strong>Do I need to come with a team?</strong>
-						<i class="far fa-angle-down"></i>
 					</div>
 					<p>No, teams will be formed the morning of the event.</p>
 				</li>
 				<li>
 					<div class="question">
 						<strong>How big are teams?</strong>
-						<i class="far fa-angle-down"></i>
 					</div>
 					<p>You may work individually, or in a group of up to five total people.</p>
 				</li>
 				<li>
 					<div class="question">
 						<strong>What should I bring?</strong>
-						<i class="far fa-angle-down"></i>
 					</div>
 					<p>
 						Bring a photo ID for check-in, a laptop, chargers, and anything else you may
@@ -88,12 +109,21 @@
 	</div>
 	<div class="contact">
 		<div class="center">
-			<h2>Questions?</h2>
-			<p>Contact us at <a href="mailto:acmuwbothell@gmail.com">acmuwbothell@gmail.com</a></p>
+			<h2>Other Questions?</h2>
+			<p>
+				This event is run by the UWB chapter of the ACM and student volunteers.
+
+				<br />
+
+				Reach out to us by email: <a href="mailto:acmuwbothell@gmail.com?subject=UWB Hacks the Internet">acmuwbothell@gmail.com</a>
+				or on LinkedIn: <a href="https://www.linkedin.com/in/uwbacm">linkedin.com/in/uwbacm</a>
+
+				<br />
+
+				Learn more about UWB ACM at <a href="http://uwbacm.com/">uwbacm.com</a>
+			</p>
 		</div>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./script.js"></script>
 </body>
 </html>
