@@ -246,6 +246,11 @@ h4
 
 @media(max-width: 850px)
 {
+    .top-fold
+    {
+        height: 800px;
+    }
+
     .top-fold__center
     {
         flex-direction: column;
