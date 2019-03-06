@@ -76,7 +76,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 700px;
+  height: 550px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -88,8 +88,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #111;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #1b0925), color-stop(71%, #ad3eff), color-stop(90%, #1b0925));
-  background: linear-gradient(#1b0925 70%, #ad3eff 71%, #1b0925 90%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #1b0925), color-stop(81%, #ad3eff), to(#1b0925));
+  background: linear-gradient(#1b0925 80%, #ad3eff 81%, #1b0925 100%);
 }
 
 .top-fold img {
