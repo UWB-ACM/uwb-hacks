@@ -69,6 +69,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 50pt;
 }
 
 .top-fold {
@@ -76,7 +77,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 550px;
+  height: 770px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -103,6 +104,10 @@ body {
 
 .top-fold__left {
   margin-left: 50px;
+}
+
+.top-fold__left iframe {
+  margin: 15pt 0;
 }
 
 .faq {
@@ -210,7 +215,6 @@ b, strong {
 
 a {
   color: #50e9fd;
-  text-decoration: underline;
 }
 
 h1, h2 {
@@ -264,9 +268,10 @@ h4 {
 
 @media (max-width: 850px) {
   .top-fold {
-    height: 800px;
+    height: 900px;
   }
   .top-fold__center {
+    padding-top: 50pt;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
