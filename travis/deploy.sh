@@ -15,13 +15,16 @@ then
     gulp
     # checkout gh-pages branch and remove all existing files
     # into the directory ../gh_pages
+    echo "Cloning."
     git clone --branch gh-pages https://${GH_TOKEN}@github.com/UWB-ACM/uwb-hacks.git ../gh_pages
     cd ../gh_pages
     rm -rf *
+    echo "Cleared all old files."
 
     # copy the built files from the original branch into the output
     cp -R ../uwb-hacks/* .
     cp ../uwb-hacks/.travis.yml .
+    cp ../uwb-hacks/.gitignore .
 
     echo "Copied files."
 
