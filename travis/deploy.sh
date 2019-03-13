@@ -20,8 +20,8 @@ then
     rm -rf *
 
     # copy the built files from the original branch into the output
-    cp -R ../uwbacm-site/* .
-    cp ../uwbacm-site/.travis.yml .
+    cp -R ../uwb-hacks/* .
+    cp ../uwb-hacks/.travis.yml .
 
     echo "Copied files."
 
