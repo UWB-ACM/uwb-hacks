@@ -24,7 +24,6 @@ then
     # copy the built files from the original branch into the output
     cp -R ../uwb-hacks/* .
     cp ../uwb-hacks/.travis.yml .
-    cp ../uwb-hacks/.gitignore .
 
     echo "Copied files."
 
