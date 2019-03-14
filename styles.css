@@ -62,7 +62,7 @@ body {
 
 .top-fold__left {
   margin-left: 50px; }
-  .top-fold__left iframe {
+  .top-fold__left iframe, .top-fold__left #discord-widget {
     margin: 15pt 0; }
 
 .faq {
