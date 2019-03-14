@@ -42,12 +42,13 @@ body {
   width: 95%;
   max-width: 1100px;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 50pt; }
 
 .top-fold {
   width: 100%;
   display: flex;
-  height: 550px;
+  height: 770px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -61,6 +62,8 @@ body {
 
 .top-fold__left {
   margin-left: 50px; }
+  .top-fold__left iframe {
+    margin: 15pt 0; }
 
 .faq {
   background-color: #1b0925;
@@ -126,8 +129,7 @@ b, strong {
   font-weight: 800; }
 
 a {
-  color: #50e9fd;
-  text-decoration: underline; }
+  color: #50e9fd; }
 
 h1, h2 {
   font-weight: 800;
@@ -168,8 +170,9 @@ h4 {
 
 @media (max-width: 850px) {
   .top-fold {
-    height: 800px; }
+    height: 900px; }
   .top-fold__center {
+    padding-top: 50pt;
     flex-direction: column; }
     .top-fold__center img {
       margin-top: 18pt;

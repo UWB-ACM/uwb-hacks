@@ -70,13 +70,14 @@ body
     max-width: 1100px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 50pt;
 }
 
 .top-fold
 {
     width: 100%;
     display: flex;
-    height: 550px;
+    height: 770px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -100,6 +101,10 @@ body
 .top-fold__left
 {
     margin-left: 50px;
+    iframe
+    {
+        margin: 15pt 0;
+    }
 }
 
 .faq
@@ -189,7 +194,6 @@ b, strong
 a 
 {
     color: $text-highlight;
-    text-decoration: underline;
 }
 
 h1, h2
@@ -248,11 +252,12 @@ h4
 {
     .top-fold
     {
-        height: 800px;
+        height: 900px;
     }
 
     .top-fold__center
     {
+        padding-top: 50pt;
         flex-direction: column;
         img
         {
