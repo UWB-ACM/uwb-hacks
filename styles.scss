@@ -107,6 +107,24 @@ body
     }
 }
 
+.what-is-uwbhacks
+{
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    .center
+    {
+        width: 95%;
+        max-width: 800px;
+    }
+    p
+    {
+        margin: 7pt;
+    }
+}
+
 .faq
 {
     background-color: $background;
@@ -131,6 +149,7 @@ body
         align-items: center;
     }
     li {
+        list-style: none;
         margin-top: 15pt;
         margin-bottom: 15pt;
     }
@@ -172,7 +191,7 @@ body
     }
 }
 
-p
+p, ul, li, blockquote
 {
     color: $foreground;
 }
@@ -194,6 +213,25 @@ b, strong
 a 
 {
     color: $text-highlight;
+}
+
+ul, ol
+{
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    padding-left: 10pt;
+    li
+    {
+        list-style: circle inside;
+    }
+}
+
+blockquote
+{
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    padding-left: 20px;
+    font-style: italic;
 }
 
 h1, h2
