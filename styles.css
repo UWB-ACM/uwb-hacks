@@ -65,6 +65,18 @@ body {
   .top-fold__left iframe, .top-fold__left #discord-widget {
     margin: 15pt 0; }
 
+.what-is-uwbhacks {
+  background-color: #1b0925;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; }
+  .what-is-uwbhacks .center {
+    width: 95%;
+    max-width: 800px; }
+  .what-is-uwbhacks p {
+    margin: 7pt; }
+
 .faq {
   background-color: #1b0925;
   display: flex;
@@ -85,6 +97,7 @@ body {
     justify-content: space-between;
     align-items: center; }
   .faq li {
+    list-style: none;
     margin-top: 15pt;
     margin-bottom: 15pt; }
   .faq strong {
@@ -115,7 +128,7 @@ body {
     color: #50e9fd;
     text-decoration: underline; }
 
-p {
+p, ul, li, blockquote {
   color: #ddd; }
 
 b, i, em, strong {
@@ -130,6 +143,19 @@ b, strong {
 
 a {
   color: #50e9fd; }
+
+ul, ol {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  padding-left: 10pt; }
+  ul li, ol li {
+    list-style: circle inside; }
+
+blockquote {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  padding-left: 20px;
+  font-style: italic; }
 
 h1, h2 {
   font-weight: 800;
