@@ -170,7 +170,7 @@ h4 {
 
 @media (max-width: 850px) {
   .top-fold {
-    height: 900px; }
+    height: 1050px; }
   .top-fold__center {
     padding-top: 50pt;
     flex-direction: column; }
