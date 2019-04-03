@@ -338,7 +338,7 @@ h4
 .schedule
 {
     width: 100%;
-    padding: 50px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +354,7 @@ h4
         th
         {
             @extend h2;
-            font-size: 40pt;
+            font-size: 35pt;
             padding-left: 15pt;
             padding-right: 15pt;
             padding-bottom: 10pt;
@@ -369,14 +369,16 @@ h4
         }
         td:first-child
         {
+            // time
             font-weight: bold;
-            font-size: 30pt;
+            font-size: 25pt;
             text-align: right;
             font-style: italic;
         }
         td:nth-child(2)
         {
-            font-size: 18pt;
+            // event
+            font-size: 16pt;
         }
         td
         {
