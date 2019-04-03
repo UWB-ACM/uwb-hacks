@@ -334,3 +334,73 @@ h4
         background: $background;
     }
 }
+
+.schedule
+{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center 
+    {
+        width: 95%;
+        max-width: 800px;
+    }
+}
+
+.calendar
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    > div
+    {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        @for $i from 1 through 10
+        {
+            > div:nth-of-type(#{$i}) {
+                background-color: rgba(white, (10 - $i) / 20);
+            }
+        }
+        @media(max-width: 730px) {
+            flex-direction: column;
+            > div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.calendar__day
+{
+    width: 20%;
+    height: 150px;
+    background-color: white;
+    .top
+    {
+        padding: 5px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span
+    {
+        color: darken($color: white, $amount: 5%);
+        font-weight: 900;
+    }
+    .bottom
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: rgba(black, .4);
+    }
+}
