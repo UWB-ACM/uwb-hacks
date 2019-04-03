@@ -347,60 +347,46 @@ h4
         width: 95%;
         max-width: 800px;
     }
-}
-
-.calendar
-{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    > div
+    table
     {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-        border-radius: 4px;
-        overflow: hidden;
-        @for $i from 1 through 10
+        margin-top: 30pt;
+        width: 100%;
+        th
         {
-            > div:nth-of-type(#{$i}) {
-                background-color: rgba(white, (10 - $i) / 20);
-            }
+            @extend h2;
+            font-size: 40pt;
+            padding-left: 15pt;
+            padding-right: 15pt;
+            padding-bottom: 10pt;
         }
-        @media(max-width: 730px) {
-            flex-direction: column;
-            > div {
-                width: 100%;
-                margin-bottom: 15px;
-            }
+        th:first-child
+        {   
+            text-align: right;
         }
-    }
-}
-
-.calendar__day
-{
-    width: 20%;
-    height: 150px;
-    background-color: white;
-    .top
-    {
-        padding: 5px;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    span
-    {
-        color: darken($color: white, $amount: 5%);
-        font-weight: 900;
-    }
-    .bottom
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        background-color: rgba(black, .4);
+        th:nth-child(2)
+        {
+            text-align: left;
+        }
+        td:first-child
+        {
+            font-weight: bold;
+            font-size: 30pt;
+            text-align: right;
+            font-style: italic;
+        }
+        td:nth-child(2)
+        {
+            font-size: 18pt;
+        }
+        td
+        {
+            padding-left: 15pt;
+            padding-right: 15pt;
+            padding-bottom: 9pt;
+            padding-top: 9pt;
+            color: $foreground;
+            border-bottom: rgba($foreground, 0.2) dotted;
+            vertical-align: middle;
+        }
     }
 }
