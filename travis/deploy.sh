@@ -31,6 +31,7 @@ then
     git config user.name "Travis CI / UWB-ACM"
 
     # commit this to the gh-pages branch
+    git add --force *.css
     git status
     git add .
     git status
