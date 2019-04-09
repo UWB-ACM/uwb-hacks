@@ -334,3 +334,61 @@ h4
         background: $background;
     }
 }
+
+.schedule
+{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center 
+    {
+        width: 95%;
+        max-width: 800px;
+    }
+    table
+    {
+        margin-top: 30pt;
+        width: 100%;
+        th
+        {
+            @extend h2;
+            font-size: 35pt;
+            padding-left: 15pt;
+            padding-right: 15pt;
+            padding-bottom: 10pt;
+        }
+        th:first-child
+        {   
+            text-align: right;
+        }
+        th:nth-child(2)
+        {
+            text-align: left;
+        }
+        td:first-child
+        {
+            // time
+            font-weight: bold;
+            font-size: 25pt;
+            text-align: right;
+            font-style: italic;
+        }
+        td:nth-child(2)
+        {
+            // event
+            font-size: 16pt;
+        }
+        td
+        {
+            padding-left: 15pt;
+            padding-right: 15pt;
+            padding-bottom: 9pt;
+            padding-top: 9pt;
+            color: $foreground;
+            border-bottom: rgba($foreground, 0.2) dotted;
+            vertical-align: middle;
+        }
+    }
+}
