@@ -15,11 +15,11 @@ body {
   justify-content: space-between;
   z-index: 1000;
   background-color: #222222; }
-  .navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar h3 {
+  .navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar h3 {
     display: inline-block;
     color: #ddd;
     margin: 5pt; }
-  .navigation-bar h2 {
+  .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th {
     font-size: 20pt;
     -webkit-text-stroke: none;
     -moz-text-stroke: none;
@@ -117,7 +117,7 @@ body {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 100px; }
-  .contact h2 {
+  .contact h2, .contact .schedule table th, .schedule table .contact th {
     margin-bottom: 15px; }
   .contact p, .contact a {
     line-height: 200%;
@@ -157,11 +157,11 @@ blockquote {
   padding-left: 20px;
   font-style: italic; }
 
-h1, h2 {
+h1, h2, .schedule table th {
   font-weight: 800;
   text-transform: uppercase;
   color: #ddd; }
-  h1 b, h2 b {
+  h1 b, h2 b, .schedule table th b {
     font-size: unset; }
 
 h3, h4 {
@@ -174,11 +174,11 @@ h3, h4 {
 h1 {
   font-size: 50pt; }
 
-h2 {
+h2, .schedule table th {
   font-size: 25pt;
   font-style: italic; }
 
-h1, h2 {
+h1, h2, .schedule table th {
   font-style: italic;
   color: transparent;
   paint-order: stroke;
@@ -209,9 +209,9 @@ h4 {
       margin-left: 0; }
   .navigation-bar {
     padding: 3pt; }
-    .navigation-bar h2, .navigation-bar a {
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar a {
       margin: 0; }
-    .navigation-bar h2 {
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th {
       font-size: 13pt; }
     .navigation-bar h3 {
       display: none; }
@@ -219,3 +219,40 @@ h4 {
       font-size: 10pt; }
   .top-fold {
     background: #1b0925; } }
+
+.schedule {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .schedule .center {
+    width: 95%;
+    max-width: 800px; }
+  .schedule table {
+    margin-top: 30pt;
+    width: 100%; }
+    .schedule table th {
+      font-size: 35pt;
+      padding-left: 15pt;
+      padding-right: 15pt;
+      padding-bottom: 10pt; }
+    .schedule table th:first-child {
+      text-align: right; }
+    .schedule table th:nth-child(2) {
+      text-align: left; }
+    .schedule table td:first-child {
+      font-weight: bold;
+      font-size: 25pt;
+      text-align: right;
+      font-style: italic; }
+    .schedule table td:nth-child(2) {
+      font-size: 16pt; }
+    .schedule table td {
+      padding-left: 15pt;
+      padding-right: 15pt;
+      padding-bottom: 9pt;
+      padding-top: 9pt;
+      color: #ddd;
+      border-bottom: rgba(221, 221, 221, 0.2) dotted;
+      vertical-align: middle; }
