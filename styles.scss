@@ -56,7 +56,8 @@ body
     color: $button-foreground;
     background-color: $glow-pink;
     padding: 8px 15px;
-    display: table;
+    display: inline-block;
+    margin-right: 5px;
     border-radius: 2px;
     border: 1px solid rgba(black, .5);
     box-shadow: 0 2px 5px $glow-pink;
@@ -391,4 +392,14 @@ h4
             vertical-align: middle;
         }
     }
+}
+
+.twitter-follow-button
+{
+    @extend .button;
+}
+
+.discord-embed
+{
+    display: block;
 }
