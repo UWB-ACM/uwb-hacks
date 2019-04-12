@@ -15,11 +15,11 @@ body {
   justify-content: space-between;
   z-index: 1000;
   background-color: #222222; }
-  .navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar h3 {
+  .navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar h3 {
     display: inline-block;
     color: #ddd;
     margin: 5pt; }
-  .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th {
+  .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
     font-size: 20pt;
     -webkit-text-stroke: none;
     -moz-text-stroke: none;
@@ -110,21 +110,21 @@ body {
     font-size: 1.3rem;
     padding: 8px 10px; }
 
-.contact {
+.contact, .docs {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 100px; }
-  .contact h2, .contact .schedule table th, .schedule table .contact th {
+  .contact h2, .docs h2, .contact .schedule table th, .schedule table .contact th, .docs .schedule table th, .schedule table .docs th, .contact .docs-link, .docs .docs-link {
     margin-bottom: 15px; }
-  .contact p, .contact a {
+  .contact p, .docs p, .contact a, .docs a {
     line-height: 200%;
     color: #ddd;
     width: 95%;
     max-width: 800px; }
-  .contact a {
+  .contact a, .docs a {
     color: #50e9fd;
     text-decoration: underline; }
 
@@ -157,11 +157,11 @@ blockquote {
   padding-left: 20px;
   font-style: italic; }
 
-h1, h2, .schedule table th {
+h1, h2, .schedule table th, .docs-link {
   font-weight: 800;
   text-transform: uppercase;
   color: #ddd; }
-  h1 b, h2 b, .schedule table th b {
+  h1 b, h2 b, .schedule table th b, .docs-link b {
     font-size: unset; }
 
 h3, h4 {
@@ -174,11 +174,11 @@ h3, h4 {
 h1 {
   font-size: 50pt; }
 
-h2, .schedule table th {
+h2, .schedule table th, .docs-link {
   font-size: 25pt;
   font-style: italic; }
 
-h1, h2, .schedule table th {
+h1, h2, .schedule table th, .docs-link {
   font-style: italic;
   color: transparent;
   paint-order: stroke;
@@ -209,9 +209,9 @@ h4 {
       margin-left: 0; }
   .navigation-bar {
     padding: 3pt; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar a {
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar a {
       margin: 0; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th {
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
       font-size: 13pt; }
     .navigation-bar h3 {
       display: none; }
@@ -256,3 +256,20 @@ h4 {
       color: #ddd;
       border-bottom: rgba(221, 221, 221, 0.2) dotted;
       vertical-align: middle; }
+
+.docs {
+  margin-bottom: 20px;
+  padding-bottom: 0; }
+  .docs .center {
+    color: #ddd;
+    margin-top: 5px;
+    padding: 8px 10px; }
+
+.docs-link {
+  border-color: #50e9fd;
+  color: rgba(0, 0, 0, 0) !important;
+  text-align: center;
+  display: block;
+  margin: auto;
+  -webkit-text-stroke-color: #82effe;
+  filter: drop-shadow(0 0 5px #50e9fd); }
