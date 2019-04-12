@@ -417,4 +417,28 @@ h4
 {
     display: inline-block;
     margin-right: 5px;
+
+.docs
+{
+    @extend .contact;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    .center
+    {
+        color: $foreground;
+        margin-top: 5px;
+        padding: 8px 10px;
+    }
+}
+
+.docs-link
+{
+    @extend h2;
+    border-color: $text-highlight;
+    color: rgba(0, 0, 0, 0) !important;
+    text-align: center;
+    display: block;
+    margin: auto;
+    -webkit-text-stroke-color: lighten($color: $text-highlight, $amount: 10);
+    filter: drop-shadow(0 0 5px $text-highlight);
 }
