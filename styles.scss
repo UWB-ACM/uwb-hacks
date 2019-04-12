@@ -94,7 +94,6 @@ body
 
     .top-fold__register
     {
-        margin-top: 15pt;
         @extend .button;
     }
 }
@@ -102,7 +101,7 @@ body
 .top-fold__left
 {
     margin-left: 50px;
-    iframe, #discord-widget
+    .discord-embed, #discord-widget
     {
         margin: 15pt 0;
     }
@@ -394,12 +393,28 @@ h4
     }
 }
 
-.twitter-follow-button
+.register-buttons
 {
-    @extend .button;
+    margin-top: 15pt;
 }
 
 .discord-embed
 {
     display: block;
+}
+
+.tweets-preview
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.twitter-wrapper
+{
+    display: inline-block;
+    margin-right: 5px;
 }
