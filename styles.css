@@ -194,32 +194,6 @@ h3 {
 h4 {
   font-size: 20pt; }
 
-@media (max-width: 850px) {
-  .top-fold {
-    height: 1050px; }
-  .top-fold__center {
-    padding-top: 50pt;
-    flex-direction: column; }
-    .top-fold__center img {
-      margin-top: 18pt;
-      display: block;
-      max-width: 50%; }
-    .top-fold__center .top-fold__left {
-      display: block;
-      margin-left: 0; }
-  .navigation-bar {
-    padding: 3pt; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar a {
-      margin: 0; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
-      font-size: 13pt; }
-    .navigation-bar h3 {
-      display: none; }
-    .navigation-bar a {
-      font-size: 10pt; }
-  .top-fold {
-    background: #1b0925; } }
-
 .schedule {
   width: 100%;
   padding: 10px;
@@ -256,6 +230,39 @@ h4 {
       color: #ddd;
       border-bottom: rgba(221, 221, 221, 0.2) dotted;
       vertical-align: middle; }
+
+@media (max-width: 850px) {
+  .top-fold {
+    height: 1050px; }
+  .top-fold__center {
+    padding-top: 50pt;
+    flex-direction: column; }
+    .top-fold__center img {
+      margin-top: 18pt;
+      display: block;
+      max-width: 50%; }
+    .top-fold__center .top-fold__left {
+      display: block;
+      margin-left: 0; }
+  .navigation-bar {
+    padding: 3pt; }
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar a {
+      margin: 0; }
+    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
+      font-size: 13pt; }
+    .navigation-bar h3 {
+      display: none; }
+    .navigation-bar a {
+      font-size: 10pt; }
+  .top-fold {
+    background: #1b0925; }
+  .schedule table td:first-child {
+    font-size: 16pt; }
+  .schedule table td:nth-child(2) {
+    font-size: 12pt; }
+  .schedule td {
+    padding-top: 2pt;
+    padding-bottom: 2pt; } }
 
 .docs {
   margin-bottom: 20px;
