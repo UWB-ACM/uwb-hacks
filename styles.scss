@@ -286,55 +286,6 @@ h4
     font-size: 20pt;
 }
 
-@media(max-width: 850px)
-{
-    .top-fold
-    {
-        height: 1050px;
-    }
-
-    .top-fold__center
-    {
-        padding-top: 50pt;
-        flex-direction: column;
-        img
-        {
-            margin-top: 18pt;
-            display: block;
-            max-width: 50%;
-        }
-        .top-fold__left
-        {
-            display: block;
-            margin-left: 0;
-        }
-    }
-    .navigation-bar
-    {
-        padding: 3pt;
-        h2, a
-        {
-            margin: 0;
-        }
-        h2
-        {
-            font-size: 13pt;
-        }
-        h3 
-        {
-            display: none;
-        }
-        a
-        {
-            font-size: 10pt;
-        }
-    }
-    .top-fold
-    {
-        background: $background;
-    }
-}
-
 .schedule
 {
     width: 100%;
@@ -442,4 +393,69 @@ h4
     margin: auto;
     -webkit-text-stroke-color: lighten($color: $text-highlight, $amount: 10);
     filter: drop-shadow(0 0 5px $text-highlight);
+}
+
+@media(max-width: 850px)
+{
+    .top-fold
+    {
+        height: 1050px;
+    }
+
+    .top-fold__center
+    {
+        padding-top: 50pt;
+        flex-direction: column;
+        img
+        {
+            margin-top: 18pt;
+            display: block;
+            max-width: 50%;
+        }
+        .top-fold__left
+        {
+            display: block;
+            margin-left: 0;
+        }
+    }
+    .navigation-bar
+    {
+        padding: 3pt;
+        h2, a
+        {
+            margin: 0;
+        }
+        h2
+        {
+            font-size: 13pt;
+        }
+        h3 
+        {
+            display: none;
+        }
+        a
+        {
+            font-size: 10pt;
+        }
+    }
+    .top-fold
+    {
+        background: $background;
+    }
+    .schedule
+    {
+        table td:first-child
+        {
+            font-size: 16pt;
+        }
+        table td:nth-child(2)
+        {
+            font-size: 12pt;
+        }
+        td
+        {
+            padding-top: 2pt;
+            padding-bottom: 2pt;
+        }
+    }
 }
