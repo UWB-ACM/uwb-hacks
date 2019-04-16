@@ -31,7 +31,8 @@ body {
   color: #ddd;
   background-color: #ad3eff;
   padding: 8px 15px;
-  display: table;
+  display: inline-block;
+  margin-right: 5px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 5px #ad3eff; }
@@ -57,12 +58,10 @@ body {
   .top-fold img {
     width: 700px;
     display: block; }
-  .top-fold .top-fold__register {
-    margin-top: 15pt; }
 
 .top-fold__left {
   margin-left: 50px; }
-  .top-fold__left iframe, .top-fold__left #discord-widget {
+  .top-fold__left .discord-embed, .top-fold__left #discord-widget {
     margin: 15pt 0; }
 
 .what-is-uwbhacks {
@@ -231,6 +230,41 @@ h4 {
       border-bottom: rgba(221, 221, 221, 0.2) dotted;
       vertical-align: middle; }
 
+.register-buttons {
+  margin-top: 15pt; }
+
+.discord-embed {
+  display: block; }
+
+.tweets-preview {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.twitter-wrapper {
+  display: inline-block;
+  margin-right: 5px; }
+
+.docs {
+  margin-bottom: 20px;
+  padding-bottom: 0; }
+  .docs .center {
+    color: #ddd;
+    margin-top: 5px;
+    padding: 8px 10px; }
+
+.docs-link {
+  border-color: #50e9fd;
+  color: rgba(0, 0, 0, 0) !important;
+  text-align: center;
+  display: block;
+  margin: auto;
+  -webkit-text-stroke-color: #82effe;
+  filter: drop-shadow(0 0 5px #50e9fd); }
+
 @media (max-width: 850px) {
   .top-fold {
     height: 1050px; }
@@ -263,20 +297,3 @@ h4 {
   .schedule td {
     padding-top: 2pt;
     padding-bottom: 2pt; } }
-
-.docs {
-  margin-bottom: 20px;
-  padding-bottom: 0; }
-  .docs .center {
-    color: #ddd;
-    margin-top: 5px;
-    padding: 8px 10px; }
-
-.docs-link {
-  border-color: #50e9fd;
-  color: rgba(0, 0, 0, 0) !important;
-  text-align: center;
-  display: block;
-  margin: auto;
-  -webkit-text-stroke-color: #82effe;
-  filter: drop-shadow(0 0 5px #50e9fd); }
