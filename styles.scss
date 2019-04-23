@@ -383,6 +383,17 @@ h4
     }
 }
 
+.showcase
+{
+    @extend .docs;
+    width: 95%;
+    .center
+    {
+        width: 95%;
+        max-width: 800px;
+    }
+}
+
 .docs-link
 {
     @extend h2;
