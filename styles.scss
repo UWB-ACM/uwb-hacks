@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap');
 
 /*Cloud Splash Page Style Sheet*/
 html, body {
@@ -42,6 +42,7 @@ h4 , h3{
     color: white;
 
 }
+
 
 p{
     padding-top:10px;
@@ -121,8 +122,28 @@ p{
 }
 
 
+.postit {
+    height: 20vw;
+    width: 20vw;
+    background: url('./images/postit.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    transform: translate(40px, 40px);
+}
 
-
+.postit > p {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2vw;
+    text-align: center;
+    color: black;
+}
+    
 
 
 
