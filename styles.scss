@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|VT323&display=swap');
+
 /*Cloud Splash Page Style Sheet*/
 html, body {
     margin:0;
@@ -25,15 +27,17 @@ img{
 }
 
  h1 {
-     /*padding-top: 18px;*/
-     font-family: erdana,sans-serif;
+     padding-top: 18px;
+     padding-bottom: 18px;
+     font-family: 'VT323',sans-serif;
+     font-size: 6vw;
      text-align: center;
      color: white;
 
  }
 h4 , h3{
     padding-top: 18px;
-    font-family: 'Coda', cursive;
+    font-family: 'Share Tech Mono', cursive;
     text-align: center;
     color: white;
 
@@ -41,7 +45,7 @@ h4 , h3{
 
 p{
     padding-top:10px;
-    font-family: erdana,sans-serif;
+    font-family: 'Share Tech Mono', sans-serif;
     text-align: center;
     color: white;
 
@@ -60,33 +64,14 @@ p{
 
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #08A600, 0 0 40px #08A600, 0 0 50px #08A600, 0 0 60px #08A600, 0 0 70px #08A600;
     }
 
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #fff, 0 0 30px #0BE400, 0 0 40px #0BE400, 0 0 50px #0BE400, 0 0 60px #0BE400, 0 0 70px #0BE400, 0 0 80px #0BE400;
     }
 }
 
-.glow2 {
-
-    font-size: 30px;
-    color: #fff;
-    text-align: right;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow2 {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
 
 /* container for transparent image text*/
 .container2 {
