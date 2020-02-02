@@ -1,305 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap");
+/*Cloud Splash Page Style Sheet*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: url(images/appleBlue.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #1b0925;
-  color: #ddd; }
+  /*background-image: url("appleBlue.jpg");*/
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat; }
 
-.navigation-bar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  padding: 20px 30px;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  background-color: #222222; }
-  .navigation-bar div, .navigation-bar a, .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar h3 {
-    display: inline-block;
-    color: #ddd;
-    margin: 5pt; }
-  .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
-    font-size: 20pt;
-    -webkit-text-stroke: none;
-    -moz-text-stroke: none;
-    filter: none; }
-  .navigation-bar h3 {
-    font-size: 14pt; }
-
-.button, .navigation-bar .nav-register, .top-fold .top-fold__register {
-  color: #ddd;
-  background-color: #ad3eff;
-  padding: 8px 15px;
-  display: inline-block;
-  margin-right: 5px;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 5px #ad3eff; }
-
-.top-fold__center {
-  display: flex;
-  align-items: center;
-  width: 95%;
-  max-width: 1100px;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 50pt; }
-
-.top-fold {
-  width: 100%;
-  display: flex;
-  height: 770px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #111;
-  background: linear-gradient(#1b0925 80%, #ad3eff 81%, #1b0925 100%); }
-  .top-fold img {
-    width: 700px;
-    display: block; }
-
-.top-fold__left {
-  margin-left: 50px; }
-  .top-fold__left .discord-embed, .top-fold__left #discord-widget {
-    margin: 15pt 0; }
-
-.what-is-uwbhacks {
-  background-color: #1b0925;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0; }
-  .what-is-uwbhacks .center {
-    width: 95%;
-    max-width: 800px; }
-  .what-is-uwbhacks p {
-    margin: 7pt; }
-
-.faq {
-  background-color: #1b0925;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0; }
-  .faq .center {
-    width: 95%;
-    max-width: 800px; }
-  .faq .question {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 8px 10px;
-    border-radius: 3px;
-    width: 100%;
-    display: flex;
-    color: white;
-    font-size: 1.4rem;
-    justify-content: space-between;
-    align-items: center; }
-  .faq li {
-    list-style: none;
-    margin-top: 15pt;
-    margin-bottom: 15pt; }
-  .faq strong {
-    font-weight: 600;
-    color: #ddd;
-    font-size: 1.4rem; }
-  .faq p {
-    color: #ddd;
-    margin-top: 5px;
-    font-size: 1.3rem;
-    padding: 8px 10px; }
-
-.contact, .docs, .showcase {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 100px; }
-  .contact h2, .docs h2, .showcase h2, .contact .schedule table th, .schedule table .contact th, .docs .schedule table th, .schedule table .docs th, .showcase .schedule table th, .schedule table .showcase th, .contact .docs-link, .docs .docs-link, .showcase .docs-link {
-    margin-bottom: 15px; }
-  .contact p, .docs p, .showcase p, .contact a, .docs a, .showcase a {
-    line-height: 200%;
-    color: #ddd;
-    width: 95%;
-    max-width: 800px; }
-  .contact a, .docs a, .showcase a {
-    color: #50e9fd;
-    text-decoration: underline; }
-
-p, ul, li, blockquote {
-  color: #ddd; }
-
-b, i, em, strong {
-  color: #50e9fd; }
-
-em, i {
-  font-weight: 400;
-  font-style: italic; }
-
-b, strong {
-  font-weight: 800; }
-
-a {
-  color: #50e9fd; }
-
-ul, ol {
-  margin-top: 5pt;
-  margin-bottom: 5pt;
-  padding-left: 10pt; }
-  ul li, ol li {
-    list-style: circle inside; }
-
-blockquote {
-  margin-top: 5pt;
-  margin-bottom: 5pt;
-  padding-left: 20px;
-  font-style: italic; }
-
-h1, h2, .schedule table th, .docs-link {
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #ddd; }
-  h1 b, h2 b, .schedule table th b, .docs-link b {
-    font-size: unset; }
-
-h3, h4 {
-  color: #ddd;
-  font-weight: 400; }
-  h3 b, h4 b {
-    font-size: unset;
-    font-weight: 400; }
+img {
+  max-width: 100%;
+  /*//height: auto;*/ }
 
 h1 {
-  font-size: 50pt; }
-
-h2, .schedule table th, .docs-link {
-  font-size: 25pt;
-  font-style: italic; }
-
-h1, h2, .schedule table th, .docs-link {
-  font-style: italic;
-  color: transparent;
-  paint-order: stroke;
-  -moz-text-stroke-color: #fcb3ff;
-  -moz-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fcb3ff;
-  -webkit-text-stroke-width: 1px;
-  filter: drop-shadow(0 0 5px #ad3eff); }
-
-h3 {
-  font-size: 20pt; }
-
-h4 {
-  font-size: 20pt; }
-
-.schedule {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .schedule .center {
-    width: 95%;
-    max-width: 800px; }
-  .schedule table {
-    margin-top: 30pt;
-    width: 100%; }
-    .schedule table th {
-      font-size: 35pt;
-      padding-left: 15pt;
-      padding-right: 15pt;
-      padding-bottom: 10pt; }
-    .schedule table th:first-child {
-      text-align: right; }
-    .schedule table th:nth-child(2) {
-      text-align: left; }
-    .schedule table td:first-child {
-      font-weight: bold;
-      font-size: 25pt;
-      text-align: right;
-      font-style: italic; }
-    .schedule table td:nth-child(2) {
-      font-size: 16pt; }
-    .schedule table td {
-      padding-left: 15pt;
-      padding-right: 15pt;
-      padding-bottom: 9pt;
-      padding-top: 9pt;
-      color: #ddd;
-      border-bottom: rgba(221, 221, 221, 0.2) dotted;
-      vertical-align: middle; }
-
-.register-buttons {
-  margin-top: 15pt; }
-
-.discord-embed {
-  display: block; }
-
-.tweets-preview {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.twitter-wrapper {
-  display: inline-block;
-  margin-right: 5px; }
-
-.docs, .showcase {
-  margin-bottom: 20px;
-  padding-bottom: 0; }
-  .docs .center, .showcase .center {
-    color: #ddd;
-    margin-top: 5px;
-    padding: 8px 10px; }
-
-.showcase {
-  width: 95%; }
-  .showcase .center {
-    width: 95%;
-    max-width: 800px; }
-
-.docs-link {
-  border-color: #50e9fd;
-  color: rgba(0, 0, 0, 0) !important;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: 'VT323',sans-serif;
+  font-size: 6vw;
   text-align: center;
-  display: block;
-  margin: auto;
-  -webkit-text-stroke-color: #82effe;
-  filter: drop-shadow(0 0 5px #50e9fd); }
+  color: white; }
 
-@media (max-width: 850px) {
-  .top-fold {
-    height: 1050px; }
-  .top-fold__center {
-    padding-top: 50pt;
-    flex-direction: column; }
-    .top-fold__center img {
-      margin-top: 18pt;
-      display: block;
-      max-width: 50%; }
-    .top-fold__center .top-fold__left {
-      display: block;
-      margin-left: 0; }
-  .navigation-bar {
-    padding: 3pt; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link, .navigation-bar a {
-      margin: 0; }
-    .navigation-bar h2, .navigation-bar .schedule table th, .schedule table .navigation-bar th, .navigation-bar .docs-link {
-      font-size: 13pt; }
-    .navigation-bar h3 {
-      display: none; }
-    .navigation-bar a {
-      font-size: 10pt; }
-  .top-fold {
-    background: #1b0925; }
-  .schedule table td:first-child {
-    font-size: 16pt; }
-  .schedule table td:nth-child(2) {
-    font-size: 12pt; }
-  .schedule td {
-    padding-top: 2pt;
-    padding-bottom: 2pt; } }
+h4, h3 {
+  padding-top: 18px;
+  font-family: 'Share Tech Mono', cursive;
+  text-align: center;
+  color: white; }
+
+p {
+  padding-top: 10px;
+  font-family: 'Share Tech Mono', sans-serif;
+  text-align: center;
+  color: white; }
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; }
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #08A600, 0 0 40px #08A600, 0 0 50px #08A600, 0 0 60px #08A600, 0 0 70px #08A600; }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0BE400, 0 0 40px #0BE400, 0 0 50px #0BE400, 0 0 60px #0BE400, 0 0 70px #0BE400, 0 0 80px #0BE400; } }
+
+/* container for transparent image text*/
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+  /*justify-items: center;*/
+  align-items: center;
+  max-width: 100%;
+  /* Maximum width */
+  margin: 0 auto;
+  /* Center it */
+  line-height: 10px; }
+
+.container2 .content {
+  position: absolute;
+  /* Position the background text */
+  bottom: 25%;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: black;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+  width: 100%;
+  /* Full width */
+  padding: 20px;
+  /* Some padding */ }
+
+.container2 .logo {
+  height: 10px;
+  width: 10px;
+  padding: 20px; }
+
+.w3-tag {
+  position: fixed;
+  left: 20px;
+  /* Adjust as needed */
+  top: 30px;
+  /* Adjust as needed */ }
+
+.logo-div {
+  Width: 150px;
+  /* Adjust as needed */
+  height: 150px;
+  /* Adjust as needed */
+  position: fixed;
+  right: 15px;
+  /* Adjust as needed */
+  top: 15px;
+  /* Adjust as needed */
+  z-index: 1;
+  /* Adjust as needed */
+  transform: rotate(20deg); }
+
+.postit {
+  height: 20vw;
+  width: 20vw;
+  background: url("./images/postit.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(40px, 40px); }
+
+.postit > p {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2vw;
+  text-align: center;
+  color: black; }
