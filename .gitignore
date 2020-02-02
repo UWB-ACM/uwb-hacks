@@ -1,3 +1,6 @@
+# vim tmp files
+.*.sw?
+
 .idea/
 
 *.css
