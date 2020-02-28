@@ -9,13 +9,11 @@ h1{
 
 }
 
-h3{
+h2, h3{
     font-family: 'Share Tech Mono', sans-serif;
     padding: 5px 0;
-    text-align: center;
 }
 h4{
-    text-align: center;
     font-family: 'Share Tech Mono', sans-serif;
     padding:2px 0;
 }
@@ -27,9 +25,11 @@ header h1 {
 section {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0;
-    position: fixed;
-    height: 950px;
+    width: 40%;
+    /*z-index: 5;*/
+    float: left;
+    position: absolute;
+    height:  100%;
     max-width:35%;
     background-color: white;
     border-top-right-radius: 30% 50%;
@@ -75,6 +75,7 @@ section {
     color: #818181;
     display: block;
     font-family: 'Share Tech Mono', sans-serif;
+
 }
 
 .container{
@@ -527,7 +528,7 @@ section {
     top: 20px;
     right: 45px;
     font-size: 60px;
-    background-color: #2ecc71;
+    background-color: #34495e;
 }
 
 @media screen and (max-height: 450px) {
@@ -763,7 +764,6 @@ section {
     margin:0;
     padding: 0;
     display: flex;
-
 }
 
 /*Items within Navigation Container*/
@@ -783,19 +783,32 @@ section {
 
 .wrapper{
     max-width: 250px;
-    margin: 0 auto;
+    margin-bottom: 15px;
     padding: 10px;
+    margin-left: 55px;
 }
 
-.registration{
+/*=======Registration Button Start==========*/
+.registration {
     text-align: center;
-    font-size: 25px;
+    margin-left: 55px;
+    margin-top: 5px;
+    padding: 2px 2px;
+    background-color: Gold;
+    width: 170px;
+    font-size: 20px;
+    font-weight: 600;
     font-family: 'Share Tech Mono', sans-serif;
+    color: darkviolet;
+    border-radius: 5px;
 }
 
-.registration a:hover {
-    color: lime;
-}
+.registration:hover {
+    -webkit-animation: grow;
+    padding: 8px 8px;
+    color: gold;
+    background-color: blueviolet;
+}/*=======Registration Button End ==========*/
 
 /*========Flex Boxes on Info Slide Out Cards=========*/
 .flex-container {
@@ -803,15 +816,143 @@ section {
     flex-wrap: wrap;
     padding: 40px 15px;
     color: white;
-
+    font-family: 'Share Tech Mono', sans-serif;
+    margin-top: 50px;
 }
 
 .flex-container > div {
     /*background-color: #f1f1f1;*/
     width: 45%;
-    margin: 10px;
+    margin: 20px;
     text-align: left;
-    line-height: 20px;
+    line-height: 2;
     font-size: 15px;
 }
 /*====================================================*/
+
+/*============Event Title Block Start================*/
+.title{
+    background: #fff;
+    color: #58585a;
+    float: left;
+    position: relative;
+    width: 60%;
+    font-size: 65px;
+    font-weight: 400;
+    margin-left: 55px;
+    letter-spacing: -5px;
+    font-family: 'Share Tech Mono', sans-serif;
+}
+
+.event{
+    background: #fff;
+    color: #58585a;
+    float: left;
+    position: center;
+    width: 73%;
+    margin-left: 55px;
+    line-height: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .title{
+        width: 40%;
+        font-size: 45px;
+
+    }
+    .registration{
+        font-size: 14px;
+        width: 100px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .event{
+        width: 60%;
+        font-size: 12px;
+    }
+    .flex-nav .social{
+
+    }
+    .wrapper{
+        max-width: 180px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .registration{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .event{
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        width: 80%;
+    }
+    .title{
+        margin-left: 15px;
+    }
+    .wrapper{
+        max-width: 120px;
+    }
+    .myNav1{
+        z-index: 5;
+    }
+
+}
+ .docs  button{
+
+    background-color: lightslategray;
+    color: white;
+    align-items: center;
+    border-radius:10px;
+    margin-left: 20px;
+}
+
+ .docs:hover {
+    -webkit-animation: grow;
+    color: darkorange;
+    background-color: dodgerblue;
+}
+
+.flex-columns{
+    display: flex;
+    flex-direction: row;
+}
+.flex-columns > div {
+    width: 115px;
+    margin: 10px;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+}
+.schedule {
+    font-size: 20px;
+    line-height: 2;
+    padding: 5px;
+}
+
+th {
+    padding-right: 10px;
+}
+/*@media only screen and (max-width: 1440px){*/
+/*    .registration{*/
+/*        margin-left: 65px;*/
+/*        font-size: 30px;*/
+/*        padding: 10px;*/
+/*        margin-top: 20px;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*    .event{*/
+/*        margin-left: 65px;*/
+/*        font-size: 25px;*/
+/*    }*/
+/*    .title{*/
+/*        margin-left: 65px;*/
+/*        margin-top: 20px;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*    .wrapper{*/
+/*        max-width: 320px;*/
+/*    }*/
+/*}*/
