@@ -777,7 +777,7 @@ section {
     flex: 1;
 }
 /*wrapping on top navigation*/
-*. *:before *:after{
+* ::before ::after{
     box-sizing: inherit;
 }
 
