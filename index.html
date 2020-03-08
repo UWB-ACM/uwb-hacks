@@ -14,13 +14,13 @@
     <!--Front Page Rainbow Navigation on Right-->
     <div class="rightNav">
         <div class="container">
-            <div class="box box1 tablinks" onclick="openNav1(myNav1);switchTab(evt, myNav1);"><p>About UWB Hacks</p></div>
-            <div class="box box2 tablinks" onclick="openNav2(myNav2);switchTab(evt, myNav2);"><p>Cloud Project Ideas</p></div>
-            <div class="box box3 tablinks" onclick="openNav3(myNav3);switchTab(evt, myNav3)"><p>Schedule</p></div>
-            <div class="box box4 tablinks" onclick="openNav4(myNav4);switchTab(evt, myNav4)"><p>FAQ</p></div>
-            <div class="box box5 tablinks" onclick="openNav5(myNav5);switchTab(evt, myNav5)"><p>Sponsors</p></div>
-            <div class="box box6 tablinks" onclick="openNav6(myNav6);switchTab(evt, myNav6)"><p>Project Showcase</p></div>
-            <div class="box box7 tablinks" onclick="openNav7(myNav7);switchTab(evt, myNav7)"><p>Acknowledgements</p></div>
+            <div class="box box1 tablinks" onclick="openNav('myNav1')"><p>About UWB Hacks</p></div>
+            <div class="box box2 tablinks" onclick="openNav('myNav2')"><p>Cloud Project Ideas</p></div>
+            <div class="box box3 tablinks" onclick="openNav('myNav3')"><p>Schedule</p></div>
+            <div class="box box4 tablinks" onclick="openNav('myNav4')"><p>FAQ</p></div>
+            <div class="box box5 tablinks" onclick="openNav('myNav5')"><p>Sponsors</p></div>
+            <div class="box box6 tablinks" onclick="openNav('myNav6')"><p>Project Showcase</p></div>
+            <div class="box box7 tablinks" onclick="openNav('myNav7')"><p>Acknowledgements</p></div>
 <!--            <div class="box box8" onclick="openNav8(myNav8);switchTab(evt, myNav8)"><p>Stay Tune</p></div>-->
         </div>
     </div>
@@ -72,7 +72,7 @@
     <!--Card 1 Content Slide Navigation -->
     <div id="myNav1" class="overlay1 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav1')">&times;</a>
             <div class="overlay1-content">
                 <div class="image_card1">
                     <img class="responsive" src="gameboy.jpg" alt="Circuit Board Image">
@@ -115,7 +115,7 @@
 
     <div id="myNav2" class="overlay2 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav2')">&times;</a>
             <div class="overlay2-content">
                 <div class="image_card2">
                     <img class="responsive" src="floppy1.jpg" alt="Circuit Board Image">
@@ -160,7 +160,7 @@
     <!--   Card 3 Content Slide Navigation -->
     <div id="myNav3" class="overlay3 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav3')">&times;</a>
             <div class="overlay3-content">
                 <div class="image_card3">
                     <img class="responsive" src="parts1.jpg" alt="Circuit Board Image">
@@ -195,7 +195,7 @@
     <!--   Card 4 Content Slide Navigation -->
     <div id="myNav4" class="overlay4 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav4')">&times;</a>
             <div class="overlay4-content">
                 <div class="image_card4">
                     <img class="responsive" src="lmnc.jpg" alt="Circuit Board Image">
@@ -245,13 +245,13 @@
     <!--   Card 5 Content Slide Navigation -->
     <div id="myNav5" class="overlay5 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav5')">&times;</a>
             <div class="overlay5-content">
                 <div class="image_card5">
                     <img class="responsive" src="pcb-wall.jpg" alt="Circuit Board Image">
                 </div>
             </div>
-            <div><h3>More Information Comming Soon!! </h3> </div>
+            <div><h3>More Information Coming Soon!! </h3> </div>
         </div>
         <div class="flex-container">
 <!--            <div><h3>Content 2</h3> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>-->
@@ -263,7 +263,7 @@
     <div id="myNav6" class="overlay6 tabcontent">
 
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav6')">&times;</a>
             <div class="overlay6-content">
                 <div class="image_card6">
                     <img class="responsive" src="computer2.jpg" alt="Circuit Board Image">
@@ -280,7 +280,7 @@
 <!--===============Card 7 Content Slide Navigation==================-->
     <div id="myNav7" class="overlay7 tabcontent">
         <div class="flex-container">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav7')">&times;</a>
             <div class="overlay7-content">
                 <div class="image_card7">
                     <img class="responsive" src="computer1.jpg" alt="Circuit Board Image">
@@ -320,7 +320,7 @@
 <!--    &lt;!&ndash;  Card 8Content Slide Navigation &ndash;&gt;-->
 <!--    <div id="myNav8" class="overlay8">-->
 <!--        <div class="flex-container">-->
-<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>-->
+<!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav(myNav8)">&times;</a>-->
 <!--            <div class="overlay8-content">-->
 <!--                <div class="image_card8">-->
 <!--                    <img class="responsive" src="images/computer2.jpg" alt="Circuit Board Image">-->
@@ -340,50 +340,34 @@
     <!--Open and Close Each Individual Content/Image Info Card-->
     <script>
 
-        function openNav1(i) {document.getElementById("myNav1").style.width = "90%";}
-        function closeNav1(i){document.getElementById("myNav1").style.width = "0%";}
-        function openNav2(i) {document.getElementById("myNav2").style.width = "90%";}
-        function closeNav2(d){document.getElementById("myNav2").style.width = "0%";}
-        function openNav3(d) {document.getElementById("myNav3").style.width = "90%";}
-        function closeNav3(d){document.getElementById("myNav3").style.width = "0%";}
-        function openNav4(d) {document.getElementById("myNav4").style.width = "90%";}
-        function closeNav4(d){document.getElementById("myNav4").style.width = "0%";}
-        function openNav5(d) {document.getElementById("myNav5").style.width = "90%";}
-        function closeNav5(d){document.getElementById("myNav5").style.width = "0%";}
-        function openNav6(d) {document.getElementById("myNav6").style.width = "90%";}
-        function closeNav6(d){document.getElementById("myNav6").style.width = "0%";}
-        function openNav7(d) {document.getElementById("myNav7").style.width = "90%";}
-        function closeNav7(d){document.getElementById("myNav7").style.width = "0%";}
-        // function openNav8(id) {document.getElementById("myNav8").style.width = "90%";}
+		document.addEventListener("keydown", keydown); //add listener for escape key to close tabs
+			
+		var opentab; //currently open tab tracker variable
+		
+        function openNav(tab) { //handle when tab link is clicked on
+			
+			if(opentab == tab) {closeNav(opentab); return;} //close tab if you click the link for it again 
+			
+			if(opentab) {closeNav(opentab);} //if there's an open tab, close it before opening next one
+		
+			document.getElementById(tab).style.width = "90%"; //open tab by setting width to 90%
+			opentab = tab; //set opentab tracker variable
+			}
+		
+        function closeNav(tab){ //close button on tab handler 
+			document.getElementById(tab).style.width = "0%"; //close tab by setting width to zero 
+			opentab = null; //clear open tab tracker 
+			}
 
-        // $('.panel-title').click(function() {
-        //     if ($(this).find('.fa').hasClass('fa-plus')) {
-        //         $('#faq .fa').removeClass('fa-minus').addClass('fa-plus');
-        //         $(this).find('.fa').removeClass('fa-plus').addClass('fa-minus');
-        //     } else {
-        //         $(this).find('.fa').removeClass('fa-minus').addClass('fa-plus');
-        //     }
-        // });
+      function keydown (e) { //keydown handler for entire window
+		if(e.key === "Escape") { //listen to escape key 
+        		if(opentab) { //check if there's an open tab 
+					closeNav(opentab); //close the open tab 
+					} 
 
-        function switchTab(evt, myNav) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(myNav).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+    }
+}
+	  
     </script>
     </body>
 </html>

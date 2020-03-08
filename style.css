@@ -112,13 +112,22 @@ section {
     text-align: right;
     padding: 5px;
     justify-content: center;
+	
 }
 
 .box p{
     color: white;
     padding-right: 25px;
 }
+
+#tablinkcontainer {
+	float:right;
+	width:100%;
+	transition-duration: 300ms;
+}
+
 /*=====================================*/
+
 
 /* =============Start of CSS for Card 1 open page===========*/
 .overlay1  {
@@ -131,7 +140,11 @@ section {
     /*background-color: black;*/
     background-color: #2ecc71;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay1::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay1-content {
@@ -187,7 +200,11 @@ section {
     /*background-color: black;*/
     background-color: #f1c40f;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay2::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay2-content {
@@ -241,7 +258,11 @@ section {
     /*background-color: black;*/
     background-color: #e67e22;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay3::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay3-content {
@@ -295,7 +316,11 @@ section {
     /*background-color: black;*/
     background-color: #ce1126;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay4::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay4-content {
@@ -350,7 +375,11 @@ section {
     /*background-color: black;*/
     background-color: #9b59b6;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay5::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay5-content {
@@ -404,7 +433,11 @@ section {
     /*background-color: black;*/
     background-color: #3498db;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay6::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay6-content {
@@ -459,7 +492,11 @@ section {
     /*background-color: black;*/
     background-color: #1abc9c;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.overlay7::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay7-content {
@@ -688,6 +725,7 @@ section {
     margin:0;
     padding: 0;
     display: flex;
+
 }
 
 /*Items within Navigation Container*/
