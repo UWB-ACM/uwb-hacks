@@ -1,10 +1,6 @@
-//<!--Updated 3/2 10pm -->
+/*<!--Updated 3/2 10px -->*/
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap');
-
-/*
-THIS IS A TEST
- */
 
 h1{
     margin: 0;
@@ -40,15 +36,28 @@ section {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 70%;
-    /*z-index: 5;*/
+    z-index: 1;
     float: left;
     position: absolute;
     height:  100%;
     max-width:35%;
-    background-color: white;
+    /*padding: 100px 0;*/
+    background: #c9dbe9;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
     border-top-right-radius: 30% 50%;
     border-bottom-right-radius: 30% 50%;
 }
+
+/*#clouds{*/
+/*    padding: 100px 0;*/
+/*    background: #c9dbe9;*/
+/*    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+/*    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+/*    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+/*}*/
+
 
 
 /*=========Color Rainbow Boxes========= */
@@ -69,21 +78,24 @@ section {
     float: right;
     height: auto;
     width: 100%;
-    z-index: 1;
+    z-index:999999;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
 
 }
+.tablinks active{
+    -webkit-animation: bounce;
+}
 .move{
     justify-content: flex-start;
 }
 
-.rightNav p{
-
-    height:7vh;
-    padding: 6px 8px 6px 8px;
+.rightNav p {
+    z-index: 999999;
+    height:15vh;
+    padding: 15px 8px 6px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -109,7 +121,7 @@ section {
 /*=====================================*/
 
 /* =============Start of CSS for Card 1 open page===========*/
-.overlay1 {
+.overlay1  {
     height: 100%;
     width: 0;
     position: fixed;
@@ -150,6 +162,7 @@ section {
     right: 45px;
     font-size: 60px;
 }
+
 
 @media screen and (max-height: 450px) {
     .overlay1 a {font-size: 20px}
@@ -688,7 +701,7 @@ section {
     flex: 1;
 }
 /*wrapping on top navigation*/
-* ::before ::after{
+*. *:before *:after{
     box-sizing: inherit;
 }
 
@@ -702,7 +715,6 @@ section {
 /*=======Registration Button Start==========*/
 .registration {
     text-align: center;
-    margin-left: 55px;
     margin-top: 5px;
     padding: 2px 2px;
     background-color: Gold;
@@ -744,7 +756,7 @@ section {
 
 /*============Event Title Block Start================*/
 .title{
-    background: #fff;
+
     color: #58585a;
     float: left;
     position: relative;
@@ -757,13 +769,13 @@ section {
 }
 
 .event{
-    background: #fff;
+
     color: #58585a;
     float: left;
     position: center;
     width: 73%;
     margin-left: 55px;
-    line-height: 1px;
+
     /*font-stretch: 25px;*/
 }
 
@@ -945,24 +957,126 @@ section {
 th {
     padding-right: 10px;
 }
-/*@media only screen and (max-width: 1440px){*/
-/*    .registration{*/
-/*        margin-left: 65px;*/
-/*        font-size: 30px;*/
-/*        padding: 10px;*/
-/*        margin-top: 20px;*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-/*    .event{*/
-/*        margin-left: 65px;*/
-/*        font-size: 25px;*/
-/*    }*/
-/*    .title{*/
-/*        margin-left: 65px;*/
-/*        margin-top: 20px;*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-/*    .wrapper{*/
-/*        max-width: 320px;*/
-/*    }*/
-/*}*/
+
+
+/*===========Cloud Animation Starts Here =====================*/
+*{ margin: 0; padding: 0;}
+
+body {
+    /*To hide the horizontal scroller appearing during the animation*/
+    overflow: hidden;
+}
+
+
+/*Time to finalise the cloud shape*/
+.cloud {
+    width: 200px; height: 60px;
+    background: #fff;
+    z-index: -1000;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+
+    position: relative;
+}
+
+.cloud:before, .cloud:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100px; height: 80px;
+    position: absolute; top: -15px; left: 10px;
+
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+    width: 120px; height: 120px;
+    top: -75px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+    -webkit-animation: moveclouds 15s linear infinite;
+    -moz-animation: moveclouds 15s linear infinite;
+    -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+    left: 200px;
+
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.6; /*opacity proportional to the size*/
+
+    /*Speed will also be proportional to the size and opacity*/
+    /*More the speed. Less the time in 's' = seconds*/
+    -webkit-animation: moveclouds 25s linear infinite;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+    left: -250px; top: -200px;
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+    left: 470px; top: -250px;
+
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.75; /*opacity proportional to the size*/
+
+    -webkit-animation: moveclouds 18s linear infinite;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+    left: -150px; top: -150px;
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    z-index: -1000;
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+z-index: -1000;
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+z-index: -1000;
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+
+/* ===============Cloud animation ends here================*/
