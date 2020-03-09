@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
 
@@ -333,7 +333,7 @@
 			opentab = tab; //set opentab tracker variable
 		}
 		
-		function setspeed(speed){
+		function setspeed(speed){ //find all elements with tabcontent class and set speed accordingly
 			var all = document.getElementsByClassName('tabcontent');
 				for (var i = 0; i < all.length; i++) {
 					all[i].style.transitionDuration = speed;
