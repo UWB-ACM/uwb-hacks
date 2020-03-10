@@ -108,18 +108,12 @@ section {
 .box {
     flex: 1;
     text-align: right;
-    padding: 5px;
     justify-content: center;
 }
 
 .box p {
-    z-index: 999999;
-    padding: 15px 8px 6px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    font-family: 'Share Tech Mono', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 4.5vh;
     color: white;
     padding-right: 25px;
 }
