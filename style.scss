@@ -1,5 +1,7 @@
+@use "sass:list";
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap');
+
 .fill-container {
     width: 100%;
 }
@@ -32,6 +34,7 @@ h4{
 header h1 {
     color: white;
 }
+
 html, body{
     /*=====removes visible scroll bar======*/
     overflow-x: hidden;
@@ -41,6 +44,7 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -58,19 +62,6 @@ section {
     border-top-right-radius: 30% 50%;
     border-bottom-right-radius: 30% 50%;
 }
-
-/*=========Color Rainbow Boxes========= */
-.box1 {background: #2ecc71;}
-.box2 { background: #f1c40f;}
-.box3 { background: #e67e22;}
-.box4 { background: #ce1126;}
-.box5 { background: #9b59b6;}
-.box6 { background: #3498db;}
-.box7 { background: #1abc9c;}
-/*.box8 { background: #34495e;}*/
-/*.box9 { background: #e743c3;}*/
-/*.box10 { background: #16A085;}*/
-/*=====================================*/
 
 /*=======Navigation Within Rainbow Boxes======*/
 .rightNav{
@@ -156,256 +147,55 @@ section {
     margin-top: 30px;
 }
 
-/* =============Start of CSS for Card 1 open page===========*/
-.overlay1  {
+/* ============= Start of SASS for card-specific styling ===========*/
 
-    /*background-color: black;*/
-    background-color: #2ecc71;
+$background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
 
-}
+@for $i from 1 through 7 {
+    .box#{$i} {
+        background: nth($background-colors, $i);
+    }
 
-.overlay1 a {
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
+    .overlay#{$i} {
+        background-color: nth($background-colors, $i);
 
-.overlay1 a:hover, .overlay1 a:focus {
-    color: #f1f1f1;
-}
+        a {
+            text-decoration: none;
+            // not all boxes had this color, but most did
+            color: #818181;
+            transition: 0.3s;
+            &:hover, &:focus {
+                // not all boxes had this color, but most did
+                color: #f1f1f1;
+            }
+        }
 
-.overlay1 .closebtn {
-    position: absolute;
-    background-color: #2ecc71;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
+        .closebtn {
+            position: absolute;
+            background-color: nth($background-colors, $i);
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+    }
 
+    @media screen and (max-height: 450px) {
+        .overlay#{$i} a { font-size: 20px }
+        .overlay#{$i} .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
 
-@media screen and (max-height: 450px) {
-    .overlay1 a {font-size: 20px}
-    .overlay1 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+    .image_card#{$i} {
+        align-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: nth($background-colors, $i);
+        opacity: 0.25;
     }
 }
-/* =============End of Card 1 pages===========*/
-
-
-
-/* =============Start of CSS for 2 open pages===========*/
-.overlay2 {
-    /*background-color: black;*/
-    background-color: #f1c40f;
-}
-
-
-.overlay2 a {
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
-
-.overlay2 a:hover, .overlay2 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay2 .closebtn {
-    position: absolute;
-    background-color: #f1c40f;;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay2 a {font-size: 20px}
-    .overlay2 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card  2 open page===========*/
-
-
-/* =============Start of CSS for 3 open pages===========*/
-.overlay3 {
-    /*background-color: black;*/
-    background-color: #e67e22;
-}
-
-.overlay3 a {
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
-
-.overlay3 a:hover, .overlay3 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay3 .closebtn {
-    background-color: #e67e22;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay3 a {font-size: 20px}
-    .overlay3 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 3 open pages===========*/
-
-
-/* =============Start of CSS for 4 open pages===========*/
-.overlay4 {
-    /*background-color: black;*/
-    background-color: #ce1126;
-}
-
-.overlay4 a {
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-
-.overlay4 a:hover, .overlay4 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay4 .closebtn {
-    background-color: #ce1126;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay4 a {font-size: 20px}
-    .overlay4 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 4 open pages===========*/
-
-
-/* =============Start of CSS for 5 open pages===========*/
-
-.overlay5 {
-  /*background-color: black;*/
-    background-color: #9b59b6;
-}
-
-.overlay5 a {
-    text-decoration: none;
-    color: lightgray;
-    transition: 0.3s;
-}
-
-.overlay5 a:hover, .overlay5 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay5 .closebtn {
-    background-color: #9b59b6;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay5 a {font-size: 20px}
-    .overlay5 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 5 open pages===========*/
-
-
-/* =============Start of CSS for 6 open pages===========*/
-.overlay6 {
-    /*background-color: black;*/
-    background-color: #3498db;
-}
-
-.overlay6 a {
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
-
-.overlay6 a:hover, .overlay6 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay6 .closebtn {
-    background-color: #3498db;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay6 a {font-size: 20px}
-    .overlay6 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of CCard 6 open pages===========*/
-
-
-/*!* =============Start of CSS for 7 open pages===========*!*/
-
-.overlay7 {
-    /*background-color: black;*/
-    background-color: #1abc9c;
-}
-
-.overlay7 a {
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
-
-.overlay7 a:hover, .overlay7 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay7 .closebtn {
-    background-color: #1abc9c;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay7 a {font-size: 20px}
-    .overlay7 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 7 open pages===========*/
 
 .responsive{
     width: 100%;
@@ -413,63 +203,6 @@ section {
     max-width: 550px;
     padding: 20px;
 }
-
-
-/*==================================================================*/
-/*=====Images Overlay within content info cards starts here ========*/
-.image_card1{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #2ecc71;
-    opacity: 0.25;
-}
-
-.image_card2{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #f1c40f;
-    opacity: 0.25;
-}
-
-.image_card3{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #e67d22;
-    opacity: 0.25;
-}
-
-.image_card4{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #ce1126;
-    opacity: 0.25;
-}
-.image_card5{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #9b59b6;
-    opacity: 0.25;
-}
-.image_card6{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #3498bd;
-    opacity: 0.25;
-}
-.image_card7{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #1abc9c;
-    opacity: 0.25;
-}
-
 
 /*=====End Image Overlays within content info cards starts here ========*/
 
