@@ -13,6 +13,16 @@ blockquote {
   padding: 0.5em 10px;
 }
 
+.big-link {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 h1{
     margin: 0;
     padding: 25px 0;
