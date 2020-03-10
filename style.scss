@@ -1,6 +1,31 @@
-/*<!--Updated 3/2 10px -->*/
+@use "sass:list";
 
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Share+Tech+Mono&display=swap');
+
+.fill-container {
+    width: 100%;
+}
+
+blockquote {
+  border-left: 10px solid #9D0E1F;
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+.big-link {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+p, li, table {
+    font-family: 'Montserrat', sans-serif;
+}
 
 h1{
     margin: 0;
@@ -8,6 +33,14 @@ h1{
     font-size: 40px;
     font-family: 'Share Tech Mono', sans-serif;
     text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 h2, h3{
@@ -23,6 +56,7 @@ h4{
 header h1 {
     color: white;
 }
+
 html, body{
     /*=====removes visible scroll bar======*/
     overflow-x: hidden;
@@ -32,6 +66,7 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -50,29 +85,6 @@ section {
     border-bottom-right-radius: 30% 50%;
 }
 
-/*#clouds{*/
-/*    padding: 100px 0;*/
-/*    background: #c9dbe9;*/
-/*    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*}*/
-
-
-
-/*=========Color Rainbow Boxes========= */
-.box1 {background: #2ecc71;}
-.box2 { background: #f1c40f;}
-.box3 { background: #e67e22;}
-.box4 { background: #ce1126;}
-.box5 { background: #9b59b6;}
-.box6 { background: #3498db;}
-.box7 { background: #1abc9c;}
-/*.box8 { background: #34495e;}*/
-/*.box9 { background: #e743c3;}*/
-/*.box10 { background: #16A085;}*/
-/*=====================================*/
-
 /*=======Navigation Within Rainbow Boxes======*/
 .rightNav{
     float: right;
@@ -83,24 +95,7 @@ section {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-
-}
-.tablinks active{
-    -webkit-animation: bounce;
-}
-.move{
-    justify-content: flex-start;
-}
-
-.rightNav p {
-    z-index: 999999;
-    padding: 15px 8px 6px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    font-family: 'Share Tech Mono', sans-serif;
-
+	transition-duration: 300ms;
 }
 
 .container{
@@ -110,29 +105,32 @@ section {
 	flex-direction: column;
 }
 
-.box{
+.box {
+    flex: 1;
     text-align: right;
     padding: 5px;
     justify-content: center;
 }
 
-/*allow boxes to autoresize with page height*/
-.container > div {
-  flex: 1;
-}
-
-.box p{
+.box p {
+    z-index: 999999;
+    padding: 15px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: 'Share Tech Mono', sans-serif;
     color: white;
     padding-right: 25px;
 }
 
-#tablinkcontainer {
-	float:right;
-	width:100%;
-	transition-duration: 300ms;
-}
-
 /*=================Tabcontent generic style====================*/
+
+#tablinkcontainer {
+    float:right;
+    width:100%;
+    transition-duration: 300ms;
+}
 
 .tabcontent {
 	height: 100%;
@@ -149,366 +147,66 @@ section {
     display: none;
 }
 
-.overlaycontent {
-	position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
+/* ============= Start of SASS for card-specific styling ===========*/
 
-/* =============Start of CSS for Card 1 open page===========*/
-.overlay1  {
+$background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
+$link-colors: #9b59b6 #3498db #1abc9c #9D0E1F #2ecc71 #f1c40f #e67e22;
+$images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images/joystick.jpg" "images/commodore.jpg" "images/computer2.jpg" "images/lisa.jpg";
 
-    /*background-color: black;*/
-    background-color: #2ecc71;
+@for $i from 1 through 7 {
+    .box#{$i} {
+        background: nth($background-colors, $i);
+    }
 
-}
+    .overlay#{$i} {
+        background-color: nth($background-colors, $i);
+        color: white;
 
-.overlay1 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+        a {
+            text-decoration: none;
+            // not all boxes had this color, but most did
+            color: nth($link-colors, $i);
+            transition: 0.3s;
+            &:hover, &:focus {
+                // not all boxes had this color, but most did
+                color: #f1f1f1;
+            }
+        }
 
-.overlay1 a:hover, .overlay1 a:focus {
-    color: #f1f1f1;
-}
+        .closebtn {
+            margin-left: auto;
+            background-color: nth($background-colors, $i);
+            // top: 20px;
+            // right: 45px;
+            font-size: 60px;
+        }
+    }
 
-.overlay1 .closebtn {
-    position: absolute;
-    background-color: #2ecc71;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
+    @media screen and (max-height: 450px) {
+        .overlay#{$i} a { font-size: 20px }
+        .overlay#{$i} .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
 
-
-@media screen and (max-height: 450px) {
-    .overlay1 a {font-size: 20px}
-    .overlay1 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+    .image_card#{$i} {
+        // align-content: space-between;
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-image: url(nth($images, $i));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        // background: nth($background-colors, $i);
+        opacity: 0.25;
     }
 }
-/* =============End of Card 1 pages===========*/
-
-
-
-/* =============Start of CSS for 2 open pages===========*/
-.overlay2 {
-    /*background-color: black;*/
-    background-color: #f1c40f;
-}
-
-
-.overlay2 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 30px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay2 a:hover, .overlay2 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay2 .closebtn {
-    position: absolute;
-    background-color: #f1c40f;;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay2 a {font-size: 20px}
-    .overlay2 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card  2 open page===========*/
-
-
-/* =============Start of CSS for 3 open pages===========*/
-.overlay3 {
-    /*background-color: black;*/
-    background-color: #e67e22;
-}
-
-.overlay3 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay3 a:hover, .overlay3 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay3 .closebtn {
-    background-color: #e67e22;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay3 a {font-size: 20px}
-    .overlay3 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 3 open pages===========*/
-
-
-/* =============Start of CSS for 4 open pages===========*/
-.overlay4 {
-    /*background-color: black;*/
-    background-color: #ce1126;
-}
-
-.overlay4 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay4 a:hover, .overlay4 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay4 .closebtn {
-    background-color: #ce1126;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay4 a {font-size: 20px}
-    .overlay4 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 4 open pages===========*/
-
-
-/* =============Start of CSS for 5 open pages===========*/
-
-.overlay5 {
-  /*background-color: black;*/
-    background-color: #9b59b6;
-}
-
-.overlay5 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: lightgray;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay5 a:hover, .overlay5 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay5 .closebtn {
-    background-color: #9b59b6;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay5 a {font-size: 20px}
-    .overlay5 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 5 open pages===========*/
-
-
-/* =============Start of CSS for 6 open pages===========*/
-.overlay6 {
-    /*background-color: black;*/
-    background-color: #3498db;
-}
-
-.overlay6 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay6 a:hover, .overlay6 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay6 .closebtn {
-    background-color: #3498db;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay6 a {font-size: 20px}
-    .overlay6 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of CCard 6 open pages===========*/
-
-
-/*!* =============Start of CSS for 7 open pages===========*!*/
-
-.overlay7 {
-    /*background-color: black;*/
-    background-color: #1abc9c;
-}
-
-.overlay7 a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay7 a:hover, .overlay7 a:focus {
-    color: #f1f1f1;
-}
-
-.overlay7 .closebtn {
-    background-color: #1abc9c;
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay7 a {font-size: 20px}
-    .overlay7 .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-/* =============End of Card 7 open pages===========*/
-
-.responsive{
-    width: 100%;
-    height: auto;
-    max-width: 550px;
-    padding: 20px;
-}
-
-
-/*==================================================================*/
-/*=====Images Overlay within content info cards starts here ========*/
-.image_card1{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #2ecc71;
-    opacity: 0.25;
-}
-
-.image_card2{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #f1c40f;
-    opacity: 0.25;
-}
-
-.image_card3{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #e67d22;
-    opacity: 0.25;
-}
-
-.image_card4{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #ce1126;
-    opacity: 0.25;
-}
-.image_card5{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #9b59b6;
-    opacity: 0.25;
-}
-.image_card6{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #3498bd;
-    opacity: 0.25;
-}
-.image_card7{
-    align-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #1abc9c;
-    opacity: 0.25;
-}
-
 
 /*=====End Image Overlays within content info cards starts here ========*/
-
-
-/*===============Social Media and Hover to Links==========*/
-/* a {*/
-/*    color: dimgrey;*/
-/*    font-weight: 100;*/
-/*    letter-spacing: 2px;*/
-/*    padding: 5px 5px;*/
-/*    display: inline-block;*/
-/*    width: 15%;*/
-/*    text-align: center;*/
-/*    transition: all 0.5s;*/
-/*    text-decoration: none;*/
-
-/*}*/
 
  /*============hover over links=========*/
 .fa{
@@ -543,7 +241,7 @@ section {
     flex: 1;
 }
 /*wrapping on top navigation*/
-*. *:before *:after{
+* ::before ::after{
     box-sizing: inherit;
 }
 
@@ -579,21 +277,12 @@ section {
 /*========Flex Boxes on Info Slide Out Cards=========*/
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     padding: 40px 15px;
     color: white;
-    font-family: 'Share Tech Mono', sans-serif;
-    margin-top: 50px;
 }
 
-.flex-container > div {
-    /*background-color: #f1f1f1;*/
-    width: 45%;
-    margin: 20px;
-    text-align: left;
-    line-height: 2;
-    font-size: 15px;
-}
 /*====================================================*/
 
 /*============Event Title Block Start================*/
@@ -652,15 +341,6 @@ section {
         margin-top: 15px;
         margin-left: 20px;
     }
-    tr th {
-        width: auto;
-        font-size: 20px;
-        border: 1px solid cornsilk;
-    }
-    .flex-container > div{
-        margin: 5px;
-        width: 85%;
-    }
 }
 
 /*=========cell phone media query===========*/
@@ -698,19 +378,8 @@ section {
         z-index: 5;
     }
    .flex-container{
-       padding: 5px;
+       padding: 10px;
        margin-top: 15px;
-       width: 80%;
-   }
-    .flex-container > div{
-        margin: 5px;
-        width: 85%;
-        font-size: 12px;
-    }
-   th {
-       padding: 2px;
-       font-size: 12px;
-       border: 1px solid cornsilk;
    }
    .rightNav p {
        font-size: 20px;
@@ -719,64 +388,6 @@ section {
         font-size: 15px;
     }
 }
-
-
-/*@media only screen and (max-width: 1440px){*/
-/*    .wrapper{*/
-/*        margin-left: 30px;*/
-/*        margin-top: 30px;*/
-/*    }*/
-/*   .event{*/
-/*       margin-top: 20px;*/
-/*       margin-bottom: 30px;*/
-/*       margin-left: 30px;*/
-/*       font-size: 25px;*/
-/*       height: 50px;*/
-/*   }*/
-/*   .title{*/
-/*       margin-top: 30px;*/
-/*       margin-bottom: 20px;*/
-/*       margin-left: 30px;*/
-/*       font-size: 70px;*/
-/*   }*/
-/*}*/
-
-/*@media only screen and (max-width: 1024px){*/
-/*    .wrapper{*/
-/*        margin-left: 30px;*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*    !*.event{*!*/
-/*    !*    width: 300px;*!*/
-/*    !*    margin-bottom: 30px;*!*/
-/*    !*    margin-left: 30px;*!*/
-/*    !*    font-size: 20px;*!*/
-/*    !*    height:300px;*!*/
-/*    !*}*!*/
-/*    .title{*/
-/*        margin-top: 10px;*/
-/*        margin-bottom: 20px;*/
-/*        margin-left: 30px;*/
-/*        font-size: 50px;*/
-/*    }*/
-/*}*/
- /*=====document button========*/
- .overlay2 button {
-
-    background-color: white;
-    color: dodgerblue;
-    align-items: center;
-    border-radius:10px;
-    margin-left: 20px;
-     font-size: 15px;
-}
-
- .overlay2 button:hover  {
-    -webkit-animation: grow;
-    color: darkorange;
-    background-color: dodgerblue;
-}
-
 
 /* ===========sections on card made for stacking on small screen*/
 .flex-columns{
@@ -792,17 +403,12 @@ section {
 }
 .schedule {
     font-size: 20px;
-    line-height: 2;
     padding: 5px;
 }
 
-th {
-    padding-right: 10px;
-}
 
 
 /*===========Cloud Animation Starts Here =====================*/
-*{ margin: 0; padding: 0;}
 
 body {
     /*To hide the horizontal scroller appearing during the animation*/
