@@ -73,24 +73,7 @@ section {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-
-}
-.tablinks active{
-    -webkit-animation: bounce;
-}
-.move{
-    justify-content: flex-start;
-}
-
-.rightNav p {
-    z-index: 999999;
-    padding: 15px 8px 6px 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    font-family: 'Share Tech Mono', sans-serif;
-
+	transition-duration: 300ms;
 }
 
 .container{
@@ -100,29 +83,32 @@ section {
 	flex-direction: column;
 }
 
-.box{
+.box {
+    flex: 1;
     text-align: right;
     padding: 5px;
     justify-content: center;
 }
 
-/*allow boxes to autoresize with page height*/
-.container > div {
-  flex: 1;
-}
-
-.box p{
+.box p {
+    z-index: 999999;
+    padding: 15px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: 'Share Tech Mono', sans-serif;
     color: white;
     padding-right: 25px;
 }
 
-#tablinkcontainer {
-	float:right;
-	width:100%;
-	transition-duration: 300ms;
-}
-
 /*=================Tabcontent generic style====================*/
+
+#tablinkcontainer {
+    float:right;
+    width:100%;
+    transition-duration: 300ms;
+}
 
 .tabcontent {
 	height: 100%;
