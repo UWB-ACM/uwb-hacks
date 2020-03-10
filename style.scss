@@ -255,21 +255,12 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 /*========Flex Boxes on Info Slide Out Cards=========*/
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     padding: 40px 15px;
     color: white;
-    font-family: 'Share Tech Mono', sans-serif;
-    margin-top: 50px;
 }
 
-.flex-container > div {
-    /*background-color: #f1f1f1;*/
-    width: 45%;
-    margin: 20px;
-    text-align: left;
-    line-height: 2;
-    font-size: 15px;
-}
 /*====================================================*/
 
 /*============Event Title Block Start================*/
@@ -328,15 +319,6 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
         margin-top: 15px;
         margin-left: 20px;
     }
-    tr th {
-        width: auto;
-        font-size: 20px;
-        border: 1px solid cornsilk;
-    }
-    .flex-container > div{
-        margin: 5px;
-        width: 85%;
-    }
 }
 
 /*=========cell phone media query===========*/
@@ -374,19 +356,8 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
         z-index: 5;
     }
    .flex-container{
-       padding: 5px;
+       padding: 10px;
        margin-top: 15px;
-       width: 80%;
-   }
-    .flex-container > div{
-        margin: 5px;
-        width: 85%;
-        font-size: 12px;
-    }
-   th {
-       padding: 2px;
-       font-size: 12px;
-       border: 1px solid cornsilk;
    }
    .rightNav p {
        font-size: 20px;
@@ -410,17 +381,12 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 }
 .schedule {
     font-size: 20px;
-    line-height: 2;
     padding: 5px;
 }
 
-th {
-    padding-right: 10px;
-}
 
 
 /*===========Cloud Animation Starts Here =====================*/
-*{ margin: 0; padding: 0;}
 
 body {
     /*To hide the horizontal scroller appearing during the animation*/
