@@ -19,6 +19,14 @@ h1{
     font-size: 40px;
     font-family: 'Share Tech Mono', sans-serif;
     text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 h2, h3{
