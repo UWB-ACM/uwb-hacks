@@ -156,22 +156,21 @@
             <div>
                 <h1>Event Schedule</h1>
                 <table class="schedule">
-                    <tr><td>9:00</td><td>Check-In Begins</td></tr>
-                    <tr><td>9:00</td><td>Free Breakfast </td></tr>
-                    <tr><td>9:30</td><td>Opening Ceremony</td></tr>
+                    <tr><td>09:00</td><td>Check-In Begins</td></tr>
+                    <tr><td>09:00</td><td>Free Breakfast </td></tr>
+                    <tr><td>09:30</td><td>Opening Ceremony</td></tr>
                     <!-- Use HTML entity for table column spacing -->
                     <tr><td>10:00 &nbsp; &nbsp;</td><td>Team Formation Mixer, hosted by ACM-W</td></tr>
                     <tr><td>10:00</td><td>Hacking Begins</td></tr>
                     <tr><td>10:45</td><td>Talk: Introduction To Cloud Services</td></tr>
                     <tr><td>12:30</td><td>Free Lunch</td></tr>
-                    <tr><td>1:15</td><td>Lightning Talks: Tales from the Cloud</td></tr>
-                    <tr><td>2:45</td><td>Workshop: TBA</td></tr>
-                    <tr><td>6:00</td><td>Free Dinner</td></tr>
-                    <tr><td>8:00</td><td>Submissions Due on DevPost</td></tr>
-                    <tr><td>8:15</td><td>Ice Cream Sundae Bar</td></tr>
-                    <tr><td>8:45</td><td>Demo Presentations</td></tr>
-                    <tr><td>9:45</td><td>Awards Ceremony</td></tr>
-
+                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud</td></tr>
+                    <tr><td>14:45</td><td>Workshop: TBA</td></tr>
+                    <tr><td>18:00</td><td>Free Dinner</td></tr>
+                    <tr><td>20:00</td><td>Submissions Due on DevPost</td></tr>
+                    <tr><td>20:15</td><td>Ice Cream Sundae Bar</td></tr>
+                    <tr><td>20:45</td><td>Demo Presentations</td></tr>
+                    <tr><td>21:45</td><td>Awards Ceremony</td></tr>
                 </table>
             </div>
         </div>
@@ -305,7 +304,11 @@
 	
         function openNav(tab) { //handle when tab link is clicked on
 
-		setspeed('0.3s'); //set transition speed to normal 
+			if(tab == 'myNav3'){ //activate cross out feature when schedule tab is opened
+					strikethroughschedule();
+			}
+		
+			setspeed('0.3s'); //set transition speed to normal 
 			
 			if(opentab == tab) {closeNav(opentab); return;} //close tab if you click the link for it again 
 			
@@ -343,6 +346,27 @@
 				} 
 
 			}
+		}
+		
+		
+		function strikethroughschedule() { //cross out schedule events as day progresses 
+			var today = new Date();
+			var hackathondate = "2020-4-17"; //yyyy-m-d
+			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+			
+			if(!(date == hackathondate)){return;} //check for hackathon date, exit if not hackathon
+			
+			var currenttime = today.getHours() + ":" + today.getMinutes()
+			var table = document.getElementById("scheduletable"); 
+
+			for(var i = 0; i < table.rows.length; i++){ //loop through table
+				if (table.rows[i].cells[0].innerText < currenttime){ //compare current time with hidden column time 
+					//cross out rows before hidden column time
+					table.rows[i].cells[1].innerHTML = "<s>" + table.rows[i].cells[1].innerHTML + "</s>";
+					table.rows[i].cells[2].innerHTML = "<s>" + table.rows[i].cells[2].innerHTML + "</s>";
+				}
+			}
+
 		}
 	  
     </script>
