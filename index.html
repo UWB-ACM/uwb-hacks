@@ -166,21 +166,21 @@
                 </div>
             </div>
             <div><h1>Event Schedule</h1>
-                <table class="schedule">
-                    <tr><th>9:00</th><th>Check-In Begins</th></tr>
-                    <tr><th>9:15</th><th>Free Breakfast </th></tr>
-                    <tr><th>10:00</th><th>Opening Ceremony</th></tr>
-                    <tr><th>10:30</th><th>Team Formation Mixer, hosted by ACM-W</th></tr>
-                    <tr><th>10:30</th><th>Hacking Begins</th></tr>
-                    <tr><th>11:15</th><th>Introduction To Cloud Services</th></tr>
-                    <tr><th>12:30</th><th>Free Lunch</th></tr>
-                    <tr><th>1:15</th><th>Lightning Talks: Tales from the Cloud</th></tr>
-                    <tr><th>2:45</th><th>Workshop TBA</th></tr>
-                    <tr><th>6:00</th><th>Free Dinner</th></tr>
-                    <tr><th>8:00</th><th>Submissions Due on DevPost</th></tr>
-                    <tr><th>8:15</th><th>Ice Cream Sundae Bar</th></tr>
-                    <tr><th>8:45</th><th> Demo Presentations</th></tr>
-                    <tr><th>9:45</th><th>Awards Ceremony</th></tr>
+                <table class="schedule" id="scheduletable">
+                    <tr><th style="display:none;">09:00</th><th>9:00</th><th>Check-In Begins</th></tr>
+                    <tr><th style="display:none;">09:15</th><th>9:15</th><th>Free Breakfast </th></tr>
+                    <tr><th style="display:none;">10:00</th><th>10:00</th><th>Opening Ceremony</th></tr>
+                    <tr><th style="display:none;">10:30</th><th>10:30</th><th>Team Formation Mixer, hosted by ACM-W</th></tr>
+                    <tr><th style="display:none;">10:30</th><th>10:30</th><th>Hacking Begins</th></tr>
+                    <tr><th style="display:none;">11:15</th><th>11:15</th><th>Introduction To Cloud Services</th></tr>
+                    <tr><th style="display:none;">12:30</th><th>12:30</th><th>Free Lunch</th></tr>
+                    <tr><th style="display:none;">13:15</th><th>1:15</th><th>Lightning Talks: Tales from the Cloud</th></tr>
+                    <tr><th style="display:none;">14:45</th><th>2:45</th><th>Workshop TBA</th></tr>
+                    <tr><th style="display:none;">18:00</th><th>6:00</th><th>Free Dinner</th></tr>
+                    <tr><th style="display:none;">20:00</th><th>8:00</th><th>Submissions Due on DevPost</th></tr>
+                    <tr><th style="display:none;">20:15</th><th>8:15</th><th>Ice Cream Sundae Bar</th></tr>
+                    <tr><th style="display:none;">20:45</th><th>8:45</th><th> Demo Presentations</th></tr>
+                    <tr><th style="display:none;">22:45</th><th>9:45</th><th>Awards Ceremony</th></tr>
 
                 </table>
             </div>
@@ -318,7 +318,11 @@
 	
         function openNav(tab) { //handle when tab link is clicked on
 
-		setspeed('0.3s'); //set transition speed to normal 
+			if(tab == 'myNav3'){ //activate cross out feature when schedule tab is opened
+					strikethroughschedule();
+			}
+		
+			setspeed('0.3s'); //set transition speed to normal 
 			
 			if(opentab == tab) {closeNav(opentab); return;} //close tab if you click the link for it again 
 			
@@ -356,6 +360,27 @@
 				} 
 
 			}
+		}
+		
+		
+		function strikethroughschedule() { //cross out schedule events as day progresses 
+			var today = new Date();
+			var hackathondate = "2020-4-17"; //yyyy-m-d
+			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+			
+			if(!(date == hackathondate)){return;} //check for hackathon date, exit if not hackathon
+			
+			var currenttime = today.getHours() + ":" + today.getMinutes()
+			var table = document.getElementById("scheduletable"); 
+
+			for(var i = 0; i < table.rows.length; i++){ //loop through table
+				if (table.rows[i].cells[0].innerText < currenttime){ //compare current time with hidden column time 
+					//cross out rows before hidden column time
+					table.rows[i].cells[1].innerHTML = "<s>" + table.rows[i].cells[1].innerHTML + "</s>";
+					table.rows[i].cells[2].innerHTML = "<s>" + table.rows[i].cells[2].innerHTML + "</s>";
+				}
+			}
+
 		}
 	  
     </script>
