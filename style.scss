@@ -1,6 +1,15 @@
-/*<!--Updated 3/2 10px -->*/
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Share+Tech+Mono|VT323&display=swap');
+.fill-container {
+    width: 100%;
+}
+
+blockquote {
+  border-left: 10px solid #9D0E1F;
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
 
 h1{
     margin: 0;
@@ -49,16 +58,6 @@ section {
     border-top-right-radius: 30% 50%;
     border-bottom-right-radius: 30% 50%;
 }
-
-/*#clouds{*/
-/*    padding: 100px 0;*/
-/*    background: #c9dbe9;*/
-/*    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*    background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*    background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
-/*}*/
-
-
 
 /*=========Color Rainbow Boxes========= */
 .box1 {background: #2ecc71;}
@@ -166,11 +165,8 @@ section {
 }
 
 .overlay1 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -207,11 +203,8 @@ section {
 
 
 .overlay2 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 30px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -245,11 +238,8 @@ section {
 }
 
 .overlay3 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -283,11 +273,8 @@ section {
 }
 
 .overlay4 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
+    color: black;
     transition: 0.3s;
 }
 
@@ -322,11 +309,8 @@ section {
 }
 
 .overlay5 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
     color: lightgray;
-    display: block;
     transition: 0.3s;
 }
 
@@ -360,11 +344,8 @@ section {
 }
 
 .overlay6 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -399,11 +380,8 @@ section {
 }
 
 .overlay7 a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 36px;
     color: #818181;
-    display: block;
     transition: 0.3s;
 }
 
@@ -494,21 +472,6 @@ section {
 
 
 /*=====End Image Overlays within content info cards starts here ========*/
-
-
-/*===============Social Media and Hover to Links==========*/
-/* a {*/
-/*    color: dimgrey;*/
-/*    font-weight: 100;*/
-/*    letter-spacing: 2px;*/
-/*    padding: 5px 5px;*/
-/*    display: inline-block;*/
-/*    width: 15%;*/
-/*    text-align: center;*/
-/*    transition: all 0.5s;*/
-/*    text-decoration: none;*/
-
-/*}*/
 
  /*============hover over links=========*/
 .fa{
@@ -719,64 +682,6 @@ section {
         font-size: 15px;
     }
 }
-
-
-/*@media only screen and (max-width: 1440px){*/
-/*    .wrapper{*/
-/*        margin-left: 30px;*/
-/*        margin-top: 30px;*/
-/*    }*/
-/*   .event{*/
-/*       margin-top: 20px;*/
-/*       margin-bottom: 30px;*/
-/*       margin-left: 30px;*/
-/*       font-size: 25px;*/
-/*       height: 50px;*/
-/*   }*/
-/*   .title{*/
-/*       margin-top: 30px;*/
-/*       margin-bottom: 20px;*/
-/*       margin-left: 30px;*/
-/*       font-size: 70px;*/
-/*   }*/
-/*}*/
-
-/*@media only screen and (max-width: 1024px){*/
-/*    .wrapper{*/
-/*        margin-left: 30px;*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*    !*.event{*!*/
-/*    !*    width: 300px;*!*/
-/*    !*    margin-bottom: 30px;*!*/
-/*    !*    margin-left: 30px;*!*/
-/*    !*    font-size: 20px;*!*/
-/*    !*    height:300px;*!*/
-/*    !*}*!*/
-/*    .title{*/
-/*        margin-top: 10px;*/
-/*        margin-bottom: 20px;*/
-/*        margin-left: 30px;*/
-/*        font-size: 50px;*/
-/*    }*/
-/*}*/
- /*=====document button========*/
- .overlay2 button {
-
-    background-color: white;
-    color: dodgerblue;
-    align-items: center;
-    border-radius:10px;
-    margin-left: 20px;
-     font-size: 15px;
-}
-
- .overlay2 button:hover  {
-    -webkit-animation: grow;
-    color: darkorange;
-    background-color: dodgerblue;
-}
-
 
 /* ===========sections on card made for stacking on small screen*/
 .flex-columns{
