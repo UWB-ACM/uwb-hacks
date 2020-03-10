@@ -125,17 +125,11 @@ section {
     display: none;
 }
 
-.overlaycontent {
-	position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
 /* ============= Start of SASS for card-specific styling ===========*/
 
 $background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
+$link-colors: #9b59b6 #3498db #1abc9c #9D0E1F #2ecc71 #f1c40f #e67e22;
+$images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images/joystick.jpg" "images/commodore.jpg" "images/computer2.jpg" "images/lisa.jpg";
 
 @for $i from 1 through 7 {
     .box#{$i} {
@@ -144,11 +138,12 @@ $background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
 
     .overlay#{$i} {
         background-color: nth($background-colors, $i);
+        color: white;
 
         a {
             text-decoration: none;
             // not all boxes had this color, but most did
-            color: #818181;
+            color: nth($link-colors, $i);
             transition: 0.3s;
             &:hover, &:focus {
                 // not all boxes had this color, but most did
@@ -157,10 +152,10 @@ $background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
         }
 
         .closebtn {
-            position: absolute;
+            margin-left: auto;
             background-color: nth($background-colors, $i);
-            top: 20px;
-            right: 45px;
+            // top: 20px;
+            // right: 45px;
             font-size: 60px;
         }
     }
@@ -175,19 +170,18 @@ $background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
     }
 
     .image_card#{$i} {
-        align-content: space-between;
+        // align-content: space-between;
+        width: 100%;
+        height: 200px;
         margin-top: 10px;
         margin-bottom: 10px;
-        background: nth($background-colors, $i);
+        background-image: url(nth($images, $i));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        // background: nth($background-colors, $i);
         opacity: 0.25;
     }
-}
-
-.responsive{
-    width: 100%;
-    height: auto;
-    max-width: 550px;
-    padding: 20px;
 }
 
 /*=====End Image Overlays within content info cards starts here ========*/
