@@ -339,6 +339,9 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 
 /*=========cell phone media query===========*/
 @media only screen and (max-width: 425px){
+    .box p {
+        font-size: 3vh;
+    }
     .section{
         width: 60%;
     }
@@ -368,15 +371,9 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
         padding: 8px;
         size: 20px;
     }
-    .myNav1{
-        z-index: 5;
-    }
    .flex-container{
        padding: 10px;
        margin-top: 15px;
-   }
-   .rightNav p {
-       font-size: 20px;
    }
     .schedule{
         font-size: 15px;
