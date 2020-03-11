@@ -207,12 +207,6 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
     color: lightslategray;
     size: 30px;
 }
-.fa:hover {
-    background-color: deepskyblue;
-    color: #457eb8;
-    -webkit-animation: grow;
-    padding: 2px 20px;
-}
 
 /*Main Navigation Container*/
 .flex-nav ul{
@@ -234,6 +228,7 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 .flex-nav .social {
     flex: 1;
 }
+
 /*wrapping on top navigation*/
 * ::before ::after{
     box-sizing: inherit;
@@ -259,6 +254,7 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
     color: darkviolet;
     border-radius: 5px;
     text-decoration: none;
+    margin-left: 55px;
 }
 
 .registration:hover {
@@ -283,25 +279,24 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 .title{
 
     color: #58585a;
-    float: left;
-    position: relative;
     width: 60%;
-    font-size:60px;
-    font-weight: 400;
+    font-size: 7vh;
+    font-weight: bold;
     margin-left: 55px;
-    letter-spacing: -5px;
     font-family: 'Share Tech Mono', sans-serif;
 }
 
 .event{
-
     color: #58585a;
-    float: left;
-    position: center;
     width: 73%;
     margin-left: 55px;
+    margin-top: 15px;
+    font-size: 4vh;
+    font-weight: normal;
+}
 
-    /*font-stretch: 25px;*/
+.event h4 {
+    margin: 5px 0px 5px 0px;
 }
 
 /*=======tablet media query==================*/
@@ -324,7 +319,7 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
        width: 150px;
         font-size: 15px;
         margin-top: 8px;
-        margin-left: 10px;
+        margin-left: 20px;
 
     }
     .flex-nav .social{
@@ -352,7 +347,7 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
         font-size: 20px;
     }
     .event{
-        margin-left: 5px;
+        margin-left: 10px;
         width: 80%;
     }
     .title{
