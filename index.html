@@ -1,72 +1,395 @@
+<!--Updated 3/2 10pm -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>UWB Hackathon Coming Soon</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <title>UWB Hacks The Cloud 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-
 <body>
 
-    <div class="postit">
-        <p class="postit-text">
-        Apr 17, 9am - 10pm, ARC & NCEC
-        </p>
+    <!--Front Page Rainbow Navigation on Right-->
+    <div class="rightNav">
+        <div id="tablinkcontainer" class="container">
+            <div class="box box1" onclick="openNav('myNav1')"><p>About UWB Hacks</p></div>
+            <div class="box box2" onclick="openNav('myNav2')"><p>Hacker Resources</p></div>
+            <div class="box box3" onclick="openNav('myNav3')"><p>Schedule</p></div>
+            <div class="box box4" onclick="openNav('myNav4')"><p>FAQ</p></div>
+            <div class="box box5" onclick="openNav('myNav5')"><p>Sponsors</p></div>
+            <div class="box box6" onclick="openNav('myNav6')"><p>Project Showcase</p></div>
+            <div class="box box7" onclick="openNav('myNav7')"><p>Acknowledgements</p></div>
+        </div>
     </div>
 
-    <div class="logo-div">
-        <a href="https://uwbacm.com"><img src="images/150_dpi.png"></a>
-    </div>
+    <!--White Half Circle Event Information-->
+    <section >
+        <div>
+            <div class="wrapper" >
+                <nav class="flex-nav">
+                    <ul>
+                        <!-- Social Media Icon LInks -->
+                        <li class="social">
+                            <a href="https://www.facebook.com/uwbacm/"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.linkedin.com/in/uwbacm"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="social">
+                            <a href=" https://docs.uwbhacks.com/ "><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                    <hr style="width: 75%; float:left;">
+                </nav>
 
 
-    <div class="container2">
-        <div class="content">
+
+            </div>
+
+            <div class="title">UWB Hacks the Cloud</div>
             <div>
-                <p class="glow" ><a href="https://docs.google.com/forms/d/1YGAVFzYEcBsO8ZgsDTX4NXmkLTwMDhh-p9FiTX5tmxA/viewform?edit_requested=true">Register Now!</a></p>
-                <h1>UWB Hacks The Cloud</h1>
-                <p class="glow" id="demo"></p>
+                <button class="registration" id="effects" >
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSesZrR4kDC5NrmjHH6o2ZsRRUO2cIFVRf567PCcCp_ysydQ1w/viewform">Register</a></button>
+            </div>
+            <div class="event">
+                <h4>April 17, 2020</h4>
+                <h4>9 AM - 10 PM</h4>
+                <h4>UWB ARC and NCEC</h4>
+            </div>
+        </div>
+        <div class="cloud x1"></div>
+        <!-- Time for multiple clouds to dance around -->
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </section>
+
+    <!--Card 1 Content Slide Navigation -->
+    <div id="myNav1" class="overlay1 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav1')">&times;</a>
+            <div class="image_card1"></div>
+            <div>
+                <h1>About UWB Hacks</h1>
+                <p>This year’s event has a theme of Cloud Computing! We are excited to see all
+                    of the innovative projects
+                    students will come up with.</p>
+            </div>
+            <div><h2>Technical Tidbits</h2>
+                <p>On the day of the event, all of the following resources will be available to all attendees:</p>
+                <ul>
+                    <li>Project mentors to work with students</li>
+                    <li>Introductory presentations for users who are new to the cloud</li>
+                    <li>Lightning talks given by technologists from Microsoft, Amazon, and UWB</li>
+                </ul>
+                <h2>Food, Friends, and Fun</h2>
+                    <ul>
+                        <li>Goodie bags for all registered attendees</li>
+                        <li>Three catered meals</li>
+                        <li>Prizes and awards for three project categories</li>
+                        <li>Team formation mixer workshop</li>
+                        <li>A photobooth for attendees to take pictures</li>
+                    </ul>
+            </div>
+            <div><h2>A UW Bothell Tradition</h2>
+                <p>
+                    UWB Hacks the Cloud is the third annual hackathon at UW Bothell. Check out <a href="archive/2019/index.html">last year’s event page</a> for
+                    more information about the Web Development hackathon and check out what our attendees created!
+                    You can also read about the 2018 hackathon on <a href="https://www.uwb.edu/news/june-2018/hackathon">the school news site</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!--   Card  2 Content Slide Navigation -->
+
+    <div id="myNav2" class="overlay2 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav2')">&times;</a>
+            <div class="image_card2"></div>
+            <div><h1>Hacker Resources</h1></div>
+            <div><h3>Documentation</h3>
+            <p>Not sure how to get started with cloud computing? Looking for project ideas? Check out the event’s 
+                documentation pages for tips, ideas, examples, and documentation for all your favorite cloud 
+                providers.</p>
+                <div>
+                    <a class="big-link" href="https://docs.uwbhacks.com">https://docs.uwbhacks.com</a>
+                </div>
+            </div>
+            <div><h3>Workshops</h3>
+                <p>Workshops and talks will be held throughout the day to help
+                    attendees find teams, get up to speed on cloud computing concepts,
+                    and get inspired by subject matter experts.</p>
+                <ul>
+                    <li>A workshop for team formation at the beginning of the day, presented by ACM-W</li>
+                    <li>An introduction to cloud computing, presented by the ACM hackathon organizers</li>
+                    <li>Lightning talks from industry partners discussing cloud computing products, projects, and paradigms</li>
+                    <li>Security-specific presentations (more information coming soon!)</li>
+                </ul>
+            </div>
+            <div><h3>Getting One-on-One Help</h3>
+                <p>Industry mentors will be standing by at the event to help individual teams brainstorm, debug, and
+                    polish their projects on an as-needed basis. Many of the mentor volunteers are UW Bothell alumni,
+                    and this year’s cohort draws employees from the following companies:
+                </p>
+                <table class="fill-container">
+                    <tr><td>&#8226; Microsoft</td><td>&#8226; Amazon</td><td>&#8226; T-Mobile</td></tr>
+                    <tr><td>&#8226; Google</td><td>&#8226; Expedia</td><td>&#8226; And more!</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--   Card 3 Content Slide Navigation -->
+    <div id="myNav3" class="overlay3 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav3')">&times;</a>
+            <div class="image_card3"></div>
+            <div>
+                <h1>Event Schedule</h1>
+                <table class="schedule">
+                    <tr><td>09:00</td><td>Check-In Begins</td></tr>
+                    <tr><td>09:00</td><td>Free Breakfast </td></tr>
+                    <tr><td>09:30</td><td>Opening Ceremony</td></tr>
+                    <!-- Use HTML entity for table column spacing -->
+                    <tr><td>10:00 &nbsp; &nbsp;</td><td>Team Formation Mixer, hosted by ACM-W</td></tr>
+                    <tr><td>10:00</td><td>Hacking Begins</td></tr>
+                    <tr><td>10:45</td><td>Talk: Introduction To Cloud Services</td></tr>
+                    <tr><td>12:30</td><td>Free Lunch</td></tr>
+                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud</td></tr>
+                    <tr><td>14:45</td><td>Workshop: TBA</td></tr>
+                    <tr><td>18:00</td><td>Free Dinner</td></tr>
+                    <tr><td>20:00</td><td>Submissions Due on DevPost</td></tr>
+                    <tr><td>20:15</td><td>Ice Cream Sundae Bar</td></tr>
+                    <tr><td>20:45</td><td>Demo Presentations</td></tr>
+                    <tr><td>21:45</td><td>Awards Ceremony</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--   Card 4 Content Slide Navigation -->
+    <div id="myNav4" class="overlay4 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav4')">&times;</a>
+            <div class="image_card4"></div>
+            <div><h1>Frequently Asked Questions!</h1>
+                <h2>The Burning Question: What about COVID-19?</h2>
+                <p>UWB Hacks the Cloud will be happening on April 17, 2020 regardless!</p>
+                <p><strong>All workshops, technical talks, and presentations will be facilitated through Zoom.</strong> The Zoom invites will be available to all registered attendees in early April.</p>
+                <p><strong>All registered participants are welcome to attend the hackathon virtually.</strong> In the event that we can host the event on-campus, we will arrange for hybrid attendance so people can participate remotely.</p>
+                <p>The organizers are currently working with UW Bothell administrators to arrange for an in-person hackathon for those who wish to physically attend, assuming that the school okays it. <strong>We hope that this will be the case, and we will be updating all participants and volunteers about how campus closures or restrictions might affect the event.</strong></p>
+                <p>We will work hard to make sure you can participate regardless of whether you are self-quarantining or otherwise concerned about getting sick. Our collective health is our most valuable possession.</p>
+                <h2>What’s a hackathon?</h2>
+                <p>From Wikipedia:</p>
+                <blockquote cite="https://en.wikipedia.org/wiki/Hackathon">
+                    A hackathon is a design sprint-like event in which computer programmers and
+                    others involved in software development, including graphic designers, interface
+                    designers, project managers, and others, often including domain experts,
+                    collaborate intensively on software projects. </blockquote>
+                <h2>What's a hacker?</h2>
+                <p>From Washington Post:</p>
+                <blockquote cite="https://www.washingtonpost.com/wp-srv/business/longterm/microsoft/stories/1998/raymond120398.htm">
+                    Contrary to popular terminology, a "hacker" does not commit digital mischief..."Those 
+                    are 'crackers.' Hackers build things, crackers break them." <strong>Hackers are 
+                    the most ardent of computer users, not content to master certain crafts but 
+                    striving for full and near-spiritual immersion.</strong> </blockquote>
+                <h2>What if I don’t have any experience with cloud computing?</h2>
+                <p>That is perfectly fine! The hackathon organizers have planned informative talks,
+                    assembled documentation pages, and created demo projects to help get you started. <br><br>
+                    Check out the schedule for information about the talks and workshops; look for
+                    provider information and example projects on the <strong><a href="https://docs.uwbhacks.com/">documentation page</a></strong>. <br><br>
+                    There will also be industry mentors at the event to help you when you get stuck.
+                </p>
+                <h2>Do I need to be in a specific major?</h2>
+                <p>Not at all! This event is open to all students.</p>
+                <h2>Are prizes offered for team projects?</h2>
+                <p>Yes! We will have 3 prize categories this year:</p>
+                <ul>
+                    <li><strong>Most Innovative</strong>: The project which combines cloud services in 
+                        innovative and technically advanced ways. Awarded by judges and organizers.</li>
+                    <li><strong>Most Impactful</strong>: The project which facilitates community awareness, 
+                        social inclusion, or otherwise improves the lives of your peers. Awarded by judges and organizers.</li>
+                    <li><strong>Student Favorite</strong>: Awarded by your peers as the best 
+                        or most popular project.</li>
+                </ul>
+                    <p>Each of these categories will come with a prize pack, which will include 
+                        a mix of IoT devices, <a href="https://www.digitalocean.com/">Digital Ocean</a> 
+                        credits, merchandise, and a custom trophy.</p>
+                    <p>More details will be announced at the opening ceremony.</p>
+                <h2>What if I don’t have a team lined up?</h2>
+                <p>There will be a workshop directly after the opening ceremony to help you form a team if you don’t have one at that time.</p>
+                <h2>What should I bring?</h2>
+                <p>We recommend bringing a laptop, charger cables for your computer(s) and phone, a water bottle,
+                    and anything you might miss for an entire day.
+                    This event will not be held overnight, so there is no need to bring a sleeping bag or changes of clothes
+                </p>
+                <h2>Do I have to work on a hackathon project?</h2>
+                <p>We want everyone at this event to learn new technologies and collaborate on new ideas. These events
+                    are a valuable time to do these things instead of your homework or personal projects. <br><br>
+
+                    If you don’t plan on working on a hackathon project, the organizers kindly request that you let us
+                    know so we can offer the seat to another student who wants to participate.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--   Card 5 Content Slide Navigation -->
+    <div id="myNav5" class="overlay5 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav5')">&times;</a>
+            <div class="image_card5"></div>
+            <h1>Sponsors</h1>
+            <div class="sponsor-card">
+                <img src="./images/do-large.svg" class="sponsor-do" />
+                <p>The hackathon organizers are delighted to share that <a href="https://www.digitalocean.com/">Digital Ocean</a> is a <strong>Bronze Tier Sponsor</strong> of UWB Hacks the Cloud.</p>
+                <p>All UWB Hacks attendees can receive a $50.00 30-day platform credit by using the link <a href="https://do.co/studenthackathon">do.co/studenthackathon</a>.</p>
+                <p>They have also donated <a href="https://store.digitalocean.com/doswag/accessories/sticker-packs">stickers</a> for all attendees, as well as T-Shirts and platform credits for the winners of the prize categories.</p>
+            </div>
+            <div class="sponsor-card">
+                <img src="./images/m365.png" class="sponsor-m365" />
+                <p>UWB Hacks is thrilled to have <a href="">Microsoft 365</a> as a <strong>Copper Tier Sponsor</strong> for this hackathon!</p> 
+                <p>They have donated all manner of Microsoft swag and other goodies for attendees.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--=================Card 6 Content Slide Navigation============-->
+    <div id="myNav6" class="overlay6 tabcontent">
+
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav6')">&times;</a>
+            <div class="image_card6"></div>
+            <div>
+                <h1>Project Showcase</h1>
+                <h3>More Information Coming Soon!</h3>
+            </div>
+        </div>
+    </div>
+
+<!--===============Card 7 Content Slide Navigation==================-->
+    <div id="myNav7" class="overlay7 tabcontent">
+        <div class="flex-container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav7')">&times;</a>
+            <div class="image_card7"></div>
+            <div>
+                <h1>Acknowledgements</h1>
+                <h2>The organizers would like to thank the following individuals for their assistance:</h2>
+                <ul>
+                    <li>All our fantastic industry mentors</li>
+                    <li>Professor Robert Dimpsey</li>
+                    <li>UW Bothell Club Council</li>
+                    <li>UW Bothell Makerspace</li>
+                    <li>UWB ACM 2020 Officers</li>
+                    <li>Erica Ferguson (Logo, Poster, and T-Shirt Design)</li>
+                    <li>Marcela Gomez, Lizzy Presland, and Derek Ogle (Web Development)</li>
+                </ul>
+            </div>
+            <div>
+                    <h2>For all prize materials that were modeled and
+                        created on campus, we’d like to thank the following individuals:</h2>
+                <ul>
+                    <li>The demo tokens created for this event were modified from the <a href="https://www.thingiverse.com/thing:622747">Laser Etched Floppy Disk</a> schematic available on Thingiverse.</li>
+                    <li>The 3D printed Puzzle Cubes are unaltered prints of the Thingiverse <a href="https://www.thingiverse.com/thing:2975065">Puzzle Cube</a>, which is an adaptation of the design by <a href="https://www.instagram.com/pacificpuzzleworks/">Pacific Puzzle Works.</a></li>
+                    <li>The trophy for the Student Favorite award is a modification of the <a href="https://www.thingiverse.com/thing:854336">486 Style Computer</a> model available on Thingiverse.</li>
+                    <li>The trophy for the Most Innovative award is a modification of a <a href="https://www.thingiverse.com/thing:3156287">Thingiverse model</a> of a <a href="https://fallout.fandom.com/wiki/Unified_Operating_System">RobCo UOS Terminal</a>.</li>
+                </ul>
+            </div>
+            <div>
+                    <h2>Royalty-free images for this website were obtained from the following sources:</h2>
+                <ul>
+                    <li><a href="https://unsplash.com/photos/HFo5k0rnoDo">Photo</a> by Museums Victoria on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/yP89apz2TAA">Photo</a> by Lorenzo Herrera on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/gl9HLFWG38k">Photo</a> by Museums Victoria on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/mbGxz7pt0jM">Photo</a> by Daniel Schludi on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/1qx2J3TsRsk">Photo</a> by Elias Castillo on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/p0j-mE6mGo4">Photo</a> by Lorenzo Herrera on Unsplash</li>
+                    <li><a href="https://unsplash.com/photos/DDHNI1Y4wm8">Photo</a> by Franck V. on Unsplash</li>
+                </ul>
             </div>
         </div>
     </div>
 
 
-
-    <!-- Display the countdown timer in an element -->
-
+    <!--Open and Close Each Individual Content/Image Info Card-->
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Apr 11, 2020 09:00:00").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+		document.addEventListener("keydown", keydown); //add listener for escape key to close tabs
+			
+		var opentab; //currently open tab tracker variable
+	
+        function openNav(tab) { //handle when tab link is clicked on
 
-            // Get today's date and time
-            var now = new Date().getTime();
+			if(tab == 'myNav3'){ //activate cross out feature when schedule tab is opened
+					strikethroughschedule();
+			}
+		
+			setspeed('0.3s'); //set transition speed to normal 
+			
+			if(opentab == tab) {closeNav(opentab); return;} //close tab if you click the link for it again 
+			
+			if(opentab) {//if there's an open tab, close it before opening next one
+				setspeed('0s'); //set transition speed to zero for instant switching
+				closeNav(opentab); //close open tab
+			}
+		
+			document.getElementById(tab).style.width = "85%"; //open tab by setting width to 90%
+			document.getElementById("tablinkcontainer").style.width = "15%"; //shrink tab links so text is not cut off
+			
+			opentab = tab; //set opentab tracker variable
+		}
+		
+		function setspeed(speed){ //find all elements with tabcontent class and set speed accordingly
+			var all = document.getElementsByClassName('tabcontent');
+				for (var i = 0; i < all.length; i++) {
+					all[i].style.transitionDuration = speed;
+				}
+		
+		}
+		
+        function closeNav(tab){ //close button on tab handler 
+			
+			document.getElementById("tablinkcontainer").style.width = "100%"; //reset tab links to full size 
+			document.getElementById(tab).style.width = "0%"; //close tab by setting width to zero 
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+			opentab = null; //clear open tab tracker 
+		}
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		function keydown (e) { //keydown handler for entire window
+			if(e.key === "Escape") { //listen to escape key 
+        		if(opentab) { //check if there's an open tab 
+					closeNav(opentab); //close the open tab 
+				} 
 
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML =  days + "d   " + hours + "h "
-                + minutes + "m   " + seconds + "s   ";
+			}
+		}
+		
+		
+		function strikethroughschedule() { //cross out schedule events as day progresses 
+			var today = new Date();
+			var hackathondate = "2020-4-17"; //yyyy-m-d
+			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+			
+			if(!(date == hackathondate)){return;} //check for hackathon date, exit if not hackathon
+			
+			var currenttime = today.getHours() + ":" + today.getMinutes()
+			var table = document.getElementById("scheduletable"); 
 
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
+			for(var i = 0; i < table.rows.length; i++){ //loop through table
+				if (table.rows[i].cells[0].innerText < currenttime){ //compare current time with hidden column time 
+					//cross out rows before hidden column time
+					table.rows[i].cells[1].innerHTML = "<s>" + table.rows[i].cells[1].innerHTML + "</s>";
+					table.rows[i].cells[2].innerHTML = "<s>" + table.rows[i].cells[2].innerHTML + "</s>";
+				}
+			}
+
+		}
+	  
     </script>
-
-</body>
+    </body>
 </html>
