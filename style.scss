@@ -25,6 +25,7 @@ blockquote {
 
 p, li, table {
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 h1{
@@ -45,6 +46,7 @@ h1{
 
 h2, h3{
     font-family: 'Share Tech Mono', sans-serif;
+    font-size: 30px;
     padding: 5px 0;
 }
 
@@ -145,7 +147,7 @@ section {
 /* ============= Start of SASS for card-specific styling ===========*/
 
 $background-colors: #2ecc71 #f1c40f #e67e22 #ce1126 #9b59b6 #3498db #1abc9c;
-$link-colors: #9b59b6 #3498db #1abc9c #9D0E1F #2ecc71 #f1c40f #e67e22;
+$link-colors: #9b59b6 #3498db #1abc9c #51C832 #2ecc71 #f1c40f #e67e22;
 $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images/joystick.jpg" "images/commodore.jpg" "images/computer2.jpg" "images/lisa.jpg";
 
 @for $i from 1 through 7 {
@@ -159,11 +161,10 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 
         a {
             text-decoration: none;
-            // not all boxes had this color, but most did
+            font-weight: bold;
             color: nth($link-colors, $i);
             transition: 0.3s;
             &:hover, &:focus {
-                // not all boxes had this color, but most did
                 color: #f1f1f1;
             }
         }
@@ -199,6 +200,33 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
         // background: nth($background-colors, $i);
         opacity: 0.25;
     }
+}
+
+.sponsor-card {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    background-color: white;
+    color: black;
+    a {
+        &:hover, &:focus {
+            color: black;
+        }
+    }
+}
+
+.sponsor-do {
+    width: 100%;
+    height: auto;
+}
+
+.sponsor-m365 {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 /*=====End Image Overlays within content info cards starts here ========*/
