@@ -1,7 +1,7 @@
 function strikethroughschedule() { //cross out schedule events as day progresses 
-    // var today = new Date();
+    var today = new Date();
     // TESTING ONLY:
-    var today = new Date(2020, 3, 21, 18, 1);
+    // var today = new Date(2020, 3, 21, 18, 1);
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     
     if(date < "2020-4-17"){return;} //check for hackathon date, exit if not hackathon
