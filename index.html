@@ -11,6 +11,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Open and Close Each Individual Content/Image Info Card-->
     <script src="tabs.js"></script>
+    <script src="schedule.js"></script>
 </head>
 <body>
 
@@ -153,22 +154,28 @@
             <div class="image_card3"></div>
             <div>
                 <h1>Event Schedule</h1>
-                <table class="schedule">
-                    <tr><td>09:00</td><td>Check-In Begins</td></tr>
-                    <tr><td>09:00</td><td>Free Breakfast </td></tr>
-                    <tr><td>09:30</td><td>Opening Ceremony</td></tr>
+                <h3>Friday April 17th</h3>
+                <table class="schedule" name="2020-4-17">
+                    <tr><td style="width: 60px">09:30</td><td>Opening Ceremony (join via <a href="https://washington.zoom.us/j/798388880">Zoom</a>)</td></tr>
                     <!-- Use HTML entity for table column spacing -->
-                    <tr><td>10:00 &nbsp; &nbsp;</td><td>Team Formation Mixer, hosted by ACM-W</td></tr>
+                    <tr><td>10:00</td><td>Team Formation Mixer, hosted by ACM-W</td></tr>
                     <tr><td>10:00</td><td>Hacking Begins</td></tr>
-                    <tr><td>10:45</td><td>Talk: Introduction To Cloud Services</td></tr>
-                    <tr><td>12:30</td><td>Free Lunch</td></tr>
-                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud</td></tr>
+                    <tr><td>10:00</td><td>Mentors go online (join via <a href="https://discord.gg/EDBbxmt">Discord</a>)</td</tr>
+                    <tr><td>10:45</td><td>Talk: Introduction To Cloud Services (join via <a href="https://washington.zoom.us/j/951323956">Zoom</a>)</td></tr>
+                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud (join via <a href="https://washington.zoom.us/j/573514052">Zoom</a>)</td></tr>
                     <tr><td>14:45</td><td>Workshop: TBA</td></tr>
-                    <tr><td>18:00</td><td>Free Dinner</td></tr>
-                    <tr><td>20:00</td><td>Submissions Due on DevPost</td></tr>
-                    <tr><td>20:15</td><td>Ice Cream Sundae Bar</td></tr>
-                    <tr><td>20:45</td><td>Demo Presentations</td></tr>
-                    <tr><td>21:45</td><td>Awards Ceremony</td></tr>
+                    <tr><td>20:00</td><td>Mentors go offline</td></tr>
+                </table>
+                <h3>Sunday April 19th</h3>
+                <table class="schedule" name="2020-4-19">
+                    <tr><td style="width: 60px;">14:00</td><td>Submissions due on <a href="">DevPost</a></td></tr>
+                    <tr><td>15:00</td><td>Project Demonstrations (join via <a href="https://washington.zoom.us/j/836897268">Zoom</a>)</td></tr>
+                    <tr><td>17:00</td><td>Judging begins</td></tr>
+                </table>
+                <h3>Tuesday April 21st</h3>
+                <table class="schedule" name="2020-4-21">
+                    <tr><td style="width: 60px;">17:00</td><td>Judging closes</td></tr>
+                    <tr><td>18:00</td><td>Awards Ceremony (join via <a href="https://washington.zoom.us/j/650094283">Zoom</a>)</td></tr>
                 </table>
             </div>
         </div>
@@ -318,28 +325,5 @@
     </div>
 
 
-    <script>
-		
-		function strikethroughschedule() { //cross out schedule events as day progresses 
-			var today = new Date();
-			var hackathondate = "2020-4-17"; //yyyy-m-d
-			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-			
-			if(!(date == hackathondate)){return;} //check for hackathon date, exit if not hackathon
-			
-			var currenttime = today.getHours() + ":" + today.getMinutes()
-			var table = document.getElementById("scheduletable"); 
-
-			for(var i = 0; i < table.rows.length; i++){ //loop through table
-				if (table.rows[i].cells[0].innerText < currenttime){ //compare current time with hidden column time 
-					//cross out rows before hidden column time
-					table.rows[i].cells[1].innerHTML = "<s>" + table.rows[i].cells[1].innerHTML + "</s>";
-					table.rows[i].cells[2].innerHTML = "<s>" + table.rows[i].cells[2].innerHTML + "</s>";
-				}
-			}
-
-		}
-	  
-    </script>
     </body>
 </html>
