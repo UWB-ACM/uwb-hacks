@@ -9,6 +9,9 @@
 <!--    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Open and Close Each Individual Content/Image Info Card-->
+    <script src="tabs.js"></script>
+    <script src="schedule.js"></script>
 </head>
 <body>
 
@@ -50,14 +53,18 @@
             </div>
 
             <div class="title">UWB Hacks the Cloud</div>
+            <div class="event">
+                <h4>April 17-19, 2020</h4>
+            </div>
             <div>
                 <button class="registration" id="effects" >
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSesZrR4kDC5NrmjHH6o2ZsRRUO2cIFVRf567PCcCp_ysydQ1w/viewform">Register</a></button>
             </div>
-            <div class="event">
-                <h4>April 17, 2020</h4>
-                <h4>9 AM - 10 PM</h4>
-                <h4>UWB ARC and NCEC</h4>
+            <div>
+                <button class="registration"><a href="https://discord.gg/EDBbxmt">Join the Discord Server</a></button>
+            </div>
+            <div>
+                <button class="registration"><a href="https://uwbhacks.devpost.com/">View on DevPost</a></button>
             </div>
         </div>
         <div class="cloud x1"></div>
@@ -80,19 +87,20 @@
                     students will come up with.</p>
             </div>
             <div><h2>Technical Tidbits</h2>
-                <p>On the day of the event, all of the following resources will be available to all attendees:</p>
+                <p>Starting at 10 AM Friday April 17th, all of the following resources will be available to all attendees:</p>
                 <ul>
                     <li>Project mentors to work with students</li>
                     <li>Introductory presentations for users who are new to the cloud</li>
                     <li>Lightning talks given by technologists from Microsoft, Amazon, and UWB</li>
                 </ul>
-                <h2>Food, Friends, and Fun</h2>
+                <h2>Fun All Weekend Long</h2>
+                    <p>Happy hackers make good projects. To that end, expect social events throughout the weekend as well as prizes and swag to keep you motivated!</p>
                     <ul>
+                        <li>Bingo, Minecraft, and other social events facilitated through Zoom and Discord</li>
+                        <li>AFK Photography Contest on Saturday</li>
+                        <li>Team formation mixer workshop on Friday</li>
                         <li>Goodie bags for all registered attendees</li>
-                        <li>Three catered meals</li>
                         <li>Prizes and awards for three project categories</li>
-                        <li>Team formation mixer workshop</li>
-                        <li>A photobooth for attendees to take pictures</li>
                     </ul>
             </div>
             <div><h2>A UW Bothell Tradition</h2>
@@ -121,18 +129,20 @@
                 </div>
             </div>
             <div><h3>Workshops</h3>
-                <p>Workshops and talks will be held throughout the day to help
+                <p>Workshops and talks will be held throughout the day on Friday, April 17th, to help
                     attendees find teams, get up to speed on cloud computing concepts,
                     and get inspired by subject matter experts.</p>
                 <ul>
-                    <li>A workshop for team formation at the beginning of the day, presented by ACM-W</li>
+                    <li>A workshop for team formation on Friday, presented by UWB's ACM-Women chapter</li>
                     <li>An introduction to cloud computing, presented by the ACM hackathon organizers</li>
                     <li>Lightning talks from industry partners discussing cloud computing products, projects, and paradigms</li>
                     <li>Security-specific presentations (more information coming soon!)</li>
                 </ul>
+                <p>Check out the <a href="javascript:void(0)" onclick="openNav('myNav3')">event schedule</a>
+                    for the talk schedule and videoconferencing links.</p>
             </div>
             <div><h3>Getting One-on-One Help</h3>
-                <p>Industry mentors will be standing by at the event to help individual teams brainstorm, debug, and
+                <p>Industry mentors will be standing by on Discord to help individual teams brainstorm, debug, and
                     polish their projects on an as-needed basis. Many of the mentor volunteers are UW Bothell alumni,
                     and this year’s cohort draws employees from the following companies:
                 </p>
@@ -140,6 +150,8 @@
                     <tr><td>&#8226; Microsoft</td><td>&#8226; Amazon</td><td>&#8226; T-Mobile</td></tr>
                     <tr><td>&#8226; Google</td><td>&#8226; Expedia</td><td>&#8226; And more!</td></tr>
                 </table>
+                <p>Join the Discord server to connect with mentors, fellow hackers, and event organizers!</p>
+                <iframe src="https://discordapp.com/widget?id=688849143111745556&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -151,22 +163,36 @@
             <div class="image_card3"></div>
             <div>
                 <h1>Event Schedule</h1>
-                <table class="schedule">
-                    <tr><td>09:00</td><td>Check-In Begins</td></tr>
-                    <tr><td>09:00</td><td>Free Breakfast </td></tr>
-                    <tr><td>09:30</td><td>Opening Ceremony</td></tr>
+                <h3>Friday April 17th</h3>
+                <table class="schedule" name="2020-4-17">
+                    <tr><td style="width: 60px">09:30</td><td>Opening Ceremony (join via <a href="https://washington.zoom.us/j/798388880">Zoom</a>)</td></tr>
                     <!-- Use HTML entity for table column spacing -->
-                    <tr><td>10:00 &nbsp; &nbsp;</td><td>Team Formation Mixer, hosted by ACM-W</td></tr>
-                    <tr><td>10:00</td><td>Hacking Begins</td></tr>
-                    <tr><td>10:45</td><td>Talk: Introduction To Cloud Services</td></tr>
-                    <tr><td>12:30</td><td>Free Lunch</td></tr>
-                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud</td></tr>
+                    <tr><td>10:00</td><td>Team Formation Mixer, hosted by ACM-W (join via <a href="https://washington.zoom.us/j/366198766">Zoom</a>)</td></tr>
+                    <tr><td>10:00</td><td>Hacking begins!</td></tr>
+                    <tr><td>10:00</td><td>Mentors go online (join via <a href="https://discord.gg/EDBbxmt">Discord</a>)</td</tr>
+                    <tr><td>11:00</td><td>Talk: Introduction To Cloud Services (join via <a href="https://washington.zoom.us/j/951323956">Zoom</a>)</td></tr>
+                    <tr><td>13:15</td><td>Lightning Talks: Tales from the Cloud (join via <a href="https://washington.zoom.us/j/573514052">Zoom</a>)</td></tr>
                     <tr><td>14:45</td><td>Workshop: TBA</td></tr>
-                    <tr><td>18:00</td><td>Free Dinner</td></tr>
-                    <tr><td>20:00</td><td>Submissions Due on DevPost</td></tr>
-                    <tr><td>20:15</td><td>Ice Cream Sundae Bar</td></tr>
-                    <tr><td>20:45</td><td>Demo Presentations</td></tr>
-                    <tr><td>21:45</td><td>Awards Ceremony</td></tr>
+                    <tr><td>20:00</td><td>Mentors go offline</td></tr>
+                </table>
+                <h3>Saturday April 18th</h3>
+                <table class="schedule" name="2020-4-18">
+                    <tr><td>08:00</td><td>Day 2 of hacking!</td></tr>
+                    <tr><td>12:00</td><td>Gaming Session (details TBA)</td></tr>
+                    <tr><td>17:00</td><td>Virtual Bingo / Trivia (details TBA)</td></tr>
+                    <tr><td>20:00</td><td>AFK Photography Contest submissions due on <a href="https://discord.gg/htz7ayg">Discord</a></td></tr>
+                </table>
+                <h3>Sunday April 19th</h3>
+                <table class="schedule" name="2020-4-19">
+                    <tr><td>08:00</td><td>Last day of hacking!</td></tr>
+                    <tr><td style="width: 60px;">14:00</td><td>Submissions due on <a href="https://uwbhacks.devpost.com/">DevPost</a></td></tr>
+                    <tr><td>15:00</td><td>Project Demonstrations (join via <a href="https://washington.zoom.us/j/836897268">Zoom</a>)</td></tr>
+                    <tr><td>17:00</td><td>Judging begins</td></tr>
+                </table>
+                <h3>Tuesday April 21st</h3>
+                <table class="schedule" name="2020-4-21">
+                    <tr><td style="width: 60px;">17:00</td><td>Judging closes</td></tr>
+                    <tr><td>18:00</td><td>Awards Ceremony (join via <a href="https://washington.zoom.us/j/650094283">Zoom</a>)</td></tr>
                 </table>
             </div>
         </div>
@@ -178,12 +204,28 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav('myNav4')">&times;</a>
             <div class="image_card4"></div>
             <div><h1>Frequently Asked Questions!</h1>
-                <h2>The Burning Question: What about COVID-19?</h2>
-                <p>UWB Hacks the Cloud will be happening on April 17, 2020 regardless!</p>
-                <p><strong>All workshops, technical talks, and presentations will be facilitated through Zoom.</strong> The Zoom invites will be available to all registered attendees in early April.</p>
-                <p><strong>All registered participants are welcome to attend the hackathon virtually.</strong> In the event that we can host the event on-campus, we will arrange for hybrid attendance so people can participate remotely.</p>
-                <p>The organizers are currently working with UW Bothell administrators to arrange for an in-person hackathon for those who wish to physically attend, assuming that the school okays it. <strong>We hope that this will be the case, and we will be updating all participants and volunteers about how campus closures or restrictions might affect the event.</strong></p>
-                <p>We will work hard to make sure you can participate regardless of whether you are self-quarantining or otherwise concerned about getting sick. Our collective health is our most valuable possession.</p>
+                <h2>What about COVID-19?</h2>
+                <p><strong>UWB Hacks the Cloud will still be held!</strong> It will be completely digital, and the organizers are working hard to make it a highlight of your regional quarantine experience.</p>
+                <p>The event will start as scheduled at 9:30 AM on Friday, April 17th, 2020. <strong>The deadline for project submissions has been extended to Sunday, April 19th at 2pm.</strong></p>
+                <p><strong>All interested students in the Puget Sound are welcome to attend the hackathon.</strong> One small silver lining is that there is no longer a registration cap, so if you want to participate, sign up!</p>
+                <p><strong>All workshops, technical talks, and presentations will be facilitated through Zoom.</strong>
+                    Check out the <a href="javascript:void(0)" onclick="openNav('myNav3')">event schedule</a>
+                    for the videoconferencing schedule and invite links. 
+                <p>Additionally, organizers are planning on recording the presentations and making them available on YouTube where possible.</p>
+                <p>As always, the slide decks for technical talks will be made availabe to participants for easy reference, and links will be posted in Discord and on the documentation website when they are available.</p>
+                <div class="small">
+                    <p>Changelog:</p>
+                    <ol>
+                        <li>March 13: Created FAQ about COVID-19 and virtual event</li>
+                        <li>March 24: Hackathon dates extended to April 19th</li>
+                        <li>March 24: Videoconferencing links added</li>
+                        <li>March 24: In-person facilitation notes removed</li>
+                        <li>March 24: Registration cap removed</li>
+                        <li>March 26: Add notes about swag &amp; prize distribution</li>
+                        <li>March 26: Add note about recording workshops and forthcoming YouTube links</li>
+                    </ol>
+                </div>
+
                 <h2>What’s a hackathon?</h2>
                 <p>From Wikipedia:</p>
                 <blockquote cite="https://en.wikipedia.org/wiki/Hackathon">
@@ -200,13 +242,16 @@
                     striving for full and near-spiritual immersion.</strong> </blockquote>
                 <h2>What if I don’t have any experience with cloud computing?</h2>
                 <p>That is perfectly fine! The hackathon organizers have planned informative talks,
-                    assembled documentation pages, and created demo projects to help get you started. <br><br>
-                    Check out the schedule for information about the talks and workshops; look for
-                    provider information and example projects on the <strong><a href="https://docs.uwbhacks.com/">documentation page</a></strong>. <br><br>
-                    There will also be industry mentors at the event to help you when you get stuck.
-                </p>
+                    assembled documentation pages, and created demo projects to help get you started.</p>
+                <p>Check out the <a href="javascript:void(0)" onclick="openNav('myNav3')">event schedule</a>
+                    for information about the talks and workshops; look for
+                    cloud technology guides, external documentation, and example projects on the <strong><a href="https://docs.uwbhacks.com/">documentation page</a></strong>.</p>
+                <p>Project mentors will be available on Discord on an as-needed basis
+                    to help you with your project.</p>
                 <h2>Do I need to be in a specific major?</h2>
                 <p>Not at all! This event is open to all students.</p>
+                <h2>What if I don’t have a team lined up?</h2>
+                <p>There will be a workshop directly after the opening ceremony to help you form a team if you don’t have one at that time.</p>
                 <h2>Are prizes offered for team projects?</h2>
                 <p>Yes! We will have 3 prize categories this year:</p>
                 <ul>
@@ -218,23 +263,16 @@
                         or most popular project.</li>
                 </ul>
                     <p>Each of these categories will come with a prize pack, which will include 
-                        a mix of IoT devices, <a href="https://www.digitalocean.com/">Digital Ocean</a> 
+                        a mix of IoT devices, <a href="https://www.digitalocean.com/">DigitalOcean</a>
                         credits, merchandise, and a custom trophy.</p>
                     <p>More details will be announced at the opening ceremony.</p>
-                <h2>What if I don’t have a team lined up?</h2>
-                <p>There will be a workshop directly after the opening ceremony to help you form a team if you don’t have one at that time.</p>
-                <h2>What should I bring?</h2>
-                <p>We recommend bringing a laptop, charger cables for your computer(s) and phone, a water bottle,
-                    and anything you might miss for an entire day.
-                    This event will not be held overnight, so there is no need to bring a sleeping bag or changes of clothes
-                </p>
+                <h2>Will participants still get swag &amp; prizes if the event is completely virtual?</h2>
+                <p><strong>Yes!</strong> The hackathon organizers are working on logistics to get swag and physical prizes distributed to participants. Updates and next steps will be announced soon.</p>
                 <h2>Do I have to work on a hackathon project?</h2>
                 <p>We want everyone at this event to learn new technologies and collaborate on new ideas. These events
-                    are a valuable time to do these things instead of your homework or personal projects. <br><br>
-
-                    If you don’t plan on working on a hackathon project, the organizers kindly request that you let us
-                    know so we can offer the seat to another student who wants to participate.
-                </p>
+                    are a valuable time to do these things instead of your homework or personal projects.</p>
+                <p>If you don’t plan on working on a hackathon project, the organizers kindly request that you let us
+                    know so we can provide swag and event merchandise to another student who wants to participate.</p>
             </div>
         </div>
     </div>
@@ -247,14 +285,14 @@
             <h1>Sponsors</h1>
             <div class="sponsor-card">
                 <img src="./images/do-large.svg" class="sponsor-do" />
-                <p>The hackathon organizers are delighted to share that <a href="https://www.digitalocean.com/">Digital Ocean</a> is a <strong>Bronze Tier Sponsor</strong> of UWB Hacks the Cloud.</p>
-                <p>All UWB Hacks attendees can receive a $50.00 30-day platform credit by using the link <a href="https://do.co/studenthackathon">do.co/studenthackathon</a>.</p>
-                <p>They have also donated <a href="https://store.digitalocean.com/doswag/accessories/sticker-packs">stickers</a> for all attendees, as well as T-Shirts and platform credits for the winners of the prize categories.</p>
+                <p>The hackathon organizers are delighted to share that <a href="https://www.digitalocean.com/">DigitalOcean</a> is a <strong>Bronze Tier Sponsor</strong> of UWB Hacks the Cloud.</p>
+                <p>All UWB Hacks participants can receive a $50.00 30-day platform credit by using the link <a href="https://do.co/studenthackathon">do.co/studenthackathon</a>.</p>
+                <p>They have also donated <a href="https://store.digitalocean.com/doswag/accessories/sticker-packs">stickers</a> for all participants, as well as <a href="https://store.digitalocean.com/doswag/unisex-apparel/unisex-space-sammy-tees/8662">T-Shirts</a> and platform credits for the winners of the prize categories.</p>
             </div>
             <div class="sponsor-card">
                 <img src="./images/m365.png" class="sponsor-m365" />
-                <p>UWB Hacks is thrilled to have <a href="">Microsoft 365</a> as a <strong>Copper Tier Sponsor</strong> for this hackathon!</p> 
-                <p>They have donated all manner of Microsoft swag and other goodies for attendees.</p>
+                <p>UWB Hacks is thrilled to have <a href="https://www.microsoft.com/en-us/microsoft-365">Microsoft 365</a> as a <strong>Copper Tier Sponsor</strong> for this hackathon!</p>
+                <p>They have donated all manner of Microsoft swag and other goodies for participants.</p>
             </div>
         </div>
     </div>
@@ -316,80 +354,5 @@
     </div>
 
 
-    <!--Open and Close Each Individual Content/Image Info Card-->
-    <script>
-
-		document.addEventListener("keydown", keydown); //add listener for escape key to close tabs
-			
-		var opentab; //currently open tab tracker variable
-	
-        function openNav(tab) { //handle when tab link is clicked on
-
-			if(tab == 'myNav3'){ //activate cross out feature when schedule tab is opened
-					strikethroughschedule();
-			}
-		
-			setspeed('0.3s'); //set transition speed to normal 
-			
-			if(opentab == tab) {closeNav(opentab); return;} //close tab if you click the link for it again 
-			
-			if(opentab) {//if there's an open tab, close it before opening next one
-				setspeed('0s'); //set transition speed to zero for instant switching
-				closeNav(opentab); //close open tab
-			}
-		
-			document.getElementById(tab).style.width = "85%"; //open tab by setting width to 90%
-			document.getElementById("tablinkcontainer").style.width = "15%"; //shrink tab links so text is not cut off
-			
-			opentab = tab; //set opentab tracker variable
-		}
-		
-		function setspeed(speed){ //find all elements with tabcontent class and set speed accordingly
-			var all = document.getElementsByClassName('tabcontent');
-				for (var i = 0; i < all.length; i++) {
-					all[i].style.transitionDuration = speed;
-				}
-		
-		}
-		
-        function closeNav(tab){ //close button on tab handler 
-			
-			document.getElementById("tablinkcontainer").style.width = "100%"; //reset tab links to full size 
-			document.getElementById(tab).style.width = "0%"; //close tab by setting width to zero 
-
-			opentab = null; //clear open tab tracker 
-		}
-
-		function keydown (e) { //keydown handler for entire window
-			if(e.key === "Escape") { //listen to escape key 
-        		if(opentab) { //check if there's an open tab 
-					closeNav(opentab); //close the open tab 
-				} 
-
-			}
-		}
-		
-		
-		function strikethroughschedule() { //cross out schedule events as day progresses 
-			var today = new Date();
-			var hackathondate = "2020-4-17"; //yyyy-m-d
-			var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-			
-			if(!(date == hackathondate)){return;} //check for hackathon date, exit if not hackathon
-			
-			var currenttime = today.getHours() + ":" + today.getMinutes()
-			var table = document.getElementById("scheduletable"); 
-
-			for(var i = 0; i < table.rows.length; i++){ //loop through table
-				if (table.rows[i].cells[0].innerText < currenttime){ //compare current time with hidden column time 
-					//cross out rows before hidden column time
-					table.rows[i].cells[1].innerHTML = "<s>" + table.rows[i].cells[1].innerHTML + "</s>";
-					table.rows[i].cells[2].innerHTML = "<s>" + table.rows[i].cells[2].innerHTML + "</s>";
-				}
-			}
-
-		}
-	  
-    </script>
     </body>
 </html>
