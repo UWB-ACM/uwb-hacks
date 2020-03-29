@@ -440,7 +440,7 @@ body {
     overflow: hidden;
 }
 
-
+@media only screen and (min-width: 768px) {
 /*Time to finalise the cloud shape*/
 .cloud {
     width: 200px; height: 60px;
@@ -551,5 +551,5 @@ z-index: -1000;
     0% {margin-left: 1000px;}
     100% {margin-left: -1000px;}
 }
-
+}
 /* ===============Cloud animation ends here================*/
