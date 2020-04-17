@@ -9,8 +9,12 @@ function strikethroughschedule() { //cross out schedule events as day progresses
     var date = today.getFullYear()+'-'+month+'-'+day;
     console.log(date);
     if(date < "2020-04-17"){return;} //check for hackathon date, exit if not hackathon
-    
-    var currenttime = today.getHours() + ":" + today.getMinutes()
+
+    var hour = today.getHours();
+    var min = today.getMinutes();
+    if (hour < 10) { hour = "0" + hour.toString(); }
+    if (min < 10) { min = "0" + min.toString(); }    
+    var currenttime = hour + ":" + min;
     var tables = document.getElementsByClassName("schedule"); 
 
     for(var i = 0; i < tables.length; i++){ //loop through tables
