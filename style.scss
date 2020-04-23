@@ -438,12 +438,6 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 }
 
 /*=====flip card=======-*/
-.project-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
 .flip-card {
   margin-bottom: 50px;
   background-color: transparent;
@@ -475,20 +469,16 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  display: flex;
 }
 
 .flip-card-front {
-  flex-direction: row;
   background-color: black;
-  color: white;
   overflow: hidden;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 /* Style the back side */
 .flip-card-back {
+  display: flex;
   flex-direction: column;
   background-color: white;
   color: black;
@@ -505,23 +495,57 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
   }
 }
 
-.project-title-container {
+.project-overlay {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.project-title {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    h2 {
-        color: black;
-        text-align: center;
-        padding: 40px;
-        background-image: linear-gradient(to top left, #b827fc 0%, #2c90fc 16%, #2ECC71 32%, #b8fd33 48%, #fec837 64%, #fd1892 80%, #b827fc 100%);
-    }
+.project-title-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
+
+.project-title {
+    height: 100%;
+    width: 100%;
+    width: auto;
+    position: relative;
+}
+
+.title-text {
+    margin: 0px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 40px;
+    background-image: linear-gradient(to top left, #b827fc 0%, #2c90fc 16%, #2ECC71 32%, #b8fd33 48%, #fec837 64%, #fd1892 80%, #b827fc 100%);
+}
+
+.project-image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.project-images {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 
 .project-links {
     width: 100%;
