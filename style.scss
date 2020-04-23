@@ -440,8 +440,9 @@ $images: "images/gameboy.jpg" "images/console.jpg" "images/cassette.jpg" "images
 /*=====flip card=======-*/
 .flip-card {
   margin-bottom: 50px;
+  width: calc(100% - 10px);
   background-color: transparent;
-  width: 100%;
+  // width: 100%;
   height: 300px;
 }
 
