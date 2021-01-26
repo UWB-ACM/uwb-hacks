@@ -200,7 +200,7 @@
             document.getElementById("submit-status").innerHTML = "submitting..."
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    document.getElementById("submit-status").innerHTML = "&#10003; register successfully";
+                    document.getElementById("submit-status").innerHTML = "&#10003; registered successfully!";
                     document.getElementById("myform");
                     refresh();
                 })
@@ -247,16 +247,9 @@
             cb2element.value=result;
           
         }
-        function refresh() {
-            
+        function refresh() {            
             setTimeout(function () {
-                 //window.location.reload();
-                if (window.confirm("Do you want to continue registration?\nClick 'OK' to continue\nClick 'Cancel' return to homepage")) {
-                    window.location.reload();
-                } else {
-                    location.href = 'index.html';
-                   
-                }
+                window.location.reload();
             }, 1000);
             
             
