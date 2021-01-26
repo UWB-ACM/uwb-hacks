@@ -16,7 +16,7 @@
         <div class="row">  
                     <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <!-- <img id="acmlogo" src="./300_dpi.png"/> -->
-                        <h3 class="col-md-12 register-heading">Hackathon Registration Test</h3>  
+                        <h3 class="col-md-12 register-heading">UWB Hack from Home 2021 Registration</h3>  
                         <div class="register-form">                            
                                 <form method="post" autocomplete="off" name="google-sheet">
                                     <div class="row mb-2">
@@ -194,7 +194,7 @@
                     refresh();
                 })
                 .catch(error => {
-                    console.error('Error!', error.message);
+                    // console.error('Error!', error.message);
                     document.getElementById("submit-status").innerHTML = "Error";
             })
             // refresh();
@@ -225,7 +225,7 @@
                 
                 if  (element.checked) {
                     result += element.value + ', ';
-                    console.log(element.value);
+                    // console.log(element.value);
                 }
             });
             const element = document.getElementById('cb1');
@@ -236,13 +236,13 @@
             
             setTimeout(function () {
                  //window.location.reload();
-                if (window.confirm("Do you want to continue registration?\nClick 'OK' to continue\nClick 'Cancel return to homepage")) {
+                if (window.confirm("Do you want to continue registration?\nClick 'OK' to continue\nClick 'Cancel' return to homepage")) {
                     window.location.reload();
                 } else {
                     location.href = 'index.html';
                    
                 }
-            }, 0);
+            }, 1000);
             
             
         }
