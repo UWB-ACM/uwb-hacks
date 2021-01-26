@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="row my-4">
 				<div class="content inline-block col-md-8">
-					<h1>UWBHacks From Home 2021</h1>
+					<h1>UWBHacks From Home</h1>
 					<h2>University of Washington Bothell Chapter of ACM</h2>
 					<h3>April 9th - April 11th</h3>
 				</div>
@@ -55,9 +55,13 @@
 	</div> -->
 
 	<footer id="footer">
-		<p>Copyright &copy; UWB ACM 2021</p>
+		<span>Copyright &copy; UWB ACM 
+			<script>document.getElementById('footer').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+		</span>
+		
 	</footer>
 
+	
 	<!-- count down until hackathon -->
 	<script>
 		// Set the date we're counting down to
