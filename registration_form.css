@@ -82,8 +82,9 @@ input[type='checkbox'] {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    padding: 2%;
-    outline: 0;              
+    padding: 1%;
+    outline: 0; 
+    font-size: 1.5em;             
 }
 .btnSubmit:hover {
     color: #e9ecef;

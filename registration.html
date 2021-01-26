@@ -39,7 +39,7 @@
                                         <div class="content col-md-12 mt-2 ml-1">
                                             
                                                 <input type="radio" id="pronoun" name="Pronouns" value="she/her/hers"
-                                                    required="" onchange="hideElement('preferred-pronoun'); ('other-pronouns')">
+                                                    required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
                                                 <label for="pronoun">she/her/hers</label><br>
                                           
                                                 <input type="radio" id="pronoun" name="Pronouns" value="he/him/his"
@@ -56,7 +56,7 @@
 
                                                 <input type="radio" id="other-pronouns"
                                                        required="" onchange="showElement('preferred-pronoun'); uncheckRadios('pronoun')">
-                                                <label for="other-pronouns">Others</label><br>
+                                                <label for="other-pronouns">Other</label><br>
     
                                                 <div id="preferred-pronoun" class="form-group form-dropbox col-md-12" style="display: none">
                                                     <input id="preferred-pronoun-input" class="form-control" type="text" 
@@ -89,7 +89,7 @@
                                                 
                                                 <input type="radio" id="other-school"
                                                        required="" onchange="showElement('preferred-school'); uncheckRadios('school')">
-                                                <label for="other-school">Others</label><br>
+                                                <label for="other-school">Other</label><br>
     
                                                 <div id="preferred-school" class="form-group form-dropbox col-md-12" style="display: none">
                                                     <input id="preferred-school-input" class="form-control" type="text" 
@@ -138,6 +138,17 @@
                                             <div class="checkbox" ><input id="cb1" type="checkbox" value="Previous UWB Hackathons" name="Hear about us">Previous UWB Hackathons</div>
                                             <div class="checkbox" ><input id="cb1" type="checkbox" value="ACM officer(s)" name="Hear about us">ACM officer(s)</div>
                                             <div class="checkbox"><input id="cb1" type="checkbox" value="Word of mouth" name="Hear about us">Word of mouth</div>
+
+                                            <input type="checkbox" id="other-media"
+                                                       required="" onchange="showElement('preferred-media');">
+                                            <label for="other-media">Other</label><br>
+    
+                                            <div id="preferred-media" class="col-md-12" style="display: none">
+                                                <input id="cb2" class="form-control" type="text" 
+                                                    name="Hear about us" placeholder="Awesome! we'd love to know it" value=""/>
+                                                <br> 
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -228,9 +239,13 @@
                     // console.log(element.value);
                 }
             });
+            const cb2element = document.getElementById('cb2');
+            // console.log(cb2element.value);
+            result += cb2element.value;
             const element = document.getElementById('cb1');
             element.value=result;
-
+            cb2element.value=result;
+          
         }
         function refresh() {
             
