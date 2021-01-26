@@ -11,28 +11,58 @@
  	<meta name="description" content="by UWB ACM chapter">
   	<meta name="keywords" content="hackathon, uwb acm, uwb events, coding contest, uwb hackathon, uwb hacks, uwb hackathon website"/>
 
-
-
-	<link rel="stylesheet" type="text/css" href="style.css"> <!-- need to create css -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css"> <!-- need to create css -->
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-	<div class="container">
-		<div class="content">
-			<h1>UWBHacks 2021</h1>
-			<h2>Hosted by UWB ACM</h2>
-			<h2>April 9th - April 11th</h2>
-		</div>
-		<div class="image">
-			<img src="images/acm-logo.png">
+	<div class="my-auto">
+		<div class="container">
+			<div class="row my-4">
+				<div class="content inline-block col-md-8">
+					<h1>UWBHacks From Home</h1>
+					<h2>University of Washington Bothell Chapter of ACM</h2>
+					<h3>April 9th, 2021 - April 11th, 2021</h3>
+				</div>
+				<div class="image inline-block col-md-4">
+						<img src="images/acm-logo.png" alt="ACM logo">
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-12 mx-auto">
+					<p id="countdown"></p>
+				</div>
+			</div>
+
+			<div class="row mb-4 align-items-center">
+				<div class="mx-auto">
+					<a href="./registration.html" class="button"><h1>Register</h1></a>
+				</div>			
+			</div>
+			<div class="row mt-4">
+				<div class="mx-auto">
+					<h1 class="coming-soon">Full website coming soon!</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<p id="demo"></p>
+	<!-- <div class="moreSoon">
+		<h1 id="moreComingSoon">Full website coming soon!</h1>
+	</div> -->
 
-	<!-- countdown until hackathon -->
+	<footer id="footer">
+		<span>Copyright &copy; UWB ACM 
+			<script>document.getElementById('footer').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+		</span>
+		
+	</footer>
+
+	
+	<!-- count down until hackathon -->
 	<script>
 		// Set the date we're counting down to
 		var countDownDate = new Date("Apr 9, 2021 00:00:00").getTime();
@@ -52,26 +82,18 @@
 			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			// Display the result in the element with id="demo"
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+			// Display the result in the element with id="countdown"
+			document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
 			+ minutes + "m " + seconds + "s ";
 
 			// If the count down is finished, write some text
 			if (distance < 0) {
 				clearInterval(x);
-				document.getElementById("demo").innerHTML = "EXPIRED";
+				document.getElementById("countdown").innerHTML = "EXPIRED";
 			}
 		}, 1000);
 
 	</script>
-
-	<div class="moreSoon">
-		<h1 id="moreComingSoon">Full website coming soon!</h1>
-	</div>
-
-	<footer id="footer">
-		<p>Copyright &copy; UWB ACM 2021</p>
-	</footer>
 
 </body>
 </html>
