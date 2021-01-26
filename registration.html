@@ -247,16 +247,9 @@
             cb2element.value=result;
           
         }
-        function refresh() {
-            
+        function refresh() {            
             setTimeout(function () {
-                 //window.location.reload();
-                if (window.confirm("Do you want to continue registration?\nClick 'OK' to continue\nClick 'Cancel' return to homepage")) {
-                    window.location.reload();
-                } else {
-                    location.href = 'index.html';
-                   
-                }
+                window.location.reload();
             }, 1000);
             
             
