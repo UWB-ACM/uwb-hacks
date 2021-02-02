@@ -1,22 +1,20 @@
+a, a:hover{
+    text-decoration: none;
+}
 #acmlogo {
     height: 150px;
     width: 150px;
     display: block;
     margin: 0px auto;
 }
-#return-homepage {
-    margin-left: 1.5%;
-    margin-top: 1%;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    outline: 0;    
-    color: #2084E8;
-    font-size: 2.5em;
+.nav-item {
+    color: #969696;
+    font-size: 1.5em;
 }
-#return-homepage:hover{
-    transform: translate(-8%,0);
+.nav-item:hover {
+    color: #636363;
 }
+
 
 .title {
     font-size: 1.5em;
@@ -26,19 +24,26 @@
 .content {
     font-size: 1.2em;
 }
+.content h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.content h2 {
+    padding: 30px 0px;
+}
 input[type='radio'] { 
     transform: scale(1.5); 
     margin-right: 2%; 
     margin-left: 0; 
     margin-top: 0; 
-    margin-bottom: 2%;
+    margin-bottom: 0;
+
 }
 input[type='checkbox'] { 
     transform: scale(1.5); 
     margin-right: 2.5%; 
     margin-left: 0; 
-    margin-top: 0; 
-    margin-bottom: 2%;
+    margin-bottom: 0;
 }
 .register .nav-tabs .nav-link:hover{
     border: none;
@@ -52,39 +57,30 @@ input[type='checkbox'] {
 }
 .form-new{
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
+    border-radius: 8px;
+    padding: 2%;
+    border: 1px solid #636363; 
 }
 
 .register-heading{
-    /* margin-bottom: 10%; */
     color: #636363; 
-    padding: 1%;
-    margin: 4% auto;
-    border-left: 8px solid #2084E8;
+    text-align: center;
+    margin-bottom: 4%;
+}
 
-    /* background-color: #e9ecef; */
-}
-.register-heading h1{
-    margin-left: 21%;
-    margin-bottom: 10%;
-    color: #e9ecef;
-}
-.register{
-    /*background: -webkit-linear-gradient(left, #055a4f, #00c6ff);*/
-    margin-top: -9%;
-    padding: 3%;
-    border-radius: 2.5rem;
-}
 .btnSubmit{
+    display: inline-flex;
     border-radius: 8px;
     color: #2084E8;
     background-color: #e9ecef;
     border: none;
     cursor: pointer;
     font-weight: bold;
-    padding: 1%;
+    padding: 8px 10%;
     outline: 0; 
-    font-size: 1.5em;             
+    font-size: 1.5em; 
+    margin: 2% auto;
 }
 .btnSubmit:hover {
     color: #e9ecef;
