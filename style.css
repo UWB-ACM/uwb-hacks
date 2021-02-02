@@ -13,82 +13,36 @@
 	font-family: 'Catamaran', sans-serif;
 }
 
-body
-{
-	background-image: linear-gradient(to right, #a8aeff, #b2ffc3);
-
-}
-
 a, a:hover {
 	text-decoration: none;
 	color: var(--primary-text-color);
 }
-
-.container {
-	width: 60%;
-}
-
-.container img
- {
-	width: 250px;
-	height: 250px;
-	justify-content: center;
-	text-align: center;
-}
-
 .content h1 
 {
 	font-size: 70px;
+	font-weight: 800;
 }
 
 .content h2 
 {
 	font-size: 30px;
-}
-
-/* .image 
-{
-	flex-basis: 40%;
-} */
-
-#countdown
-{
-	/* position: absolute;
-	text-align: center;
-	top: 65%;
-	left: 50%;
-	transform: translateX(-65%) translateY(-50%); */
-	font-size: 5vw;
-	border: 4px solid white;
-	margin-top: 4%;
-	margin-bottom: 4%;
-	padding: 1%;
-	width: 100%;
-	text-align: center;
-	font-weight: bold;
-	border-radius: 8px;
-}
-
-.coming-soon
-{
-	margin-top: 10%;
-	font-size: 1.8em;
-	font-style: italic;
+	padding: 30px 0px;
 }
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	margin-top: 2%;
+	font-size: 1.2em;
 }
-  
 
 .button 
 {
-  background-color: #a8aeff; /* Green */
+  background-color: #46a4f1; /* Green */
   border: none;
-  color: black;
+  color: white;
   padding: 1vw 4vw;
   text-align: center;
   display: inline-block;
@@ -97,9 +51,12 @@ footer {
 }
 
 .button:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	color: #328fdb;
+	background-color: white;	
 }
 
-
+.icons {
+	transform: scale(2);
+}
 
 
