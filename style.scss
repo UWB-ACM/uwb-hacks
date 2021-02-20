@@ -1,0 +1,223 @@
+@import url("https://use.typekit.net/aeh3rja.css"); // amboy
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"'); // quicksand
+
+$maya-blue: #b1c5ff;
+$blue: #2059ff;
+$light-aqua: #9bf9f5;
+$cyan: #33f2eb;
+$light-purple: #dbb1fd;
+$dark-purple: #4a0078;
+$pink: #f2339d;
+$taffy: #dd8ef2;
+$purple-bg: #05012b;
+
+$primary-text-color: $light-purple;
+
+.amboy,
+.amboy * {
+  // header font
+  font-family: amboy-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.quicksand,
+.quicksand * {
+  // body font
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: $purple-bg;
+  height: 100%;
+}
+body * {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  color: $light-purple;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+#header {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.4s;
+  z-index: 1;
+  background-color: $purple-bg;
+  opacity: 0.9;
+  font-size: 1.5em;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.body-content {
+  display: block;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.navbar *:hover {
+  color: $taffy;
+}
+.active {
+  color: $taffy !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219,177,253, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  font-size: 1.5em;
+}
+
+.custom-toggler.navbar-toggler > :hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(221,142,242, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  font-size: 1.5em;
+}
+
+#info-block section {
+  border: 4px solid white;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.blob {
+    animation: glow .5s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px white;
+    }
+}
+
+.blob {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+
+.file-marker > div {
+  padding: 0 3px;
+  height: 100%;
+  margin-top: -0.8em;
+}
+.box-contents {
+  font-size: 5em;
+}
+.box-title {
+  background: $purple-bg none repeat scroll 0 0;
+  display: inline-block;
+  margin-top: -0.4em;
+  padding: 0 2%;
+  vertical-align: middle;
+  color: white;
+  font-size: 2em;
+}
+.content h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+.content h2 {
+  font-size: 30px;
+  padding: 30px 0px;
+}
+.container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+.home-logo * {
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  //   background-color: #2084E8;
+  background-color: $pink;
+  color: white;
+  border: none;
+  padding: 1vw 4vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vw;
+  border-radius: 8px;
+  font-family: amboy-black, sans-serif;
+  font-weight: 400;
+}
+
+.button:hover {
+  //color: #2084E8;
+  color: $pink;
+  background-color: white;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  border-top: 4px solid lightgray;
+  margin-bottom: -2vw;
+}
+.footer {
+  &-links {
+    margin-top: 6vw;
+    *,
+    *:hover {
+      text-decoration: underline;
+    }
+    &-text {
+      font-size: 2vw;
+      width: 100%;
+      align-items: center;
+      text-align: left;
+      margin-left: 5vw;
+
+      width: 80%;
+      border-right: 4px solid white;
+    }
+    &-text:hover {
+      color: $taffy;
+    }
+  }
+  &-icons > * {
+    font-size: 3.5vw;
+    align-items: center;
+    // margin: 4vw 2vw;
+    margin-top: 7vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+  }
+  &-icons > *:hover {
+    color: $taffy;
+  }
+  &-logo * {
+    width: 130%;
+    height: auto;
+    margin-bottom: 3vw;
+    margin-left: -2vw;
+  }
+}
