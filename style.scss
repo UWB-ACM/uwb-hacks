@@ -96,25 +96,6 @@ a:hover {
   border-radius: 8px;
 }
 
-.blob {
-    animation: glow .5s infinite alternate;
-}
-
-@keyframes glow {
-    to {
-        text-shadow: 0 0 10px white;
-    }
-}
-
-.blob {
-    font-family: sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-
-
-
 .file-marker > div {
   padding: 0 3px;
   height: 100%;

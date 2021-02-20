@@ -41,24 +41,6 @@ var footer_content = `
 `;
 document.getElementById("footer").innerHTML = footer_content;
 
-{/* <footer class="mx-auto">
-    <div class="icons my-2">
-        <a href="https://www.facebook.com/uwbacm" target="_blank" title="facebook"><span class="fab fa-facebook mx-1" ></span></a>
-        <a href="https://twitter.com/hacksuwb" target="_blank" title="twitter"><span class="fab fa-twitter mx-1" ></span></a>
-        <a href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
-          title="linkedin"><span class="fab fa-linkedin mx-1"></span></a>
-        <a href="https://discord.gg/YBrxBTg" target="_blank" title="discord"><span class="fab fa-discord mx-1"></span></a>
-        <a href="https://www.instagram.com/uwb_acm/" target="_blank" title="instagram"><span class="fab fa-instagram mx-1" ></span></a>
-        <a href="index.html" title="UWB Hacks logo" class="footer-logo"><img src="./images/Logo.png"/></a>
-    </div>
-    <div>` + cpyright + `</div>
-  </footer> */}
-
-
-
-
-// ==========================================
-
 // ======= START OF SCRIPTS FOR COUNT DOWN ======
 if (obj = document.getElementById("countdown")) {
 
