@@ -1,6 +1,6 @@
 // ====== THIS FILE ONLY CONTAINS SCRIPTS SHARED ACROSS PAGES ======
-// ====== SCRIPTS TARGETING A FEW PAGES SHOULD BE PLACE IN A  ======
-// ====== SEPARATE FILE. TRY NOT TO PLACE THEM IN .HTML files ======
+// ====== SCRIPTS TARGETING A FEW PAGES SHOULD BE PLACED IN A  ======
+// ====== SEPARATE FILE. TRY NOT TO INCLUDE SCRIPTS IN .HTML files ======
 
 // ======= START OF SCRIPTS FOR HEADER ======
 // navbar slide down when scroll up
