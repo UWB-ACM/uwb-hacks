@@ -5,7 +5,7 @@ $maya-blue: #b1c5ff;
 $blue: #2059ff;
 $light-aqua: #9bf9f5;
 $cyan: #33f2eb;
-$light-purple: #dbb1fd;
+$light-purple: #DFBEFA;
 $dark-purple: #4a0078;
 $pink: #f2339d;
 $taffy: #dd8ef2;
@@ -28,10 +28,11 @@ $primary-text-color: $light-purple;
 }
 html {
   height: 100%;
+  font-size: 16px;
 }
 body {
   background-color: $purple-bg;
-  height: 100%;
+  height: auto;
 }
 body * {
   font-family: "Quicksand", sans-serif;
@@ -57,6 +58,7 @@ a:hover {
 .w-90 {
   width: 90%;
 }
+
 
 .body-content {
   display: block;
@@ -123,32 +125,41 @@ a:hover {
 }
 .container {
   position: relative;
-  width: 60%;
+  width: 90%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.home-logo * {
-  width: 250px;
-  height: 250px;
+@mixin logo($size) {
+  width: $size;
+  height: $size;
   justify-content: center;
   text-align: center;
 }
+.home-logo * {
+  @include logo(20vw);
+}
 
-.button {
+.btn {
   //   background-color: #2084E8;
   background-color: $pink;
   color: white;
   border: none;
-  padding: 1vw 4vw;
   text-align: center;
   display: inline-block;
-  font-size: 2vw;
   border-radius: 8px;
   font-family: amboy-black, sans-serif;
   font-weight: 400;
+  width: 100%;
+  &-lg{
+    font-size: 2vw;
+  }
+  &-md {
+    font-size: 1.5vw;
+  }
 }
 
-.button:hover {
+.btn:hover {
   //color: #2084E8;
   color: $pink;
   background-color: white;
@@ -162,6 +173,7 @@ a:hover {
   font-size: 1em;
   border-top: 4px solid lightgray;
   margin-bottom: -2vw;
+  margin-top: 5vw;
 }
 .footer {
   &-links {
@@ -171,12 +183,11 @@ a:hover {
       text-decoration: underline;
     }
     &-text {
-      font-size: 2vw;
+      font-size: 1.8vw;
       width: 100%;
       align-items: center;
       text-align: left;
-      margin-left: 5vw;
-
+      margin-left: 4vw;
       width: 80%;
       border-right: 4px solid white;
     }
@@ -196,9 +207,10 @@ a:hover {
     color: $taffy;
   }
   &-logo * {
-    width: 130%;
+    width: 20vw;
     height: auto;
     margin-bottom: 3vw;
-    margin-left: -2vw;
+    margin-left: -4vw;
+    text-align: center;
   }
 }
