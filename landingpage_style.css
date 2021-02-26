@@ -54,6 +54,15 @@ a, a:hover {
 	border-radius: 8px;
 }
 
+.disclaimer
+{
+	text-align: center;
+}
+
+.note {
+	color: red;
+}
+
 .coming-soon
 {
 	margin-top: 10%;
