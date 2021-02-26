@@ -26,11 +26,15 @@ $primary-text-color: $light-purple;
   font-family: "Quicksand", sans-serif;
   font-style: normal;
 }
+.bold {
+  font-weight: 800;
+}
 html {
   height: 100%;
   font-size: 16px;
 }
 body {
+  color: $light-purple;
   background-color: $purple-bg;
   height: auto;
 }
@@ -58,7 +62,6 @@ a:hover {
 .w-90 {
   width: 90%;
 }
-
 
 .body-content {
   display: block;
@@ -127,6 +130,7 @@ a:hover {
   position: relative;
   width: 90%;
   height: 100%;
+  margin-top: 10vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -140,22 +144,48 @@ a:hover {
   @include logo(20vw);
 }
 
+.grid-item {
+  display: inline-block;
+  background-color: white;
+}
+.image-grid {
+  padding: 2vw 4vw;
+  border-radius: 8px;
+}
+.image-grid > * > img {
+  // padding: auto 4%;
+  width: 100%;
+  height: auto;  
+}
+.image-grid > * > img:hover {
+  transform: scale(1.04); 
+  transition: 0.5s ease-out;
+}
+.separator {
+  width: 25%;
+  padding-bottom: 1vw;
+  border-bottom: 4px solid lightgray;
+
+}
+
 .btn {
   //   background-color: #2084E8;
   background-color: $pink;
   color: white;
   border: none;
-  text-align: center;
-  display: inline-block;
   border-radius: 8px;
-  font-family: amboy-black, sans-serif;
   font-weight: 400;
-  width: 100%;
+  text-align: center; 
+  display: flex;
+  padding: 1vw 2vw;
   &-lg{
-    font-size: 2vw;
+    font-size: 1.5em;
+  }
+  &-x-md {
+    font-size: 1em;
   }
   &-md {
-    font-size: 1.5vw;
+    font-size: 0.7em;
   }
 }
 
@@ -189,7 +219,7 @@ a:hover {
       text-align: left;
       margin-left: 4vw;
       width: 80%;
-      border-right: 4px solid white;
+      border-right: 4px solid lightgray;
     }
     &-text:hover {
       color: $taffy;

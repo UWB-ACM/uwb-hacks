@@ -121,3 +121,10 @@ if (contactForm) {
       });
   });
 }
+//====================================
+document.getElementById("sponsor-pkg").addEventListener("click", (e) => {
+  window.open(
+    "https://drive.google.com/file/d/1BcWEYqi8SYB1bt3MdCJh4IVnZpq6OFg3/view?usp=sharing",
+    "_blank"
+  );
+});
