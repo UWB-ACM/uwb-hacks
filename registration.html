@@ -25,182 +25,182 @@
         
         <div class="show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h1 class="mx-auto register-heading">UWB Hacks From Home Registration</h1>
-            <div class="register-form">   
-                                         
-                    <form method="post" autocomplete="off" name="google-sheet">
-                        <div class="row mb-2">
-                            <div class="content col-md-12 ml-1">
-                                <input type="email" name="Email" class="form-control" 
-                                       placeholder="* Email address" value="" required=""/>
-                            </div>
+            <p class="disclaimer">Note: If you are already have team members, please have ONE member register for the entire team</p>
+            <div class="register-form">            
+                <form method="post" autocomplete="off" name="google-sheet">
+                    <div class="row mb-2">
+                        <div class="content col-md-12 ml-1">
+                            <input type="email" name="Email" class="form-control" 
+                                    placeholder="* Email address" value="" required=""/>
                         </div>
+                    </div>
 
-                        <div class="row mb-4">
-                            <div class="content col-md-12 mt-2 ml-1">
-                                <input type="text" name="Name" class="form-control" 
-                                       placeholder="* Your Name" value="" required=""/>
-                            </div>
-                        </div>                          
-                      
-
-                        <div class="row mb-4 pl-2">      
-                            <div class="col-md-12 title">Your pronouns</div>                                  
-                            <div class="content col-md-12 mt-2 ml-1">
-                                
-                                    <input type="radio" id="pronoun" name="Pronouns" value="she/her/hers"
-                                        required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
-                                    <label for="pronoun">she/her/hers</label><br>
-                              
-                                    <input type="radio" id="pronoun" name="Pronouns" value="he/him/his"
-                                        required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
-                                    <label for="pronoun">he/him/his</label><br>
-                              
-                                    <input type="radio" id="pronoun" name="Pronouns" value="they/them/their"
-                                        required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
-                                    <label for="pronoun">they/them/their</label><br>
-                            
-                                    <!-- <input type="radio" name="Pronouns" class="display-inline">
-                                    <input type="text" id="pronoun4" class="form-control display-inline col-md-6 ml-0" 
-                                           name="Pronouns" value="" placeholder="Others"> -->
-
-                                    <input type="radio" id="other-pronouns"
-                                           required="" onchange="showElement('preferred-pronoun'); uncheckRadios('pronoun')">
-                                    <label for="other-pronouns">Other</label><br>
-
-                                    <div id="preferred-pronoun" class="form-group form-dropbox col-md-12" style="display: none">
-                                        <input id="preferred-pronoun-input" class="form-control" type="text" 
-                                               name="Pronouns" placeholder="Enter preferred pronoun" 
-                                               value=""/>
-                                        <br> 
-                                    </div>
-                            
-                            </div>      
+                    <div class="row mb-4">
+                        <div class="content col-md-12 mt-2 ml-1">
+                            <input type="text" name="Name" class="form-control" 
+                                    placeholder="* Your Name" value="" required=""/>
                         </div>
+                    </div>                          
+                    
+
+                    <div class="row mb-4 pl-2">      
+                        <div class="col-md-12 title">Your pronouns</div>                                  
+                        <div class="content col-md-12 mt-2 ml-1">
+                            
+                                <input type="radio" id="pronoun" name="Pronouns" value="she/her/hers"
+                                    required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
+                                <label for="pronoun">she/her/hers</label><br>
+                            
+                                <input type="radio" id="pronoun" name="Pronouns" value="he/him/his"
+                                    required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
+                                <label for="pronoun">he/him/his</label><br>
+                            
+                                <input type="radio" id="pronoun" name="Pronouns" value="they/them/their"
+                                    required="" onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')">
+                                <label for="pronoun">they/them/their</label><br>
                         
-                        <div class="row my-4 pl-2">      
-                            <div class="col-md-12 title">What school or company are you affiliated with?</div>                                  
-                            <div class="content col-md-12 mt-2 ml-1">
-                                    <input type="radio" id="school" name="School" value="University of Washington, Bothell" 
-                                        required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
-                                    <label for="school1">University of Washington, Bothell</label><br>
-                              
-                                    <input type="radio" id="school" name="School" value="University of Washington, Seattle" 
-                                        required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
-                                    <label for="school2">University of Washington, Seattle</label><br>
-                              
-                                    <input type="radio" id="school" name="School" value="University of Washington, Tacoma" 
-                                        required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
-                                    <label for="school3">University of Washington, Tacoma</label><br>
+                                <!-- <input type="radio" name="Pronouns" class="display-inline">
+                                <input type="text" id="pronoun4" class="form-control display-inline col-md-6 ml-0" 
+                                        name="Pronouns" value="" placeholder="Others"> -->
 
-                                    <input type="radio" id="school" name="School" value="Cascadia College"
-                                        required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
-                                    <label for="school4">Cascadia College</label><br>
-                                    
-                                    <input type="radio" id="other-school"
-                                           required="" onchange="showElement('preferred-school'); uncheckRadios('school')">
-                                    <label for="other-school">Other</label><br>
+                                <input type="radio" id="other-pronouns"
+                                        required="" onchange="showElement('preferred-pronoun'); uncheckRadios('pronoun')">
+                                <label for="other-pronouns">Other</label><br>
 
-                                    <div id="preferred-school" class="form-group form-dropbox col-md-12" style="display: none">
-                                        <input id="preferred-school-input" class="form-control" type="text" 
-                                               name="School" placeholder="Enter your institution name" value=""/>
-                                        <br> 
-                                    </div>
-                            </div>      
+                                <div id="preferred-pronoun" class="form-group form-dropbox col-md-12" style="display: none">
+                                    <input id="preferred-pronoun-input" class="form-control" type="text" 
+                                            name="Pronouns" placeholder="Enter preferred pronoun" 
+                                            value=""/>
+                                    <br> 
+                                </div>
+                        
+                        </div>      
+                    </div>
+                    
+                    <div class="row my-4 pl-2">      
+                        <div class="col-md-12 title">What school or company are you affiliated with?</div>                                  
+                        <div class="content col-md-12 mt-2 ml-1">
+                                <input type="radio" id="school" name="School" value="University of Washington, Bothell" 
+                                    required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
+                                <label for="school1">University of Washington, Bothell</label><br>
+                            
+                                <input type="radio" id="school" name="School" value="University of Washington, Seattle" 
+                                    required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
+                                <label for="school2">University of Washington, Seattle</label><br>
+                            
+                                <input type="radio" id="school" name="School" value="University of Washington, Tacoma" 
+                                    required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
+                                <label for="school3">University of Washington, Tacoma</label><br>
+
+                                <input type="radio" id="school" name="School" value="Cascadia College"
+                                    required="" onchange="hideElement('preferred-school'); uncheckRadios('other-school')">
+                                <label for="school4">Cascadia College</label><br>
+                                
+                                <input type="radio" id="other-school"
+                                        required="" onchange="showElement('preferred-school'); uncheckRadios('school')">
+                                <label for="other-school">Other</label><br>
+
+                                <div id="preferred-school" class="form-group form-dropbox col-md-12" style="display: none">
+                                    <input id="preferred-school-input" class="form-control" type="text" 
+                                            name="School" placeholder="Enter your institution name" value=""/>
+                                    <br> 
+                                </div>
+                        </div>      
+                    </div>
+                
+                    <div class="row my-4 pl-2">                     
+                        <div class="title col-md-12">Will you be working in a team or solo? </div>
+                        <div class="content col-md-12 mt-2 ml-1">
+                            <input type="radio" id="compete-as-solo" name="TeamSolo" value="Solo" required=""
+                                    onchange="hideElement('team-member')">
+                            <label for="compete-as-solo">Solo</label><br>
+
+                            <input type="radio" id="compete-as-team2" name="TeamSolo" 
+                                    value="I'm looking for teammates" required="" onchange="hideElement('team-member')">
+                            <label for="compete-as-team2">I'm looking for teammates</label><br>
+
+                            <input type="radio" id="compete-as-team" name="TeamSolo" value="I have a team" 
+                                    required="" onchange="promptMembers()">
+                            <label for="compete-as-team">I have a team</label><br>
+
+                            <div id="team-member" class="form-group form-dropbox col-md-12" style="display: none">
+                                <label class="note">* ONLY SUBMIT 1 REGISTRATION PER TEAM</label> 
+                                <input id="team-email" class="form-control" type="text" name="Team members emails" 
+                                        placeholder="List all emails separated by a comma (ie. a@mail.com, b@mail.com)" 
+                                        value=""/>
+                                <br> 
+                            </div>
+
+                        </div>
                         </div>
                     
-                        <div class="row my-4 pl-2">                     
-                            <div class="title col-md-12">Will you be working in a team or solo? </div>
-                            <div class="content col-md-12 mt-2 ml-1">
-                                <input type="radio" id="compete-as-solo" name="TeamSolo" value="Solo" required=""
-                                       onchange="hideElement('team-member')">
-                                <label for="compete-as-solo">Solo</label><br>
+                    
+                    <div class="row my-4 pl-2">      
+                        <div class="title col-md-12">How did you hear about us?</div>   
+                        <div class="row content ml-1">
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Discord" name="Hear about us" >Discord</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Newsletter" name="Hear about us">Newsletter</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="LinkedIn" name="Hear about us">LinkedIn</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Instagram" name="Hear about us">Instagram</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="UWB ACM website" name="Hear about us">UWB ACM website</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Our Hackathon website (uwbhacks.com)" name="Hear about us">Our Hackathon website (uwbhacks.com)</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Previous UWB Hackathons" name="Hear about us">Previous UWB Hackathons</div>
+                            <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="ACM officer(s)" name="Hear about us">ACM officer(s)</div>
+                            <div class="checkbox col-md-12 my-2"><input id="cb1" type="checkbox" value="Word of mouth" name="Hear about us">Word of mouth</div>
 
-                                <input type="radio" id="compete-as-team2" name="TeamSolo" 
-                                       value="I'm looking for teammates" required="" onchange="hideElement('team-member')">
-                                <label for="compete-as-team2">I'm looking for teammates</label><br>
-
-                                <input type="radio" id="compete-as-team" name="TeamSolo" value="I have a team" 
-                                       required="" onchange="promptMembers()">
-                                <label for="compete-as-team">I have a team</label><br>
-
-                                <div id="team-member" class="form-group form-dropbox col-md-12" style="display: none">
-                                    <label class="note">* ONLY SUBMIT 1 REGISTRATION PER TEAM</label> 
-                                    <input id="team-email" class="form-control" type="text" name="Team members emails" 
-                                           placeholder="List all emails separated by a comma (ie. a@mail.com, b@mail.com)" 
-                                           value=""/>
+                            <div class="col-md-12 mt-2">
+                                <input type="checkbox" id="other-media"
+                                    onchange="showElement('preferred-media');">Other                                  
+                            
+                                <div id="preferred-media" class="col-md-12" style="display: none">
+                                    <input id="cb2" class="form-control" type="text" 
+                                        name="Hear about us" placeholder="Awesome! please share with us" value=""/>
                                     <br> 
                                 </div>
-
                             </div>
-                         </div>
-                     
-                       
-                        <div class="row my-4 pl-2">      
-                            <div class="title col-md-12">How did you hear about us?</div>   
-                            <div class="row content ml-1">
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Discord" name="Hear about us" >Discord</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Newsletter" name="Hear about us">Newsletter</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="LinkedIn" name="Hear about us">LinkedIn</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Instagram" name="Hear about us">Instagram</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="UWB ACM website" name="Hear about us">UWB ACM website</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Our Hackathon website (uwbhacks.com)" name="Hear about us">Our Hackathon website (uwbhacks.com)</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="Previous UWB Hackathons" name="Hear about us">Previous UWB Hackathons</div>
-                                <div class="checkbox col-md-12 my-2" ><input id="cb1" type="checkbox" value="ACM officer(s)" name="Hear about us">ACM officer(s)</div>
-                                <div class="checkbox col-md-12 my-2"><input id="cb1" type="checkbox" value="Word of mouth" name="Hear about us">Word of mouth</div>
 
-                                <div class="col-md-12 mt-2">
-                                    <input type="checkbox" id="other-media"
-                                       onchange="showElement('preferred-media');">Other                                  
-                                
-                                    <div id="preferred-media" class="col-md-12" style="display: none">
-                                        <input id="cb2" class="form-control" type="text" 
-                                            name="Hear about us" placeholder="Awesome! please share with us" value=""/>
-                                        <br> 
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="row my-4 pl-2">                                             
-                            <div class="title col-md-12">Do you consent to your project being displayed on UWB ACM Social Media and marketing?</div>                                  
-                            <div class="content col-md-12 my-2 ml-1">                                               
-                                <input type="radio" id="consent" name="Consent" value="Yes" required=""
-                                       onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')">
-                                <label for="Yes">Yes</label><br>                                             
-                               
-                                <input type="radio" id="consent" name="Consent" value="No" required=""
-                                       onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')">
-                                <label for="No">No</label><br>  
+                    <div class="row my-4 pl-2">                                             
+                        <div class="title col-md-12">Do you consent to your project being displayed on UWB ACM Social Media and marketing?</div>                                  
+                        <div class="content col-md-12 my-2 ml-1">                                               
+                            <input type="radio" id="consent" name="Consent" value="Yes" required=""
+                                    onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')">
+                            <label for="Yes">Yes</label><br>                                             
+                            
+                            <input type="radio" id="consent" name="Consent" value="No" required=""
+                                    onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')">
+                            <label for="No">No</label><br>  
 
-                                <input type="radio" id="other-consent"
-                                       required="" onchange="showElement('preferred-consent'); uncheckRadios('consent')">
-                                <label for="other-consent">Limited permission</label><br>
+                            <input type="radio" id="other-consent"
+                                    required="" onchange="showElement('preferred-consent'); uncheckRadios('consent')">
+                            <label for="other-consent">Limited permission</label><br>
 
-                                <div id="preferred-consent" class="form-group form-dropbox col-md-12" style="display: none">
-                                    <textarea id="preferred-consent-input" class="form-control" type="text" 
-                                           name="Consent" placeholder="Please clarify your permission (ie. you can only use my work for non-profit purposes)" 
-                                           value=""></textarea> 
-                                    <br> 
-                                </div>                                             
-                            </div>                                       
+                            <div id="preferred-consent" class="form-group form-dropbox col-md-12" style="display: none">
+                                <textarea id="preferred-consent-input" class="form-control" type="text" 
+                                        name="Consent" placeholder="Please clarify your permission (ie. you can only use my work for non-profit purposes)" 
+                                        value=""></textarea> 
+                                <br> 
+                            </div>                                             
+                        </div>                                       
+                    </div>
+                    <div class="row mb-4 pl-2">
+                        <div class="title col-md-12">Would you like to share your LinkedIn with recruiters? (optional)</div>
+                        <div class="content col-md-12 ml-1">
+                            <input type="text" name="LinkedIn" class="form-control" 
+                                    placeholder="LinkedIn URL" value=""/>
                         </div>
-                        <div class="row mb-4 pl-2">
-                            <div class="title col-md-12">Would you like to share your LinkedIn with recruiters? (optional)</div>
-                            <div class="content col-md-12 ml-1">
-                                <input type="text" name="LinkedIn" class="form-control" 
-                                       placeholder="LinkedIn URL" value=""/>
-                            </div>
-                        </div>
+                    </div>
 
-                        <!-- Handle submit -->
-                        <div class="row mb-2 pl-2 center">                                                            
-                            <input type="submit" name="submit" class="btnSubmit display-inline" value="Submit" !disabled/>                             
-                        </div>                              
-                        <div id="submit-status" style="text-align: center;"></div>
-                        
-                    </form>
-             
+                    <!-- Handle submit -->
+                    <div class="row mb-2 pl-2 center">                                                            
+                        <input type="submit" name="submit" class="btnSubmit display-inline" value="Submit" !disabled/>                             
+                    </div>                              
+                    <div id="submit-status" style="text-align: center;"></div>
+                    
+                </form>
+            
                
             </div>
         </div>

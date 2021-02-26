@@ -113,6 +113,10 @@ input[type='checkbox'] {
     color: red;
     font-size: small;
 }
+.disclaimer {
+    color: red;
+    text-align: center;
+}
 .display-inline {
     display: inline-block;
 }
