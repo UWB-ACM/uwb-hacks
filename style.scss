@@ -5,7 +5,7 @@ $maya-blue: #b1c5ff;
 $blue: #2059ff;
 $light-aqua: #9bf9f5;
 $cyan: #33f2eb;
-$light-purple: #DFBEFA;
+$light-purple: #dfbefa;
 $dark-purple: #4a0078;
 $pink: #f2339d;
 $taffy: #dd8ef2;
@@ -43,6 +43,11 @@ body * {
   font-style: normal;
   color: $light-purple;
 }
+.hkt-dates {
+  color: $pink !important;
+  text-shadow: 0px 0px 5px $pink, 0 0 50px $light-purple, 0 0 1px $taffy;
+  font-size: 2.8em !important;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -54,6 +59,7 @@ a:hover {
   width: 100%;
   transition: top 0.4s;
   z-index: 1;
+  color: $light-purple;
   background-color: $purple-bg;
   opacity: 0.9;
   font-size: 1.5em;
@@ -119,20 +125,21 @@ a:hover {
   font-size: 2em;
 }
 .content h1 {
-  font-size: 70px;
+  font-size: 3.5em;
   font-weight: 800;
 }
 .content h2 {
-  font-size: 30px;
+  font-size: 2em;
   padding: 30px 0px;
 }
 .container {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin-top: 10vw;
+  margin-top: 8vw;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 @mixin logo($size) {
   width: $size;
@@ -141,7 +148,7 @@ a:hover {
   text-align: center;
 }
 .home-logo * {
-  @include logo(20vw);
+  width: 100%;
 }
 
 .grid-item {
@@ -155,18 +162,24 @@ a:hover {
 .image-grid > * > img {
   // padding: auto 4%;
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 .image-grid > * > img:hover {
-  transform: scale(1.04); 
-  transition: 0.5s ease-out;
+  transform: scale(1.04);
+  transition: 0.4s ease-out;
 }
+
 .separator {
   width: 25%;
   padding-bottom: 1vw;
   border-bottom: 4px solid lightgray;
-
 }
+.footer-separator {
+  width: 100%;
+  padding-bottom: 1vw;
+  border-top: 4px solid lightgray;
+}
+
 
 .btn {
   //   background-color: #2084E8;
@@ -175,10 +188,10 @@ a:hover {
   border: none;
   border-radius: 8px;
   font-weight: 400;
-  text-align: center; 
+  text-align: center;
   display: flex;
   padding: 1vw 2vw;
-  &-lg{
+  &-lg {
     font-size: 1.5em;
   }
   &-x-md {
@@ -199,48 +212,45 @@ a:hover {
   position: relative;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  font-size: 1em;
-  border-top: 4px solid lightgray;
-  margin-bottom: -2vw;
-  margin-top: 5vw;
+  padding-left: 2em;
+  padding-left: 2em;
 }
+
 .footer {
+  margin: 0;
+  
   &-links {
-    margin-top: 6vw;
+    vertical-align: middle;
+    border-right: 2px solid lightgray;
     *,
     *:hover {
       text-decoration: underline;
     }
     &-text {
-      font-size: 1.8vw;
+      font-size: 1.6vw;
       width: 100%;
-      align-items: center;
       text-align: left;
-      margin-left: 4vw;
-      width: 80%;
-      border-right: 4px solid lightgray;
+      margin-bottom: 0.3vw;
     }
     &-text:hover {
       color: $taffy;
     }
   }
-  &-icons > * {
-    font-size: 3.5vw;
-    align-items: center;
-    // margin: 4vw 2vw;
-    margin-top: 7vw;
-    margin-bottom: 1vw;
-    margin-left: 3vw;
+  &-icons * {
+    display: inline-block;
+    font-size: 4.1vw;
+    justify-content: right;
+    text-align: right;
+    vertical-align: middle;
+    margin-left: 3%;
   }
-  &-icons > *:hover {
+  &-icons *:hover {
     color: $taffy;
   }
   &-logo * {
-    width: 20vw;
-    height: auto;
-    margin-bottom: 3vw;
-    margin-left: -4vw;
-    text-align: center;
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
   }
 }
