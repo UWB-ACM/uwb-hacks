@@ -46,7 +46,10 @@ body * {
 .hkt-dates {
   color: $pink !important;
   text-shadow: 0px 0px 5px $pink, 0 0 50px $light-purple, 0 0 1px $taffy;
-  font-size: 2.8em !important;
+  font-size: 2rem; 
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
 }
 a,
 a:hover {
@@ -113,7 +116,10 @@ a:hover {
   margin-top: -0.8em;
 }
 .box-contents {
-  font-size: 5em;
+  font-size: 3.5rem;
+  @media (min-width: 1024px) {
+    font-size: 5rem;
+  }
 }
 .box-title {
   background: $purple-bg none repeat scroll 0 0;
@@ -125,12 +131,14 @@ a:hover {
   font-size: 2em;
 }
 .content h1 {
-  font-size: 3.5em;
+  @media (min-width: 1024px) {
+    font-size: 3.5rem;
+  }
+  font-size: 2rem;
   font-weight: 800;
 }
 .content h2 {
-  font-size: 2em;
-  padding: 30px 0px;
+  padding: 1.5vw 0px;
 }
 .container {
   position: relative;
@@ -148,7 +156,15 @@ a:hover {
   text-align: center;
 }
 .home-logo * {
+  display: flex;
+  vertical-align: middle;
   width: 100%;
+}
+.acm-title {
+  font-size: 1.2rem;
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
 }
 
 .grid-item {
@@ -180,31 +196,32 @@ a:hover {
   border-top: 4px solid lightgray;
 }
 
-
 .btn {
   //   background-color: #2084E8;
-  background-color: $pink;
-  color: white;
+  background-color: $light-purple;
+  color: $dark-purple;
   border: none;
   border-radius: 8px;
   font-weight: 400;
-  text-align: center;
+  justify-content: center;
   display: flex;
   padding: 1vw 2vw;
   &-lg {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   &-x-md {
-    font-size: 1em;
+    font-size: 1rem;
   }
   &-md {
-    font-size: 0.7em;
+    font-size: 0.6rem;
+  }
+  &-cyan {
+    background-color: $cyan;
   }
 }
 
 .btn:hover {
-  //color: #2084E8;
-  color: $pink;
+  color: $dark-purple;
   background-color: white;
 }
 
