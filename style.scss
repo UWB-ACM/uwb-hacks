@@ -134,6 +134,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 @mixin logo($size) {
   width: $size;
   height: $size;
@@ -195,6 +196,56 @@ a:hover {
   background-color: white;
 }
 
+.collapsible {
+  background-color: $purple-bg;
+  color:$light-purple;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+.faq-container{
+  padding: 7px 10px;
+  max-height: 0;
+  font-size: 20px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.rule {
+  color: $taffy;
+}
+
+.faq-container a{
+  color: $taffy;
+  font-weight: bold
+}
+
+.faq-container a:hover {
+  color: $maya-blue;
+}
+
+.faq-active, .collapsible:hover {
+  color: #05012b;
+  background-color: $light-purple;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 #footer {
   position: relative;
   bottom: 0;
@@ -205,6 +256,7 @@ a:hover {
   margin-bottom: -2vw;
   margin-top: 5vw;
 }
+
 .footer {
   &-links {
     margin-top: 6vw;
