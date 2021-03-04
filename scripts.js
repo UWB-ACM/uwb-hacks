@@ -21,25 +21,22 @@ const year = new Date().getFullYear();
 const cpyright = "Copyright &copy; UWB ACM " + year;
 var footer_content =
   `
-  <footer class="row d-flex justify-content-center">
-    <div class="d-inline-block col-sm-4 footer-links">
-      <a class="d-inline-block footer-links-text col-sm-12" href="#" title="UWB Hacks logo">Code of Conduct</a>
-      <a class="d-inline-block footer-links-text col-sm-12" href="#" title="UWB Hacks logo">Email: uwbacm@uw.edu</a>
+  <footer id="footer" class="container mt-4 p-0">
+    <div class="d-inline-block col-sm-3 footer-links p-0 ml-3 mr-3">
+      <a class="d-inline-block footer-links-text col-sm-12 p-0" href="docs/UWB_Hacks_Code_of_Conduct.pdf" target="blank" title="UWB Hacks logo">Code of Conduct</a>
+      <a class="d-inline-block footer-links-text col-sm-12 p-0" href="mailto:uwbacm@uw.edu" title="UWB Hacks logo">Email us</a>
     </div>
-    <div class="d-inline col-sm-8">
-        <div class="d-inline-block footer-logo col-sm-3 mr-3"><img src="./images/TItle.png"/></div>
-        <a class="d-inline-block footer-icons" href="https://discord.gg/YBrxBTg" target="_blank" title="discord"><span class="fab fa-discord"></span></a>
-        <a class="d-inline-block footer-icons" href="https://www.facebook.com/uwbacm" target="_blank" title="facebook"><span class="fab fa-facebook" ></span></a>
-        <a class="d-inline-block footer-icons" href="https://twitter.com/hacksuwb" target="_blank" title="twitter"><span class="fab fa-twitter" ></span></a>
-        <a class="d-inline-block footer-icons" href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
-        title="linkedin"><span class="fab fa-linkedin"></span></a>
-        <a class="d-inline-block footer-icons" href="https://www.instagram.com/uwb_acm/" target="_blank" title="instagram"><span class="fab fa-instagram" ></span></a>
+    <div class="d-inline col-sm-9 p-0">
+      <div class="d-inline-block footer-logo col-sm-4 p-0"><img src="./images/TItle.png"/></div>
+      <div class="d-inline col-sm-8 footer-icons p-0">
+        <a class="d-inline-block" href="https://discord.gg/tCq2FKFcnh" target="_blank" title="discord"><span class="fab fa-discord"></span></a>
+        <a class="d-inline-block" href="https://www.facebook.com/uwbacm" target="_blank" title="facebook"><span class="fab fa-facebook" ></span></a>
+        <a class="d-inline-block" href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
+          title="linkedin"><span class="fab fa-linkedin"></span></a>
+        <a class="d-inline-block" href="https://www.instagram.com/uwb_acm/" target="_blank" title="instagram"><span class="fab fa-instagram" ></span></a>
+      </div>
     </div>
-
-    <div class="d-inline-block col-sm-12 mb-0">` +
-  cpyright +
-  `</div>
-
+    <div class="d-inline-block col-sm-12 mt-4 mb-0" style="text-align:center">` + cpyright +`</div>
   </footer>
 `;
 document.getElementById("footer").innerHTML = footer_content;
