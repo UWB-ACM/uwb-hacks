@@ -84,7 +84,7 @@ a, a:hover { text-decoration: none; }
 
 .faq-active, .collapsible:hover { background-color: #dfbefa; }
 
-.collapsible > *:hover { color: black; }
+.collapsible:hover > * { color: black; }
 
 .faq-active > * { color: black; background-color: #dfbefa; }
 

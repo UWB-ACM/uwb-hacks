@@ -250,7 +250,7 @@ a:hover {
   background-color: $light-purple;
 }
 
-.collapsible > *:hover {
+.collapsible:hover > * {
   color: black;
 }
 
