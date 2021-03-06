@@ -69,7 +69,7 @@ a:hover {
 }
 
 .body-text {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .w-90 {
   width: 90%;
@@ -283,8 +283,8 @@ a:hover {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding-left: 2em;
-  padding-left: 2em;
+  // padding-left: 2em;
+  // padding-left: 2em;
 }
 
 .footer {
@@ -309,7 +309,7 @@ a:hover {
   }
   &-icons * {
     display: inline-block;
-    font-size: 4.1vw;
+    font-size: 4.2vw;
     justify-content: right;
     text-align: right;
     vertical-align: middle;
@@ -321,7 +321,54 @@ a:hover {
   &-logo * {
     display: inline-block;
     width: 100%;
+    margin-left: 2rem;
     justify-content: center;
     vertical-align: middle;
   }
+}
+
+.agenda {
+  padding: 2px;
+  &-day {
+    color: cyan;
+    font-weight: 800;
+    margin-bottom: 2vw;
+  }
+  &-content * {
+    font-size: 1.8vw;
+    line-height: 120%;
+    height: 8vw;
+  }
+}
+.border-right {
+  border-right: 2px solid $light-aqua;
+}
+
+.speaker {
+  &-profile {
+    width: 100%;
+  }
+  &-info {
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: 2px solid $taffy;
+  }
+}
+.track {
+  h2 {
+    text-transform: uppercase;
+    color: cyan;
+    margin-top: 2vw;
+    font-weight: 800;
+  }
+  &-img *  {
+    width: 100%;
+  }
+  &-content {
+    font-size: 1.5rem;
+  }
+
+  
 }

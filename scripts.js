@@ -21,14 +21,14 @@ const year = new Date().getFullYear();
 const cpyright = "Copyright &copy; UWB ACM " + year;
 var footer_content =
   `
-  <footer id="footer" class="container mt-4 p-0">
-    <div class="d-inline-block col-sm-3 footer-links p-0 ml-3 mr-3">
+  <footer id="footer" class="container mt-4 px-4 pt-4">
+    <div class="d-inline-block col-sm-3 col-md-3 col-lg-3 footer-links p-0 mr-3">
       <a class="d-inline-block footer-links-text col-sm-12 p-0" href="docs/UWB_Hacks_Code_of_Conduct.pdf" target="blank" title="UWB Hacks logo">Code of Conduct</a>
       <a class="d-inline-block footer-links-text col-sm-12 p-0" href="mailto:uwbacm@uw.edu" title="UWB Hacks logo">Email us</a>
     </div>
-    <div class="d-inline col-sm-9 p-0">
-      <div class="d-inline-block footer-logo col-sm-4 p-0"><img src="./images/TItle.png"/></div>
-      <div class="d-inline col-sm-8 footer-icons p-0">
+    <div class="d-inline col-sm-9 col-md-9 col-lg-9 p-0">
+      <div class="d-inline-block footer-logo col-sm-3 col-md-3 col-lg-4 p-0 mr-4"><img src="./images/TItle.png"/></div>
+      <div class="d-inline col-sm-8 col-md-8 col-lg-8 footer-icons p-0 ml-4">
         <a class="d-inline-block" href="https://discord.gg/tCq2FKFcnh" target="_blank" title="discord"><span class="fab fa-discord"></span></a>
         <a class="d-inline-block" href="https://www.facebook.com/uwbacm" target="_blank" title="facebook"><span class="fab fa-facebook" ></span></a>
         <a class="d-inline-block" href="https://www.linkedin.com/organization-guest/company/uwb-acm-club" target="_blank"
@@ -119,9 +119,13 @@ if (contactForm) {
   });
 }
 //====================================
-document.getElementById("sponsor-pkg").addEventListener("click", (e) => {
-  window.open(
-    "https://drive.google.com/file/d/1BcWEYqi8SYB1bt3MdCJh4IVnZpq6OFg3/view?usp=sharing",
-    "_blank"
-  );
-});
+if (document.getElementById("sponsor-pkg")) {
+  document.getElementById("sponsor-pkg").addEventListener("click", (e) => {
+    window.open(
+      "https://drive.google.com/file/d/1BcWEYqi8SYB1bt3MdCJh4IVnZpq6OFg3/view?usp=sharing",
+      "_blank"
+    );
+  });
+
+}
+
