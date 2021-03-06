@@ -111,7 +111,7 @@ if ((obj = document.getElementById("countdown"))) {
 
     // Display the result in the element with id="countdown"
     if (now < startDate)
-      document.getElementById("box-title").innerHTML = "starts in";
+      document.getElementById("box-title").innerHTML = "Hackathon Starts In";
     else if (now < endDate)
       document.getElementById("box-title").innerHTML = "ends in";
     else document.getElementById("box-title").innerHTML = "Hackathon concluded";
