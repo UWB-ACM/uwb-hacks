@@ -24,7 +24,6 @@ var footer_content =
   <footer id="footer" class="container mt-2">
       <div class="col-lg-3 col-6 mx-auto my-1">
         <img class="img-fluid" src="../images/TItle.png" alt="" />
-        <img class="img-fluid" src="./images/TItle.png" alt="" />
       </div>
       <div class="col-12 my-1 text-center list-unstyled">
         <a
