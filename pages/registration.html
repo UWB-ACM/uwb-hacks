@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UWB Hacks From Home</title>
+
+    <meta
+      name="description"
+      content="Register for the UWB Hacks from Home 2021 Hackathon hosted by the ACM at The University of Washington Bothell (UWB ACM)"
+    />
+    <meta
+      name="keywords"
+      content="hackathon, uwb acm, uwb events, coding contest, uwb hackathon, uwb hacks, uwb hackathon website, university of washington bothell, virtual hackathon, hackathon april 2021, association for computing machinery hackathon"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q3ES8YLK92"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q3ES8YLK92");
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 body-purple-bg">
+    <div class="my-auto">
+      <div class="body-content">
+        <header id="header" class="amboy">
+          <nav class="navbar navbar-expand-lg mx-auto">
+            <a class="navbar-brand" href="../index.html"
+              ><h3>UWB Hacks 2021</h3></a
+            >
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-4">
+                  <a
+                    id="register"
+                    class="nav-link active"
+                    href="./registration.html"
+                    ><h4>Register</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link" href="sponsors.html"
+                    ><h4>Sponsors</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link active" href="contact.html"
+                    ><h4>Contact</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link" href="faqs.html"
+                    ><h4>FAQs</h4></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div class="container">
+          <div class="mx-auto" id="myform">
+            <div
+              class="show active text-align form-new"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <h1 class="mx-auto register-heading">
+                UWB Hacks From Home Registration
+              </h1>
+              <div class="register-form">
+                <form method="post" autocomplete="off" name="google-sheet">
+                  <div class="mb-2">
+                    <div class="content col-md-12 ml-1">
+                      <input
+                        type="email"
+                        name="Email"
+                        class="form-control"
+                        placeholder="* Email address"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="content col-md-12 mt-2 ml-1">
+                      <input
+                        type="text"
+                        name="Name"
+                        class="form-control"
+                        placeholder="* Your Name"
+                        value=""
+                        required=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-4 pl-2">
+                    <div class="col-md-12 title">Your pronouns</div>
+                    <div class="content col-md-12 mt-2 ml-1">
+                      <input
+                        type="radio"
+                        id="pronoun"
+                        name="Pronouns"
+                        value="she/her/hers"
+                        required=""
+                        onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')"
+                      />
+                      <label for="pronoun">she/her/hers</label><br />
+
+                      <input
+                        type="radio"
+                        id="pronoun"
+                        name="Pronouns"
+                        value="he/him/his"
+                        required=""
+                        onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')"
+                      />
+                      <label for="pronoun">he/him/his</label><br />
+
+                      <input
+                        type="radio"
+                        id="pronoun"
+                        name="Pronouns"
+                        value="they/them/their"
+                        required=""
+                        onchange="hideElement('preferred-pronoun'); uncheckRadios('other-pronouns')"
+                      />
+                      <label for="pronoun">they/them/their</label><br />
+
+                      <!-- <input type="radio" name="Pronouns" class="display-inline">
+                                            <input type="text" id="pronoun4" class="form-control display-inline col-md-6 ml-0" 
+                                                   name="Pronouns" value="" placeholder="Others"> -->
+
+                      <input
+                        type="radio"
+                        id="other-pronouns"
+                        required=""
+                        onchange="showElement('preferred-pronoun'); uncheckRadios('pronoun')"
+                      />
+                      <label for="other-pronouns">Other</label><br />
+
+                      <div
+                        id="preferred-pronoun"
+                        class="form-group form-dropbox col-md-12"
+                        style="display: none"
+                      >
+                        <input
+                          id="preferred-pronoun-input"
+                          class="form-control"
+                          type="text"
+                          name="Pronouns"
+                          placeholder="Enter preferred pronoun"
+                          value=""
+                        />
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4 pl-2">
+                    <div class="col-md-12 title">
+                      What school or company are you affiliated with?
+                    </div>
+                    <div class="content col-md-12 mt-2 ml-1">
+                      <input
+                        type="radio"
+                        id="school"
+                        name="School"
+                        value="University of Washington, Bothell"
+                        required=""
+                        onchange="hideElement('preferred-school'); uncheckRadios('other-school')"
+                      />
+                      <label for="school1"
+                        >University of Washington, Bothell</label
+                      ><br />
+
+                      <input
+                        type="radio"
+                        id="school"
+                        name="School"
+                        value="University of Washington, Seattle"
+                        required=""
+                        onchange="hideElement('preferred-school'); uncheckRadios('other-school')"
+                      />
+                      <label for="school2"
+                        >University of Washington, Seattle</label
+                      ><br />
+
+                      <input
+                        type="radio"
+                        id="school"
+                        name="School"
+                        value="University of Washington, Tacoma"
+                        required=""
+                        onchange="hideElement('preferred-school'); uncheckRadios('other-school')"
+                      />
+                      <label for="school3"
+                        >University of Washington, Tacoma</label
+                      ><br />
+
+                      <input
+                        type="radio"
+                        id="school"
+                        name="School"
+                        value="Cascadia College"
+                        required=""
+                        onchange="hideElement('preferred-school'); uncheckRadios('other-school')"
+                      />
+                      <label for="school4">Cascadia College</label><br />
+
+                      <input
+                        type="radio"
+                        id="other-school"
+                        required=""
+                        onchange="showElement('preferred-school'); uncheckRadios('school')"
+                      />
+                      <label for="other-school">Other</label><br />
+
+                      <div
+                        id="preferred-school"
+                        class="form-group form-dropbox col-md-12"
+                        style="display: none"
+                      >
+                        <input
+                          id="preferred-school-input"
+                          class="form-control"
+                          type="text"
+                          name="School"
+                          placeholder="Enter your institution name"
+                          value=""
+                        />
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4 pl-2">
+                    <div class="title col-md-12">
+                      Will you be working in a team or solo?
+                    </div>
+                    <div class="content col-md-12 mt-2 ml-1">
+                      <input
+                        type="radio"
+                        id="compete-as-solo"
+                        name="TeamSolo"
+                        value="Solo"
+                        required=""
+                        onchange="hideElement('team-member')"
+                      />
+                      <label for="compete-as-solo">Solo</label><br />
+
+                      <input
+                        type="radio"
+                        id="compete-as-team2"
+                        name="TeamSolo"
+                        value="I'm looking for teammates"
+                        required=""
+                        onchange="hideElement('team-member')"
+                      />
+                      <label for="compete-as-team2"
+                        >I'm looking for teammates</label
+                      ><br />
+
+                      <input
+                        type="radio"
+                        id="compete-as-team"
+                        name="TeamSolo"
+                        value="I have a team"
+                        required=""
+                        onchange="promptMembers()"
+                      />
+                      <label for="compete-as-team">I have a team</label><br />
+
+                      <div
+                        id="team-member"
+                        class="form-group form-dropbox col-md-12"
+                        style="display: none"
+                      >
+                        <label class="note"
+                          >* ONLY SUBMIT 1 REGISTRATION PER TEAM</label
+                        >
+                        <input
+                          id="team-email"
+                          class="form-control"
+                          type="text"
+                          name="Team members emails"
+                          placeholder="List all emails separated by a comma (ie. a@mail.com, b@mail.com)"
+                          value=""
+                        />
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4 pl-2">
+                    <div class="title col-md-12">
+                      How did you hear about us?
+                    </div>
+                    <div class="content ml-1">
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Discord"
+                          name="Hear about us"
+                        /><label>Discord</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Newsletter"
+                          name="Hear about us"
+                        /><label>Newsletter</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="LinkedIn"
+                          name="Hear about us"
+                        /><label>LinkedIn</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Instagram"
+                          name="Hear about us"
+                        /><label>Instagram</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="UWB ACM website"
+                          name="Hear about us"
+                        /><label>UWB ACM website</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Our Hackathon website (uwbhacks.com)"
+                          name="Hear about us"
+                        /><label>Our Hackathon website (uwbhacks.com)</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Previous UWB Hackathons"
+                          name="Hear about us"
+                        /><label>Previous UWB Hackathons</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="ACM officer(s)"
+                          name="Hear about us"
+                        /><label>ACM officer(s)</label>
+                      </div>
+                      <div class="checkbox col-md-12 my-2">
+                        <input
+                          id="cb1"
+                          type="checkbox"
+                          value="Word of mouth"
+                          name="Hear about us"
+                        /><label>Word of mouth</label>
+                      </div>
+
+                      <div class="col-md-12 mt-2">
+                        <input
+                          type="checkbox"
+                          id="other-media"
+                          onchange="showElement('preferred-media');"
+                        /><label>Other</label>
+
+                        <div
+                          id="preferred-media"
+                          class="col-md-12"
+                          style="display: none"
+                        >
+                          <input
+                            id="cb2"
+                            class="form-control"
+                            type="text"
+                            name="Hear about us"
+                            placeholder="Awesome! please share with us"
+                            value=""
+                          />
+                          <br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="my-4 pl-2">
+                    <div class="title col-md-12">
+                      Do you consent to your project being displayed on UWB ACM
+                      Social Media and marketing?
+                    </div>
+                    <div class="content col-md-12 my-2 ml-1">
+                      <input
+                        type="radio"
+                        id="consent"
+                        name="Consent"
+                        value="Yes"
+                        required=""
+                        onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')"
+                      />
+                      <label for="Yes">Yes</label><br />
+
+                      <input
+                        type="radio"
+                        id="consent"
+                        name="Consent"
+                        value="No"
+                        required=""
+                        onchange="hideElement('preferred-consent'); uncheckRadios('other-consent')"
+                      />
+                      <label for="No">No</label><br />
+
+                      <input
+                        type="radio"
+                        id="other-consent"
+                        required=""
+                        onchange="showElement('preferred-consent'); uncheckRadios('consent')"
+                      />
+                      <label for="other-consent">Limited permission</label
+                      ><br />
+
+                      <div
+                        id="preferred-consent"
+                        class="form-group form-dropbox col-md-12"
+                        style="display: none"
+                      >
+                        <textarea
+                          id="preferred-consent-input"
+                          class="form-control"
+                          type="text"
+                          name="Consent"
+                          placeholder="Please clarify your permission (ie. you can only use my work for non-profit purposes)"
+                          value=""
+                        ></textarea>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4 pl-2">
+                    <div class="title col-md-12">
+                      Would you like to share your LinkedIn with recruiters?
+                      (optional)
+                    </div>
+                    <div class="content col-md-12 ml-1">
+                      <input
+                        type="text"
+                        name="LinkedIn"
+                        class="form-control"
+                        placeholder="LinkedIn URL"
+                        value=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Handle submit -->
+                  <div class="pl-2 mb-0 center">
+                    <button
+                      type="submit"
+                      name="submit-btn"
+                      class="btnSubmit display-inline"
+                      value="Submit"
+                      id="submit-btn"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <div id="submit-status" style="text-align: center"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="mt-4 footer-separator"></div>
+
+    <script type="text/javascript" src="../scripts/scripts.js"></script>
+    <script type="text/javascript" src="../scripts/register.js"></script>
+  </body>
+</html>

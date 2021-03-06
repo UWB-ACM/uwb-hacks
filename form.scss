@@ -1,0 +1,147 @@
+@import "style.scss";
+
+#myform {
+  * {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    .amboy {
+      font-family: amboy-black, sans-serif;
+    }
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .title {
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: black;
+  }
+  .content {
+    font-size: 1.2em;
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .content h2 {
+    padding: 30px 0px;
+  }
+  label {
+    color: black !important;
+    font-size: 1.1em;
+  }
+  * > input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 2%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  * > input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 2.5%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  * > .note {
+    color: red !important;
+    font-size: small;
+  }
+  // .text-align {
+  //   margin-top: -15%;
+  //   margin-bottom: -9%;
+  //   // padding: 10%;
+  //   // margin-left: 30%;
+  // }
+  .textarea {
+    width: 100%;
+  }
+  .form-new {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+    padding: 2%;
+    background-color: whitesmoke;
+    &-contact {
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 8px;
+      padding: 2%;
+    }
+  }
+
+  .register-heading,
+  .register-heading {
+    color: #636363;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  * > .btnSubmit {
+    display: inline-flex;
+    border-radius: 8px;
+    // color: #2084E8;
+    // background-color: #e9ecef;
+    color: lightgray;
+    background-color: $dark-purple;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10%;
+    outline: 0;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-family: amboy-black, sans-serif;
+    font-weight: 400;
+  }
+  * > .btnSubmit:hover {
+    color: $dark-purple;
+    //background-color: #2084E8;
+    background-color: lightgray;
+    transition: all 0.2s ease;
+  }
+  ::-webkit-input-placeholder {
+    font-style: italic;
+  }
+  @mixin postStatus {
+    color: $purple-bg;
+    font-size: 150%;
+    padding: 2%;
+  }
+  #submit-status {
+    @include postStatus();
+  }
+  #send-msg-status {
+    @include postStatus();
+    position: relative;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid lightblue;
+    font-size: 1.2em;
+  }
+  .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: rgb(0, 102, 255);
+  }
+  #hear-about-us {
+    border: 0;
+    float: right;
+    border-bottom: 1px solid lightblue;
+  }
+  .display-inline {
+    display: inline-block;
+  }
+  .form-dropbox {
+    float: right;
+  }
+  *:focus {
+    outline: 0;
+  }
+}
