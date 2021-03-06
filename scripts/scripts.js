@@ -27,7 +27,7 @@ var footer_content =
       <a class="d-inline-block footer-links-text col-sm-12 p-0" href="mailto:uwbacm@uw.edu" title="UWB Hacks logo">Email us</a>
     </div>
     <div class="d-inline col-sm-9 col-md-9 col-lg-9 p-0">
-      <div class="d-inline-block footer-logo col-sm-3 col-md-3 col-lg-4 p-0 mr-4"><img src="./images/TItle.png"/></div>
+      <div class="d-inline-block footer-logo col-sm-3 col-md-3 col-lg-4 p-0 mr-4"><img src="../images/TItle.png"/></div>
       <div class="d-inline col-sm-8 col-md-8 col-lg-8 footer-icons p-0 ml-4">
         <a class="d-inline-block" href="https://discord.gg/tCq2FKFcnh" target="_blank" title="discord"><span class="fab fa-discord"></span></a>
         <a class="d-inline-block" href="https://www.facebook.com/uwbacm" target="_blank" title="facebook"><span class="fab fa-facebook" ></span></a>
@@ -36,7 +36,9 @@ var footer_content =
         <a class="d-inline-block" href="https://www.instagram.com/uwb_acm/" target="_blank" title="instagram"><span class="fab fa-instagram" ></span></a>
       </div>
     </div>
-    <div class="d-inline-block col-sm-12 mt-4 mb-0" style="text-align:center">` + cpyright +`</div>
+    <div class="d-inline-block col-sm-12 mt-4 mb-0" style="text-align:center">` +
+  cpyright +
+  `</div>
   </footer>
 `;
 document.getElementById("footer").innerHTML = footer_content;
@@ -126,6 +128,4 @@ if (document.getElementById("sponsor-pkg")) {
       "_blank"
     );
   });
-
 }
-
