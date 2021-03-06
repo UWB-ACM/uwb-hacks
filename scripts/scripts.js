@@ -28,7 +28,7 @@ var footer_content =
       <div class="col-12 my-1 text-center list-unstyled">
         <a
           class="text-white text-decoration-none"
-          href="docs/UWB_Hacks_Code_of_Conduct.pdf"
+          href="../docs/UWB_Hacks_Code_of_Conduct.pdf"
           target="blank"
           title="UWB Hacks logo"
           >Code of Conduct</a

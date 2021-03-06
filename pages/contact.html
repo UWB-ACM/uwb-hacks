@@ -82,97 +82,75 @@
         </header>
 
         <div class="container">
-          <div class="mx-auto" id="myform">
-            <div
-              class="show active form-new-contact"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <h3 class="row ml-0 pl-0 amboy">Contact us</h3>
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-8 d-inline-block">
-                  <form
-                    method="post"
-                    autocomplete="off"
-                    name="contact-form"
-                    id="contact-form"
-                  >
-                    <div class="row my-3">
-                      <div class="content col-md-12">
-                        <input
-                          type="email"
-                          name="Email"
-                          class="form-control"
-                          placeholder="* Email address"
-                          id="contact_email"
-                          value=""
-                          required=""
-                        />
-                      </div>
-                    </div>
+          <h3 class="amboy">Contact us</h3>
 
-                    <div class="row my-3">
-                      <div class="content col-md-12">
-                        <input
-                          type="text"
-                          name="Name"
-                          class="form-control"
-                          placeholder="* Your name"
-                          value=""
-                          required=""
-                        />
-                      </div>
-                    </div>
-                    <div class="row my-3">
-                      <div class="content col-md-12">
-                        <textarea
-                          id="preferred-consent-input"
-                          class="form-control mx-0"
-                          type="text"
-                          name="Message"
-                          placeholder="Leave your message here"
-                          value=""
-                          style="height: 10vw"
-                          required=""
-                        ></textarea>
-                      </div>
-                    </div>
-
-                    <!-- Handle submit -->
-                    <div class="row">
-                      <div class="col-md-4 mt-2 d-inline-block">
-                        <button
-                          type="submit"
-                          name="send-msg"
-                          class="btn btn-lg d-inline-block col-md-12 amboy"
-                          value="Send"
-                          id="btn-send-msg"
-                        >
-                          Send
-                        </button>
-                      </div>
-
-                      <div
-                        id="send-msg-status"
-                        class="d-inline-block col-md-8"
-                      ></div>
-                    </div>
-                  </form>
-                </div>
-                <div
-                  class="col-sm-12 col-md-12 col-lg-4 d-inline-block"
-                  style="text-align: right"
-                >
-                  <img
-                    class="acm-logo d-flex mx-auto"
-                    src="../images/acm_white_bg.png"
-                    alt="acm logo"
-                  />
-                </div>
-              </div>
+          <form
+            class="row"
+            method="post"
+            autocomplete="off"
+            name="contact-form"
+            id="contact-form"
+          >
+            <div class="col-12 my-1">
+              <input
+                type="email"
+                name="Email"
+                class="form-control"
+                placeholder="* Email address"
+                id="contact_email"
+                value=""
+                required=""
+              />
             </div>
-          </div>
+
+            <div class="col-12 my-1">
+              <input
+                type="text"
+                name="Name"
+                class="form-control"
+                placeholder="* Your name"
+                value=""
+                required=""
+              />
+            </div>
+
+            <div class="col-12 my-1">
+              <textarea
+                id="preferred-consent-input"
+                class="form-control mx-0"
+                type="text"
+                name="Message"
+                placeholder="Leave your message here"
+                value=""
+                style="height: 10vw"
+                required=""
+              ></textarea>
+            </div>
+
+            <!-- Handle submit -->
+
+            <div class="col-12 my-1">
+              <button
+                type="submit"
+                name="send-msg"
+                class="btn btn-lg d-inline-block col-md-12 amboy"
+                value="Send"
+                id="btn-send-msg"
+              >
+                Send
+              </button>
+            </div>
+
+            <div id="send-msg-status" class="col-12"></div>
+
+            <div class="col-lg-3 col-6 my-1 mx-auto">
+              <img
+                class="img-fluid"
+                src="../images/acm_white_bg.png"
+                alt="acm logo"
+              />
+            </div>
+          </form>
         </div>
       </div>
     </div>
