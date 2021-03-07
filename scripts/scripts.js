@@ -30,14 +30,14 @@ var footer_content =
           class="text-white text-decoration-none"
           href="../docs/UWB_Hacks_Code_of_Conduct.pdf"
           target="blank"
-          title="UWB Hacks logo"
+          title="Code of conduct"
           >Code of Conduct</a
         >
         <br />
         <a
           class="text-white text-decoration-none"
           href="mailto:uwbacm@uw.edu"
-          title="UWB Hacks logo"
+          title="Contact us via email"
           >Email us</a
         >
       </div>
