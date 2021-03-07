@@ -124,8 +124,6 @@ a, a:hover { text-decoration: none; }
 
 .track h2 { text-transform: uppercase; color: cyan; margin-top: 2vw; font-weight: 800; }
 
-.track-img * { width: 100%; }
-
 .track-content { font-size: 1.5rem; }
 
 .time { background-color: #dfbefa; color: #05012b; border-radius: 8px; padding: 4px; }
