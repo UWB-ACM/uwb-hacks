@@ -4,16 +4,16 @@
 
 // ======= START OF SCRIPTS FOR HEADER ======
 // navbar slide down when scroll up
-let prevScrollpos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
-  } else {
-    document.getElementById("header").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-};
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = () => {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("header").style.top = "0";
+//   } else {
+//     document.getElementById("header").style.top = "-100px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
 // ==========================================
 
 // ======= START OF SCRIPTS FOR FOOTER ======
