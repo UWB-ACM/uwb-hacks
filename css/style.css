@@ -122,7 +122,7 @@ a, a:hover { text-decoration: none; }
 
 .speaker-info { padding: 8px; border-radius: 8px; font-weight: 600; font-size: 1.5rem; border: 2px solid #dd8ef2; }
 
-.track h2 { text-transform: uppercase; color: cyan; margin-top: 2vw; font-weight: 800; }
+.track h2 { text-transform: uppercase; color: cyan; font-weight: 800; }
 
 .track-content { font-size: 1.5rem; }
 
