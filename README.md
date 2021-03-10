@@ -20,10 +20,3 @@ If you are testing locally, there are a few ways of generating CSS from the SASS
 * Use the VSCode plugin [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass); preferred method for [Chris](https://github.com/chris-johnston).
 * Use the [SASS plugin for Gulp (part of Node.js)](https://www.npmjs.com/package/gulp-sass); preferred method for [Lizzy](https://github.com/etcadinfinitum).
 * Use the [Ruby gem](https://rubygems.org/gems/sass/versions/3.4.22).
-
-## Travis CI
-
-Travis CI has been set up to build and deploy the website to the `gh-pages` branch when changes are
-pushed to the `master` branch.
-The logs for this can be found by clicking the build status badge.
-The script for this can be found in `travis/deploy.sh`, and CI settings can be found in `.travis.yml`.
