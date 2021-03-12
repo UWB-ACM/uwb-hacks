@@ -226,23 +226,25 @@ a:hover {
 }
 
 .faq-container {
-  padding: 7px 10px;
+  padding: 7px 30px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  font-size: 22px;
 }
 
 .rule {
-  color: $taffy;
+  color: $cyan;
 }
 
 .faq-container a {
-  color: $taffy;
+  color: $cyan;
   font-weight: bold;
 }
 
 .faq-container a:hover {
   color: $maya-blue;
+  font-weight: bold;
 }
 
 .faq-active,
@@ -256,12 +258,13 @@ a:hover {
 
 .faq-active > * {
   color: black;
-  background-color: $light-purple;
+  background-color: $light-purple; 
 }
 
 .collapsible:after {
   content: "\02795"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 18px;
+  margin-top: 4px;
   color: white;
   float: right;
   margin-left: 5px;
