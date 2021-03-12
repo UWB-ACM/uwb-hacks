@@ -74,13 +74,13 @@ a, a:hover { text-decoration: none; }
 
 .collapsible { background-color: #05012b; color: #dfbefa; cursor: pointer; padding: 10px; width: 100%; border: none; text-align: left; outline: none; }
 
-.faq-container { padding: 7px 10px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+.faq-container { padding: 7px 30px; max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; font-size: 22px; }
 
-.rule { color: #dd8ef2; }
+.rule { color: #33f2eb; }
 
-.faq-container a { color: #dd8ef2; font-weight: bold; }
+.faq-container a { color: #33f2eb; font-weight: bold; }
 
-.faq-container a:hover { color: #b1c5ff; }
+.faq-container a:hover { color: #b1c5ff; font-weight: bold; }
 
 .faq-active, .collapsible:hover { background-color: #dfbefa; }
 
@@ -88,7 +88,7 @@ a, a:hover { text-decoration: none; }
 
 .faq-active > * { color: black; background-color: #dfbefa; }
 
-.collapsible:after { content: "\02795"; /* Unicode character for "plus" sign (+) */ font-size: 13px; color: white; float: right; margin-left: 5px; }
+.collapsible:after { content: "\02795"; /* Unicode character for "plus" sign (+) */ font-size: 18px; margin-top: 4px; color: white; float: right; margin-left: 5px; }
 
 .faq-active:after { content: "\2796"; /* Unicode character for "minus" sign (-) */ }
 
@@ -122,7 +122,7 @@ a, a:hover { text-decoration: none; }
 
 .speaker-info { padding: 8px; border-radius: 8px; font-weight: 600; font-size: 1.5rem; border: 2px solid #dd8ef2; }
 
-.track h2 { text-transform: uppercase; color: cyan; margin-top: 2vw; font-weight: 800; }
+.track h2 { text-transform: uppercase; color: cyan; font-weight: 800; }
 
 .track-content { font-size: 1.5rem; }
 
@@ -150,15 +150,17 @@ a, a:hover { text-decoration: none; }
 
 #myform .textarea { width: 100%; }
 
-#myform .form-new { margin: 0 auto; width: 100%; border-radius: 8px; padding: 2%; background-color: whitesmoke; }
+#myform .form-new { margin: 0 auto; width: 100%; border-radius: 8px; padding: 2%; background-color: #DCDCDC; }
 
 #myform .form-new-contact { margin: 0 auto; width: 100%; border-radius: 8px; padding: 2%; }
 
-#myform .register-heading, #myform .register-heading { color: #636363; text-align: center; margin-bottom: 4%; }
+#myform .register-heading, #myform .register-heading { color: black; text-align: center; margin-bottom: 15px; }
+
+#myform .reg-disclaimer { font-size: 18px; color: black; text-align: center; margin-bottom: 15px; }
 
 #myform * > .btnSubmit { display: inline-flex; border-radius: 8px; color: lightgray; background-color: #4a0078; border: none; cursor: pointer; padding: 8px 10%; outline: 0; font-size: 1.5em; margin-left: auto; margin-right: auto; margin-top: 2%; font-family: amboy-black, sans-serif; font-weight: 400; }
 
-#myform * > .btnSubmit:hover { color: #4a0078; background-color: lightgray; transition: all 0.2s ease; }
+#myform * > .btnSubmit:hover { color: #4a0078; background-color: white; transition: all 0.2s ease; }
 
 #myform ::-webkit-input-placeholder { font-style: italic; }
 
