@@ -127,4 +127,14 @@ a, a:hover { text-decoration: none; }
 .track-content { font-size: 1.5rem; }
 
 .time { background-color: #dfbefa; color: #05012b; border-radius: 8px; padding: 4px; }
+
+#sponsor-pkg { margin-bottom: 30px; }
+
+#sponsor-pkg:hover { background-color: #c880de; }
+
+.sponsor-container { background-color: white; }
+
+.sponsor-container h2 { color: black; padding-top: 15px; }
+
+.sponsor-container img { padding-top: 30px; }
 /*# sourceMappingURL=style.css.map */
