@@ -1,7 +1,7 @@
 // ====== Start of scripts for submitting for Registration form =======
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyMtHk57-i9cNf1-RlTvl84t--GcFfhNtsB4nbVodR9VbcHqvFigAks/exec";
+  "https://script.google.com/macros/s/AKfycbz6QHllrxx0cf1AxiKYU3-aXLCOSfvgOW9Fm1UIc7Y50rR5o73M5WL5DZ3VutneBDRaHw/exec";
 const form = document.forms["google-sheet"];
 
 form.addEventListener("submit", (e) => {
