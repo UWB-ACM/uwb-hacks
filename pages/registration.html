@@ -288,56 +288,55 @@
                   </div>
 
                   <div class="my-4 pl-2">
-                    <div class="title col-md-12">
+                    <div class="col-md-12 title">
                       Will you be working in a team or solo?
                     </div>
                     <div class="content col-md-12 mt-2 ml-1">
                       <input
                         type="radio"
-                        id="compete-as-solo"
+                        id="participant-type"
                         name="TeamSolo"
                         value="Solo"
                         required=""
-                        onchange="hideElement('team-member')"
+                        onchange="hideElement('preferred-participant-type'); uncheckRadios('have-team')"
                       />
-                      <label for="compete-as-solo">Solo</label><br />
+                      <label for="solo"
+                        >Solo</label
+                      ><br />
 
                       <input
                         type="radio"
-                        id="compete-as-team2"
+                        id="participant-type"
                         name="TeamSolo"
                         value="I'm looking for teammates"
                         required=""
-                        onchange="hideElement('team-member')"
+                        onchange="hideElement('preferred-participant-type'); uncheckRadios('have-team')"
                       />
-                      <label for="compete-as-team2"
+                      <label for="find-team"
                         >I'm looking for teammates</label
                       ><br />
 
                       <input
                         type="radio"
-                        id="compete-as-team"
+                        id="have-team"
                         name="TeamSolo"
                         value="I have a team"
                         required=""
-                        onchange="promptMembers()"
+                        onchange="showElement('preferred-participant-type'); uncheckRadios('participant-type')"
                       />
-                      <label for="compete-as-team">I have a team</label><br />
+                      <label for="have-team">I have a team</label><br />
 
                       <div
-                        id="team-member"
+                        id="preferred-participant-type"
                         class="form-group form-dropbox col-md-12"
                         style="display: none"
                       >
-                        <label class="note"
-                          >* ONLY SUBMIT 1 REGISTRATION PER TEAM</label
-                        >
                         <input
-                          id="team-email"
+                          id="preferred-team-input"
                           class="form-control"
                           type="text"
                           name="Team members emails"
-                          placeholder="List all emails separated by a comma (ie. a@mail.com, b@mail.com)"
+                          placeholder="List all emails separated by commas (ie. a@mail.com, b@mail.com)"
                           value=""
                         />
                         <br />
