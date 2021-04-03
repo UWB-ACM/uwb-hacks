@@ -73,7 +73,7 @@ var footer_content =
         ></a>
       </div>
       <div
-        class="d-inline-block col-sm-12 mt-4 mb-0"
+        class="d-block row mt-4 mb-0"
         style="text-align: center"
       >
         ` +
