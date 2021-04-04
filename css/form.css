@@ -128,6 +128,11 @@ a, a:hover { text-decoration: none; }
 
 .time { background-color: #dfbefa; color: #05012b; border-radius: 8px; padding: 4px; }
 
+#late-registration { margin: 5rem auto; }
+#late-registration * { text-align: center; justify-content: center; }
+#late-registration h2 { font-size: 2rem; margin: 2rem auto; background-color: #dfbefa; color: red; width: 80%; padding: 1.5rem; border-radius: 8px; }
+#late-registration a { color: dodgerblue }
+
 #myform * { font-family: "Quicksand", sans-serif; font-weight: 800; margin-top: auto; margin-bottom: auto; }
 
 #myform * .amboy { font-family: amboy-black, sans-serif; }
