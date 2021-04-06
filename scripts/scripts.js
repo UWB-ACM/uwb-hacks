@@ -42,30 +42,30 @@ var footer_content =
         >
       </div>
 
-      <div class="row text-center mx-auto w-50">
+      <div class="row text-center mx-auto justify-content-center mt-4">
         <a
-          class="col-3"
+          class="mx-3"
           href="https://discord.gg/tCq2FKFcnh"
           target="_blank"
           title="discord"
           ><span class="fab fa-discord fa-2x"></span
         ></a>
         <a
-          class="col-3"
+          class="mx-3"
           href="https://www.facebook.com/uwbacm"
           target="_blank"
           title="facebook"
           ><span class="fab fa-facebook fa-2x"></span
         ></a>
         <a
-          class="col-3"
+          class="mx-3"
           href="https://www.linkedin.com/organization-guest/company/uwb-acm-club"
           target="_blank"
           title="linkedin"
           ><span class="fab fa-linkedin fa-2x"></span
         ></a>
         <a
-          class="col-3"
+          class="mx-3"
           href="https://www.instagram.com/uwb_acm/"
           target="_blank"
           title="instagram"
@@ -73,7 +73,7 @@ var footer_content =
         ></a>
       </div>
       <div
-        class="d-inline-block col-sm-12 mt-4 mb-0"
+        class="d-block row mt-4 mb-0"
         style="text-align: center"
       >
         ` +
@@ -86,8 +86,8 @@ document.getElementById("footer").innerHTML = footer_content;
 
 // ======= START OF SCRIPTS FOR COUNT DOWN ======
 if ((obj = document.getElementById("countdown"))) {
-  const startDate = new Date("Apr 9, 2021 17:30:00").getTime();
-  const endDate = new Date("Apr 11, 2021 00:00:00").getTime();
+  const startDate = new Date("Apr 9, 2021 09:30:00").getTime();
+  const endDate = new Date("Apr 11, 2021 17:00:00").getTime();
   var countDownDate = null;
 
   // Update the count down every 1 second
