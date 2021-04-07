@@ -1,8 +1,8 @@
 // ====== Start of scripts for submitting for Registration form =======
-const startDate = new Date("Apr 8, 2021 00:00:00").getTime();
+const startDate = new Date("Apr 9, 2021 00:00:00").getTime();
 const currentTime = new Date().getTime();
 if (currentTime - startDate >= 0) {
-  // registration form closed on  April 8, 12:00AM
+  // registration form closed on  April 9, 12:00AM
   document.getElementById("myform").style.display = "none";
   // show message
   document.getElementById("late-registration").style.display = "block";
