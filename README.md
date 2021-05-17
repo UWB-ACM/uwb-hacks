@@ -20,3 +20,8 @@ If you are testing locally, there are a few ways of generating CSS from the SASS
 * Use the VSCode plugin [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass); preferred method for [Chris](https://github.com/chris-johnston).
 * Use the [SASS plugin for Gulp (part of Node.js)](https://www.npmjs.com/package/gulp-sass); preferred method for [Lizzy](https://github.com/etcadinfinitum).
 * Use the [Ruby gem](https://rubygems.org/gems/sass/versions/3.4.22).
+
+## How to deploy website
+
+If UWBHacks is to be re-used, in order to deploy the styling and HMTL changes you will need to open a PR to merge into `gh-pages`. gh-pages will deploy the website 
+automatically after changes have been merged.
