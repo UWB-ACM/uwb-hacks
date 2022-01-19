@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>UWB Hacks From Home</title>
+
+    <meta name="description" content="UWB ACM Hackathon Contact" />
+    <meta
+      name="keywords"
+      content="hackathon, uwb acm, uwb events, coding contest, uwb hackathon, uwb hacks, uwb hackathon website, university of washington bothell, virtual hackathon, hackathon april 2021, association for computing machinery hackathon"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q3ES8YLK92"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q3ES8YLK92");
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 body body-purple-bg">
+    <div class="my-auto">
+      <div class="body-content">
+        <header id="header" class="amboy">
+          <nav class="navbar navbar-expand-lg mx-auto">
+            <a class="navbar-brand mx-4" href="../index.html"
+              ><h3>UWB Hacks 2021</h3></a
+            >
+            <button
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-4">
+                  <a id="register" class="nav-link" href="./registration.html"
+                    ><h4>Register</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link" href="sponsors.html"
+                    ><h4>Sponsors</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link active" href="contact.html"
+                    ><h4>Contact</h4></a
+                  >
+                </li>
+                <li class="nav-item mx-4">
+                  <a id="sponsors" class="nav-link" href="faqs.html"
+                    ><h4>FAQ</h4></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div class="container">
+          <h2 class="amboy">Contact us</h2>
+
+          <form
+            class="row"
+            method="post"
+            autocomplete="off"
+            name="contact-form"
+            id="contact-form"
+          >
+            <div class="col-12 my-1">
+              <input
+                type="email"
+                name="Email"
+                class="form-control"
+                placeholder="* Email address"
+                id="contact_email"
+                value=""
+                required=""
+              />
+            </div>
+
+            <div class="col-12 my-1">
+              <input
+                type="text"
+                name="Name"
+                class="form-control"
+                placeholder="* Your name"
+                value=""
+                required=""
+              />
+            </div>
+
+            <div class="col-12 my-1">
+              <textarea
+                id="preferred-consent-input"
+                class="form-control mx-0"
+                type="text"
+                name="Message"
+                placeholder="Leave your message here"
+                value=""
+                style="height: 10vw"
+                required=""
+              ></textarea>
+            </div>
+
+            <!-- Handle submit -->
+
+            <div class="col-12 my-1">
+              <button
+                type="submit"
+                name="send-msg"
+                class="btn btn-lg d-inline-block col-md-12 amboy"
+                value="Send"
+                id="btn-send-msg"
+              >
+                Send
+              </button>
+            </div>
+
+            <div id="send-msg-status" class="col-12"></div>
+
+            <div class="col-lg-3 col-6 my-1 mx-auto">
+              <img
+                class="img-fluid"
+                src="../images/acm_white_bg.png"
+                alt="University of Washington Bothell ACM Logo"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="mt-4 footer-separator"></div>
+
+    <script type="text/javascript" src="../scripts/scripts.js"></script>
+  </body>
+</html>
