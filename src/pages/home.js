@@ -10,8 +10,9 @@ function Home() {
                 <div className="content">
                     <div className="home">
                         <div className="acm_title">
-                            <h1>UWB Hacks the Cloud</h1>
+                            <h1 className="page_title">UWB Hacks the Cloud</h1>
                             <h2>University of Washington Bothell Chapter of the Association for Computing Machinery</h2>
+                            <h2 className="date">April 1st - April 3rd 2022</h2>
                             <br/>
                             <img className="acm_logo" src={acm_logo} alt="ACM logo"/>
                         </div>
