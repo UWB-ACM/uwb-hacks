@@ -32,9 +32,9 @@ function Countdown() {
   }, [now]);
 
   return (
-    <h2>
-      {days} Days {hours} Hours {minutes} Minutes {seconds} Seconds
-    </h2>
+    <p className="text_countdown">
+      {days} Day(s), {hours} Hour(s), {minutes} Minute(s), {seconds} Second(s)
+    </p>
   );
 }
 export default Countdown;

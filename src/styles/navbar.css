@@ -1,0 +1,66 @@
+/* NAVBAR */
+.navbar {
+    display:block;
+    position: fixed;
+    top:0;
+    width:100%;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: fantasy;
+}
+
+.navbar_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 3rem;
+    justify-content: space-between; /* add space between logo/left-side text and other pages */
+    font-size: 2em;    
+    text-transform: uppercase;   
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar_logo {
+    display: inline-block;
+    align-items: center;
+    white-space: nowrap; /* prevent text from wrapping when resized larger */
+}
+
+.navbar_links {
+    display:flex;
+}
+
+.navbar_link-wrapper {
+    display:inline-block; /* aligns text side by side */
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.text_link {
+    text-decoration: none;
+    color:antiquewhite;
+    font-kerning: none;
+    /* 3D text effect */
+    letter-spacing: 0.02em;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #6b61ff;
+    text-shadow: 
+        1px -1px 0 #6b61ff,
+        2px 2px 0 #6b61ff,
+        3px 3px 0 #6b61ff,
+        4px 4px 0 #6b61ff;
+}
+
+.text_link:hover {
+    /* 3D text effect pop out */
+    position: relative; 
+    top: -3px; 
+    left: -3px; 
+    text-shadow: 1px 1px #6b61ff, 
+                2px 2px #6b61ff, 
+                3px 3px #6b61ff, 
+                4px 4px #6b61ff, 
+                5px 5px #6b61ff, 
+                6px 6px #6b61ff;
+}

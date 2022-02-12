@@ -1,10 +1,29 @@
-import Countdown from "./components/Countdown";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Contact from "./pages/contact";
+import FAQ from "./pages/faq";
+import Register from "./pages/register";
+import Home from "./pages/home";
+import Sponsors from "./pages/sponsors";
+import Footer from "./components/footer";
+import './styles/footer.css';
+import './styles/app.css';
+import './styles/navbar.css';
 function App() {
   return (
-    <>
-      <h1>UWB Hacks The Cloud</h1>
-      <Countdown />
-    </>
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Navbar/>} />
+              <Route index element={<Home />}/>
+              <Route path="register" element={<Register />}/>
+              <Route path="sponsors" element={<Sponsors />}/>
+              <Route path="contact" element={<Contact />}/>
+              <Route path="faq" element={<FAQ />}/>
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
