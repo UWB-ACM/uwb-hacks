@@ -5,7 +5,6 @@ import FAQ from "./pages/faq";
 import Register from "./pages/register";
 import Home from "./pages/home";
 import Sponsors from "./pages/sponsors";
-import Footer from "./components/footer";
 import './styles/footer.css';
 import './styles/app.css';
 import './styles/navbar.css';
@@ -22,7 +21,6 @@ function App() {
               <Route path="faq" element={<FAQ />}/>
         </Routes>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

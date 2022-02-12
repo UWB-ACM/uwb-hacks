@@ -1,8 +1,7 @@
 .footer {
     display:block;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    margin-top:2em;
     background: rgba(0, 0, 0, 0.3);
 }
 

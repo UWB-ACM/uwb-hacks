@@ -1,11 +1,11 @@
 /* NAVBAR */
 .navbar {
     display:block;
-    position: fixed;
     top:0;
     width:100%;
     background: rgba(0, 0, 0, 0.3);
     font-family: fantasy;
+    margin-bottom:2em;
 }
 
 .navbar_wrapper {

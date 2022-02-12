@@ -1,14 +1,15 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 function Contact() {
     return (
-        <>
-            <Navbar />
-            <div className="contact">
-                <div className="contact_wrapper">
-                    <h2 className="page_title">Contact Us</h2>
+        <>  
+            <div className="wrapper">
+                <Navbar />
+                <div className="content">
+                    <h1 className="page_title">Contact Us</h1>
                         
-                    
                 </div>
+                <Footer/>
             </div>
         </>
     );
