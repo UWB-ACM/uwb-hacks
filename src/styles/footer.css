@@ -2,7 +2,6 @@
     display:block;
     width: 100%;
     margin-top:2em;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 .footer_wrapper {
@@ -22,7 +21,6 @@
 
 .footer_text {
     text-decoration: none;
-    color:antiquewhite;
     font-size:1.5em;
     font-family: monospace;
 }
@@ -41,6 +39,6 @@
     margin-right: 1.25rem;
 }
 
-.footer_link a {
-    color:antiquewhite;
+.footer_link a, .footer_text{
+    color:#f0eff4;
 }

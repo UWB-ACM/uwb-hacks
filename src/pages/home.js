@@ -8,7 +8,7 @@ function Home() {
             <div className="wrapper">
                 <Navbar />
                 <div className="content">
-                    <div className="home">
+                    <div className="col-12 home">
                         <div className="acm_title">
                             <h1 className="page_title">UWB Hacks the Cloud</h1>
                             <h2>University of Washington Bothell Chapter of the Association for Computing Machinery</h2>

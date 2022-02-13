@@ -1,10 +1,10 @@
 /* NAVBAR */
 .navbar {
     display:block;
+    position: sticky;
     top:0;
     width:100%;
-    background: rgba(0, 0, 0, 0.3);
-    font-family: fantasy;
+    font-family: FranklinGothic;
     margin-bottom:2em;
 }
 
@@ -34,18 +34,18 @@
 
 .navbar_link-wrapper {
     display:inline-block; /* aligns text side by side */
-    margin-left: 1.25rem;
+    margin-left: 1.75rem;
     margin-right: 1.25rem;
 }
 
 .text_link {
     text-decoration: none;
-    color:antiquewhite;
+    color:#f0eff4;
     font-kerning: none;
     /* 3D text effect */
     letter-spacing: 0.02em;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #6b61ff;
+    /* -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #6b61ff; */
     text-shadow: 
         1px 1px 0 #6b61ff,
         2px 2px 0 #6b61ff,

@@ -12,13 +12,14 @@
 
 .home .date {
     font-size: 3em;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: #6b61ff;
+    color:#fadda2;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
 }
 
 .acm_logo {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /* COUNTDOWN TIMER */
@@ -26,12 +27,11 @@
 .countdown p {
     padding: 1rem;
     font-size: 1.9em;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: #6b61ff;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
 }
 
 .countdown_box {
-    background: rgba(0, 0, 0, 0.3);
     padding:0.5rem;
     border-radius: 10px;
     width: 700px;
@@ -45,7 +45,8 @@
     font-size: 3.5em !important;
     letter-spacing: 0.1em;
     letter-spacing: 0.02em;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: #6b61ff;
+    color:#f0eff4;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
     
 }

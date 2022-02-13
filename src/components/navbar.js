@@ -15,20 +15,12 @@ function Navbar() {
                             <li className="navbar_link-wrapper">
                                 <Link className="text_link" to="/register">Register</Link>
                             </li>
-
-                            {/* <li className="navbar_link-wrapper">
-                                <Link className="text_link" to="/sponsors">Sponsors</Link>
-                            </li> */}
-
                             <li className="navbar_link-wrapper">
                                 <Link className="text_link" to="/contact">Contact</Link>
                             </li>
-
-                            {/* <li className="navbar_link-wrapper">
-                                <Link className="text_link" to="/faq">FAQ</Link>
-                            </li> */}
                         </ul>
                     </div>
+                
                 </div>
             </nav>
             <Outlet /> 

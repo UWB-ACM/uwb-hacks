@@ -24,7 +24,7 @@ function Contact() {
         <>  
             <div className="wrapper">
                 <Navbar />
-                <div className="content">
+                <div className="content col-12">
                     <h1 className="page_title">Contact Us</h1>
                     <form className="contact_form" autoComplete="off" ref = {form} onSubmit={sendEmail}>
                         <input
