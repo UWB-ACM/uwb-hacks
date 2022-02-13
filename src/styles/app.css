@@ -22,12 +22,11 @@
     min-height: 100vh;
 }
 .content {
-    text-transform: uppercase;
     text-align: center;
     margin:auto;
-    max-width:1000px;
+    width:1000px;
     flex:1;
-    color:antiquewhite;
+    color:#f0eff4;
 }
 
 .page_title {
@@ -38,56 +37,10 @@
     -webkit-text-stroke: 0.5px;
     -webkit-text-stroke-color: #6b61ff;
     text-shadow: 
-        1px -1px 0 #6b61ff,
+        1px 1px 0 #6b61ff,
         2px 2px 0 #6b61ff,
         3px 3px 0 #6b61ff,
         4px 4px 0 #6b61ff,
         5px 5px 0 #6b61ff,
         6px 6px 0 #6b61ff;
-}
-
-.acm_title .page_title {
-    font-size: 3em;
-    margin-bottom: 0.25em;
-    
-}
-
-.home h2 {
-    font-family: monospace;
-    font-size: 2em;
-    margin-top: 0.25em;
-}
-
-.home .date {
-    font-size: 3em;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: #6b61ff;
-}
-
-.acm_logo {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-/* COUNTDOWN TIMER */
-
-.countdown p {
-    padding: 1rem;
-    font-size: 1.9em;
-    
-    
-}
-
-.countdown_box {
-    background: rgba(0, 0, 0, 0.3);
-    padding:1rem;
-}
-
-.text_countdown {
-    font-size: 2.5em !important;
-    letter-spacing: 0.1em;
-    color:antiquewhite;
-    letter-spacing: 0.02em;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: #6b61ff;
 }

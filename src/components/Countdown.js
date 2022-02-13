@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 function Countdown() {
   const hDate = new Date(2022, 3, 1, 19);
   const [now, setNow] = useState(new Date());
@@ -22,18 +23,18 @@ function Countdown() {
 
   useEffect(() => {
     let dif = parseInt(hDate - now);
-    setDays(parseInt(dif / msPerDay));
+    setDays(parseInt(Math.floor(dif / msPerDay)));
     dif -= days * msPerDay;
-    setHours(parseInt(dif / msPerHour));
+    setHours(parseInt(Math.floor(dif / msPerHour)));
     dif -= hours * msPerHour;
-    setMinutes(parseInt(dif / msPerMinute));
+    setMinutes(parseInt(Math.floor(dif / msPerMinute)));
     dif -= minutes * msPerMinute;
-    setSeconds(parseInt(dif / msPerSecond));
+    setSeconds(parseInt(Math.floor(dif / msPerSecond)));
   }, [now]);
 
   return (
     <p className="text_countdown">
-      {days} Day(s), {hours} Hour(s), {minutes} Minute(s), {seconds} Second(s)
+      {days}d {hours}h {minutes}m {seconds}s
     </p>
   );
 }

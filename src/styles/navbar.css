@@ -25,6 +25,7 @@
     display: inline-block;
     align-items: center;
     white-space: nowrap; /* prevent text from wrapping when resized larger */
+    font-size: 1.2em;
 }
 
 .navbar_links {
@@ -46,7 +47,7 @@
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: #6b61ff;
     text-shadow: 
-        1px -1px 0 #6b61ff,
+        1px 1px 0 #6b61ff,
         2px 2px 0 #6b61ff,
         3px 3px 0 #6b61ff,
         4px 4px 0 #6b61ff;

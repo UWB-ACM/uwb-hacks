@@ -8,6 +8,8 @@ import Sponsors from "./pages/sponsors";
 import './styles/footer.css';
 import './styles/app.css';
 import './styles/navbar.css';
+import './styles/home.css';
+import './styles/contact.css';
 function App() {
   return (
     <div className="container">
