@@ -9,9 +9,9 @@ function Footer() {
         <>
             <div className="footer">
                 <div className="footer_wrapper">
-                    <div className="footer_top">
+                    <div className="footer_top_links">
                         <a
-                            className="footer_text"
+                            className="footer_link"
                             href=""
                             title="Code of Conduct"
                         >
@@ -19,7 +19,7 @@ function Footer() {
                         </a>
                         <br />
                         <a
-                            className="footer_text"
+                            className="footer_link"
                             href="mailto:uwbacm@uw.edu"
                             title="Contact us via email"
                         >
@@ -27,7 +27,7 @@ function Footer() {
                         </a>
                     </div>
                     <br />
-                    <div className="footer_links">
+                    <div className="footer_bot_links">
                         <ul>
                             <li className="footer_link">
                                 <a 
@@ -36,7 +36,7 @@ function Footer() {
                                     title="discord" 
                                     rel="noreferrer"
                                 >
-                                    <FontAwesomeIcon icon = {faDiscord} />
+                                    <FontAwesomeIcon className="icon" icon = {faDiscord} />
                                 </a>
                             </li>
                             <li className="footer_link">
@@ -46,7 +46,7 @@ function Footer() {
                                     title="instagram"
                                     rel="noreferrer"
                                 >
-                                    <FontAwesomeIcon icon = {faInstagram} />
+                                    <FontAwesomeIcon className="icon" icon = {faInstagram} />
                                 </a>
                             </li>
                             <li className="footer_link">
@@ -56,7 +56,7 @@ function Footer() {
                                     title="facebook"
                                     rel="noreferrer"
                                 >
-                                    <FontAwesomeIcon icon = {faFacebook} />
+                                    <FontAwesomeIcon className="icon" icon = {faFacebook} />
                                 </a>
                             </li>
                             <li className="footer_link">
@@ -66,7 +66,7 @@ function Footer() {
                                     title="linkedin"
                                     rel="noreferrer"
                                 >
-                                    <FontAwesomeIcon icon = {faLinkedin} />
+                                    <FontAwesomeIcon className="icon" icon = {faLinkedin} />
                                 </a>
                             </li>
                         </ul>

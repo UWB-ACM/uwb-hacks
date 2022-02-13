@@ -21,7 +21,12 @@
 }
 
 .navbar ,.footer, .countdown_box {
-    background: rgba(0,0,0, 0.3);
+    background: rgba(79, 72, 189, 0.5);
+}
+
+.navbar .text_link, .footer_link, .footer_text, .footer_link a {
+    color:#f0eff4;
+    text-decoration: none;
 }
 
 /* HOME */
