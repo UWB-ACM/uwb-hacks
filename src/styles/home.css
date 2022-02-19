@@ -1,0 +1,54 @@
+.acm_title .page_title {
+    font-size: 3em;
+    margin-bottom: 0.25em;
+    
+}
+
+.home h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    margin-top: 0.25em;
+}
+
+.home .date {
+    font-size: 2.5em;
+    color:#fadda2;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
+}
+
+.acm_logo {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* COUNTDOWN TIMER */
+
+.countdown p {
+    padding: 1rem;
+    font-size: 1.9em;
+    font-family:'Lucida Sans';
+    font-weight: 500;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
+}
+
+.countdown_box {
+    padding:0.5rem;
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+    /* border-color: #6b61ff;
+    border-style: solid;
+    border-width: 0.25em; */
+}
+
+.text_countdown {
+    font-size: 3.5em !important;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
+    color:#fadda2;
+    /* -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #6b61ff; */
+    
+}

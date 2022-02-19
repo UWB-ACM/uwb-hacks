@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: FranklinGothic;
+    src: url("../fonts/Franklin_Gothic_Black_SSi_Black.ttf") format('truetype');
+}
+
+.container {
+    background-image: url(../images/plainbg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* resize image to fill screen */
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    
+}
+
+.navbar ,.footer, .countdown_box {
+    background: rgba(79, 72, 189, 0.5);
+}
+
+.navbar .text_link, .footer_link, .footer_text, .footer_link a {
+    color:#f0eff4;
+    text-decoration: none;
+}
+
+/* HOME */
+.wrapper {
+    font-family: FranklinGothic;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+    margin:auto;
+    max-width:1000px;
+    flex:1;
+    color:#f0eff4;
+}
+
+.page_title {
+    font-size: 2.5em;
+    font-kerning: none;
+    /* 3D text effect */
+    letter-spacing: 0.02em;
+    text-shadow:
+    1px 1px 0 #6b61ff,
+    2px 2px 0 #6b61ff,
+    3px 3px 0 #6b61ff,
+    4px 4px 0 #6b61ff,
+    5px 5px 0 #6b61ff,
+    6px 6px 0 #6b61ff;
+
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+[class*="col-"] {
+    width: 100%;
+  }
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
