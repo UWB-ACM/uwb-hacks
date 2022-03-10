@@ -1,0 +1,49 @@
+.formcontainer {
+  width: 30rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f0eff4;
+}
+
+.regTitle {
+  font-size: 2.5em;
+  font-feature-settings: "kern" off;
+  font-kerning: none;
+  padding-bottom: 1rem;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 0 #6b61ff, 2px 2px 0 #6b61ff, 3px 3px 0 #6b61ff,
+    4px 4px 0 #6b61ff, 5px 5px 0 #6b61ff, 6px 6px 0 #6b61ff;
+}
+
+.labelTitle {
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+}
+
+.registerBtn {
+  background-color: #6b61ff;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: #f0eff4;
+  font-size: 1.5em;
+}
+
+.registerBtn:hover {
+    background-color: #f0eff4;
+    color: #6b61ff;
+}
+
+

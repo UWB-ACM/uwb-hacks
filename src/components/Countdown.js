@@ -14,8 +14,8 @@ function Countdown() {
 
   useEffect(() => {
     let id = setInterval(() => {
-        setNow(new Date());
-      }, 1000);
+      setNow(new Date());
+    }, 1000);
     return () => {
       clearInterval(id);
     };
@@ -23,19 +23,22 @@ function Countdown() {
 
   useEffect(() => {
     let dif = parseInt(hDate - now);
-    setDays(parseInt(Math.floor(dif / msPerDay)));
+    setDays(parseInt(dif / msPerDay));
     dif -= days * msPerDay;
-    setHours(parseInt(Math.floor(dif / msPerHour)));
+    setHours(parseInt(dif / msPerHour));
     dif -= hours * msPerHour;
-    setMinutes(parseInt(Math.floor(dif / msPerMinute)));
+    setMinutes(parseInt(dif / msPerMinute));
     dif -= minutes * msPerMinute;
-    setSeconds(parseInt(Math.floor(dif / msPerSecond)));
-  }, [now]);
+    setSeconds(parseInt(dif / msPerSecond));
+  }, [days, hDate, hours, minutes, msPerDay, msPerHour, msPerMinute, now]);
 
   return (
-    <p className="text_countdown">
-      {days}d {hours}h {minutes}m {seconds}s
-    </p>
+    <h2>
+      {days} {days === 1 ? "Day" : "Days"} {hours}{" "}
+      {hours === 1 ? "Hour" : "Hours"} {minutes}{" "}
+      {minutes === 1 ? "Minute" : "Minutes"} {seconds}{" "}
+      {seconds === 1 ? "Second" : "Seconds"}
+    </h2>
   );
 }
 export default Countdown;

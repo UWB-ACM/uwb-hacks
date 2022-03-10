@@ -8,6 +8,15 @@
     src: url("../fonts/Franklin_Gothic_Black_SSi_Black.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: ModernSans-Light;
+    src: url("../fonts/ModernSans-Light.otf") format('otf');
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
 .container {
     background-image: url(../images/plainbg2.png);
     background-position: center;

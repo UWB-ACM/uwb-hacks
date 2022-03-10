@@ -17,7 +17,7 @@ function Footer() {
                         >
                             Code of Conduct
                         </a>
-                        <br />
+                        <div>
                         <a
                             className="footer_link"
                             href="mailto:uwbacm@uw.edu"
@@ -25,8 +25,8 @@ function Footer() {
                         >
                             Email us
                         </a>
+                        </div>
                     </div>
-                    <br />
                     <div className="footer_bot_links">
                         <ul>
                             <li className="footer_link">
@@ -71,7 +71,6 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <br />
                     <div className="footer_copyright">
                         <p className="footer_text">
                             Copyright © UWB ACM {curr_year}
