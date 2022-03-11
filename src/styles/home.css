@@ -101,7 +101,7 @@
 }
 
 .husky .husky_image {
-    z-index: 100;
+    z-index: 1;
     transform: scale(0.9) translateY(2rem);
 }
 
