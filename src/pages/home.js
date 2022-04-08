@@ -4,6 +4,9 @@ import Countdown from "../components/Countdown";
 import BlueCard from "../components/BlueCard";
 import HuskyCard from "../components/HuskyCard";
 import acm_logo from "../images/acm_white_bg.png";
+import sustain_logo from "../images/sustainability_trackLogo.png";
+import edu_logo from "../images/education_trackLogo.png";
+import entertain_logo from "../images/entertainment_trackLogo.png";
 import { ReactComponent as Title } from "../images/title.svg";
 function Home() {
   return (
@@ -26,9 +29,12 @@ function Home() {
               <div className="countdown_box">
                 <Countdown />
               </div>
-              <HuskyCard title={<span>Tracks</span>} />
+              
+            </div>
+            <HuskyCard title={<span>Tracks</span>} />
               <div className="track_box">
                 <BlueCard
+                  image={<img src={sustain_logo} alt="Sustainability Logo" className="track-img"/>}
                   title={<h1 className="bc_header">Sustainability</h1>}
                   content={
                     <p className="bc_content">
@@ -41,6 +47,7 @@ function Home() {
                   }
                 />
                 <BlueCard
+                  image={<img src={edu_logo} alt="Education Logo" className="track-img"/>}
                   title={<h1 className="bc_header">Education</h1>}
                   content={
                     <p className="bc_content">
@@ -53,7 +60,9 @@ function Home() {
                     </p>
                   }
                 />
+                
                 <BlueCard
+                  image={<img src={entertain_logo} alt="Entertainment Logo" className="track-img"/>}
                   title={<h1 className="bc_header">Entertainment</h1>}
                   content={
                     <p className="bc_content">
@@ -68,7 +77,6 @@ function Home() {
                   }
                 />
               </div>
-            </div>
           </div>
         </div>
         <Footer />
