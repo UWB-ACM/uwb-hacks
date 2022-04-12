@@ -57,17 +57,16 @@
 .track_box {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    column-gap: 2rem;
-    margin: 2rem;
+    column-gap: 4rem;
+    margin-top: 2rem;
     justify-content: center; 
 }
 
 .track_box .bc_header {
     display: flex;
     color: #fadda2;
-    font-size: 1.875rem;
+    font-size: 2rem;
     line-height: 2.25rem;
-    padding-left: 15px;
     text-shadow: 3px 3px rgb(0 0 0 / 10%);
 }
 
@@ -75,21 +74,21 @@
     font-family: sans-serif;
     color: rgb(240, 239, 244);
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     line-height: 1.75rem;
     text-align: left;
     text-shadow: 2px 2px rgb(0 0 0 / 10%);
+    padding-top: 1rem;
 }
 
 .track_box .bluecard-outer {
-    display:grid;
-    grid-template-columns: 100%;
 }
 
 .track_box .bluecard-inner {
     border-radius: 10px;
     background-color: rgb(142 205 230);
-    padding: 25px 5px;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
 }
 
 .husky {
@@ -113,5 +112,15 @@
 .husky .tracks {
     border-radius: 10px;
     background-color: rgb(142 205 230);
-    padding: 25px 5px; 
+    padding: 1.5rem;
+}
+
+.track-img {
+    z-index: 1;
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.outer-img {
+    padding-bottom: 1.5rem;
 }
