@@ -1,52 +1,20 @@
 .contact_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    margin-top: 2em;
-    height: 400px;
-    width: 800px;
+  width: 45rem;
+  border-radius: 1rem;
+  text-align: center;
+  backdrop-filter: blur(1.5rem);
+  padding: 1rem 5rem 1rem 5rem;
 }
 
-.contact_form textarea, .contact_form input { 
-    outline: none; 
-}
-
-.contact_form input, .contact_form textarea {
-    margin: 0.2em;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #f0eff4;
-}
-
-.contact_form input {
-    border-radius: 4px;
-    padding:0.5em;
-}
-
-.contact_form button {
-    margin:0.2em;
-    font-size: 1.5em;
-    font-family: FranklinGothic;
-    padding: 0.5em;
-    border-radius: 10px;
-    
-    color: #66a1ff;
-    background-color: #f0eff4;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.contact_form textarea {
-    height: 300px;
-    font-size: 1.2em;
-    border-radius: 5px;
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  font-size: 0.9rem;
 }
 
 .contact_p {
-    font-family: 'Lucida Sans' !important;
-    font-size: 1.2em;
+  font-family: "Lucida Sans" !important;
+  font-size: 1.2em;
 }

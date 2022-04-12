@@ -1,7 +1,14 @@
 .formcontainer {
-  width: 30rem;
-  border-radius: 10px;
+  width: 45rem;
+  border-radius: 2rem;
   text-align: center;
+  backdrop-filter: blur(0.4rem);
+  padding: 1rem 5rem 1rem 5rem;
+}
+
+.blueOpacity {
+  background-color: hsla(197, 76%, 81%, 0.233);
+  border-radius: 2rem;
 }
 
 input[type="text"],
@@ -12,6 +19,14 @@ input[type="email"] {
   display: inline-block;
   border: none;
   background: #f0eff4;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
 }
 
 .regTitle {
@@ -28,6 +43,7 @@ input[type="email"] {
   text-align: left;
   display: block;
   font-size: 1.5em;
+  color: #f0eff4;
 }
 
 .registerBtn {
@@ -42,8 +58,6 @@ input[type="email"] {
 }
 
 .registerBtn:hover {
-    background-color: #f0eff4;
-    color: #6b61ff;
+  background-color: #f0eff4;
+  color: #6b61ff;
 }
-
-
