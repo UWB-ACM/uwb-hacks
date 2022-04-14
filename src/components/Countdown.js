@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Countdown() {
-  const hDate = new Date(2022, 4, 13, 19);
+  const hDate = new Date(2022, 4, 13, 18);
   const [now, setNow] = useState(new Date());
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -33,7 +33,7 @@ function Countdown() {
   }, [days, hDate, hours, minutes, msPerDay, msPerHour, msPerMinute, now]);
 
   return (
-    <h2>
+    <h2 className="countdown_text">
       {days} {days === 1 ? "Day" : "Days"} {hours}{" "}
       {hours === 1 ? "Hour" : "Hours"} {minutes}{" "}
       {minutes === 1 ? "Minute" : "Minutes"} {seconds}{" "}

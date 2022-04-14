@@ -13,12 +13,32 @@
     src: url("../fonts/ModernSans-Light.otf") format('otf');
 }
 
+@font-face {
+    font-family: FredokaOne;
+    src: url("../fonts/FredokaOne-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: KanitThin;
+    src: url("../fonts/Kanit-Thin.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: KanitRegular;
+    src: url("../fonts/Kanit-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: ArimoSemiBold;
+    src: url("../fonts/Arimo-SemiBold.ttf") format('truetype');
+}
+
 h2 {
     margin-bottom: 16px;
 }
 
 .container {
-    background-image: url(../images/plainbg2.png);
+    background-image: url(../images/bg3.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,6 +51,10 @@ h2 {
 
 .navbar ,.footer, .countdown_box {
     background: rgba(79, 72, 189, 0.5);
+}
+
+.navbarBlur, .footerBlur {
+    backdrop-filter: blur(0.4rem);
 }
 
 .navbar .text_link, .footer_link, .footer_text, .footer_link a {

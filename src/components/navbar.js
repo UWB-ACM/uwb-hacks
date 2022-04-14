@@ -3,7 +3,9 @@ import { Outlet, Link } from "react-router-dom";
 function Navbar() {
     return (
         <>
+            
             <nav className="navbar">
+            <div className="navbarBlur">
                 <div className="navbar_wrapper">
                     <ul className="navbar_logo">
                         <li>
@@ -21,6 +23,7 @@ function Navbar() {
                         </ul>
                     </div>
                 
+                </div>
                 </div>
             </nav>
             <Outlet /> 
