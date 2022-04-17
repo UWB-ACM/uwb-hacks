@@ -6,6 +6,7 @@ function Register() {
   const [dispTMField, setDispTMField] = useState(false);
   const [dispHearField, setDispHearField] = useState(false);
   const [dispSchoolField, setDispSchoolField] = useState(false);
+  const [dispGenderField, setDispGenderField] = useState(false);
   return (
     <>
       <div className="wrapper">
@@ -45,11 +46,16 @@ function Register() {
                     schoolSelect.options[schoolSelect.selectedIndex].value;
                   if (schoolValue === "other") setDispSchoolField(true);
                   else setDispSchoolField(false);
+                  var genderSelect = document.getElementById("gender");
+                  var genderValue =
+                    genderSelect.options[genderSelect.selectedIndex].value;
+                  if (genderValue === "other") setDispGenderField(true);
+                  else setDispGenderField(false);
                 }}
                 id="rform"
               >
                 <label className="labelTitle">
-                  First Name:
+                  First Name: *
                   <input
                     name="FirstName"
                     type="text"
@@ -58,7 +64,7 @@ function Register() {
                   />
                 </label>
                 <label className="labelTitle">
-                  Last Name:
+                  Last Name: *
                   <input
                     name="LastName"
                     type="text"
@@ -67,7 +73,7 @@ function Register() {
                   />
                 </label>
                 <label className="labelTitle">
-                  Email:
+                  Email: *
                   <input
                     name="Email"
                     type="email"
@@ -76,7 +82,43 @@ function Register() {
                   />
                 </label>
                 <label className="labelTitle">
-                  Do you have a team?
+                  You are a... *
+                  <select id="youarea" name="You are a...">
+                    <option value="high school student">High School Student</option>
+                    <option value="undergrad student">Undergraduate Student</option>
+                    <option value="graduate student">Graduate Student</option>
+                    <option value="working professional">Working Professional</option>
+                  </select>
+                </label>
+                <label className="labelTitle">
+                  What is your age range? *
+                  <select id="agerange" name="What is your age range?">
+                    <option value="15-20">15-20</option>
+                    <option value="21-25">21-25</option>
+                    <option value="26-30">26-30</option>
+                    <option value="30+">30+</option>
+                  </select>
+                </label>
+                <label className="labelTitle">
+                  Institutional affiliation (school, employer...): *
+                  <input
+                    name="Institutional Affiliation"
+                    type="text"
+                    placeholder="Institutional Affiliation"
+                    required
+                  />
+                </label>
+                <label className="labelTitle">
+                  What country and timezone (EST, PST, MST...) are you located in? *
+                  <input
+                    name="Country and TimeZone"
+                    type="text"
+                    placeholder="Country and Timezone"
+                    required
+                  />
+                </label>
+                <label className="labelTitle">
+                  Do you have a team? *
                   <select id="team" name="HasATeam">
                     <option value="looking for teammates">
                       I'm looking for teammates
@@ -87,7 +129,7 @@ function Register() {
                 </label>
                 {dispTMField && (
                   <label className="labelTitle">
-                    Emails of Team Members:
+                    Emails of Team Members: *
                     <input
                       name="TeamMemberEmails"
                       type="text"
@@ -97,7 +139,7 @@ function Register() {
                   </label>
                 )}
                 <label className="labelTitle">
-                  How Did You Hear About Us?
+                  How Did You Hear About Us? *
                   <select id="HearAboutUs" name="HearAboutUs">
                     <option value="discord">Discord</option>
                     <option value="wordofmouth">Word of Mouth</option>
@@ -115,12 +157,12 @@ function Register() {
                   <input
                     name="HearAboutUsOther"
                     type="text"
-                    placeholder="Other Way You Heard About Us"
+                    placeholder="Other Way You Heard About Us *"
                     required
                   />
                 )}
                 <label className="labelTitle">
-                  School
+                  School *
                   <select id="school" name="School">
                     <option value="University of Washington,Bothell">
                       University of Washington, Bothell
@@ -140,17 +182,55 @@ function Register() {
                   <input
                     name="SchoolOther"
                     type="text"
-                    placeholder="School"
+                    placeholder="School *"
                     required
                   />
                 )}
                 <label className="labelTitle">
-                  What are you looking to get out of the Hackathon?
+                  What are you looking to get out of the Hackathon? *
                   <input
                     name="What are you looking to get out of the Hackathon?"
                     type="text"
                     placeholder="What are you looking to get out of the Hackathon?"
                     required
+                  />
+                </label>
+                <label className="labelTitle">
+                  Race/Ethnicity
+                  <input
+                    name="Race/Ethnicity"
+                    type="text"
+                    placeholder="Race/Ethnicity"
+                  />
+                </label>
+
+                <label className="labelTitle">
+                  Gender
+                  <select id="gender" name="Gender">
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Agender">Agender</option>
+                    <option value="Genderqueer/Nonbinary">
+                      Genderqueer/Nonbinary
+                    </option>
+                    <option value="Transgender">Transgender</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+                {dispGenderField && (
+                  <input
+                    name="GenderOther"
+                    type="text"
+                    placeholder="Other"
+                  />
+                )}
+                <label className="labelTitle">
+                  Is there anything else you would like us to know?
+                  <input
+                    name="Anything else you would like us to know?"
+                    type="text"
+                    placeholder="Anything else you would like us to know?"
                   />
                 </label>
                 <input
@@ -159,6 +239,7 @@ function Register() {
                   type="submit"
                   value={registerBtn}
                 />
+                <p className="contact_p">* Indicates required field</p>
               </form>
             </div>
           </div>
