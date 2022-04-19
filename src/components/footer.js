@@ -28,7 +28,7 @@ function Footer() {
               <ul>
                 <li className="footer_link">
                   <a
-                    href="https://discord.gg/tCq2FKFcnh"
+                    href="https://discord.gg/35F3Dc2UjU"
                     target="_blank"
                     title="discord"
                     rel="noreferrer"
