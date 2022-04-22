@@ -25,9 +25,7 @@ function Footer() {
               </div>
             </div>
             <div className="footer_bot_links">
-              <ul>
-                <li className="footer_link">
-                  <a
+                  <a className="footer_link"
                     href="https://discord.gg/35F3Dc2UjU"
                     target="_blank"
                     title="discord"
@@ -35,9 +33,7 @@ function Footer() {
                   >
                     <FontAwesomeIcon className="icon" icon={faDiscord} />
                   </a>
-                </li>
-                <li className="footer_link">
-                  <a
+                  <a className="footer_link"
                     href="https://www.instagram.com/uwb_acm/"
                     target="_blank"
                     title="instagram"
@@ -45,9 +41,7 @@ function Footer() {
                   >
                     <FontAwesomeIcon className="icon" icon={faInstagram} />
                   </a>
-                </li>
-                <li className="footer_link">
-                  <a
+                  <a className="footer_link"
                     href="https://www.facebook.com/uwbacm"
                     target="_blank"
                     title="facebook"
@@ -55,9 +49,7 @@ function Footer() {
                   >
                     <FontAwesomeIcon className="icon" icon={faFacebook} />
                   </a>
-                </li>
-                <li className="footer_link">
-                  <a
+                  <a className="footer_link"
                     href="https://www.linkedin.com/organization-guest/company/uwb-acm-club"
                     target="_blank"
                     title="linkedin"
@@ -65,8 +57,6 @@ function Footer() {
                   >
                     <FontAwesomeIcon className="icon" icon={faLinkedin} />
                   </a>
-                </li>
-              </ul>
             </div>
             <div className="footer_copyright">
               <p className="footer_text">Copyright © UWB ACM {curr_year}</p>
