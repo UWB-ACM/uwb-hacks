@@ -35,7 +35,7 @@ function Contact() {
         <Navbar />
         <div className="content">
           <div className="blueOpacity">
-            <div className="contact_form">
+            <div className="formcontainer">
               <form autoComplete="off" ref={form} onSubmit={sendEmail}>
                 <h1 className="regTitle">Contact Us</h1>
                 <label className="labelTitle">

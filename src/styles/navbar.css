@@ -6,15 +6,12 @@
     top:0;
     width:100%;
     font-family: FranklinGothic;
-    margin-bottom:2em;
 }
 
 .navbar_wrapper {
     display: flex;
     align-items: center;
-    padding: 1rem;
     justify-content: space-between; /* add space between logo/left-side text and other pages */
-    font-size: 1.8em;    
     text-transform: uppercase;   
 }
 
@@ -26,7 +23,7 @@
     display: inline-block;
     align-items: center;
     white-space: nowrap; /* prevent text from wrapping when resized larger */
-    font-size: 1.2em;
+    
 }
 
 .navbar_links {
@@ -35,8 +32,9 @@
 
 .navbar_link-wrapper {
     display:inline-block; /* aligns text side by side */
-    margin-left: 1.75rem;
-    margin-right: 1.25rem;
+    
+    margin-left: 1rem;
+    margin-right: 0.75rem;
 }
 
 .text_link {
@@ -52,16 +50,6 @@
         3px 3px 0 #6b61ff,
         4px 4px 0 #6b61ff; */
 }
-
 .text_link:hover {
-    /* 3D text effect pop out */
-    position: relative; 
-    top: -3px; 
-    left: -3px; 
-    text-shadow: 1px 1px #66a1ff, 
-                2px 2px #66a1ff, 
-                3px 3px #66a1ff, 
-                4px 4px #66a1ff, 
-                5px 5px #66a1ff, 
-                6px 6px #66a1ff;
+    color: #fadda2;
 }
