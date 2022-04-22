@@ -224,13 +224,6 @@ function Register() {
                     placeholder="Other"
                   />
                 )}
-                
-                <label className="labelTitle" id ="trans">
-                   Transgender
-                  <input type="checkbox" id ="transgender" name="Transgender"> 
-                  </input>
-                </label>
-                <br></br>
 
                 <label className="labelTitle">
                   Is there anything else you would like us to know?
