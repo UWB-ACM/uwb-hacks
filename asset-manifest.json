@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uwb-hacks/static/css/main.aed65dc8.css",
-    "main.js": "/uwb-hacks/static/js/main.1cab8ed7.js",
+    "main.css": "/uwb-hacks/static/css/main.7744c9d0.css",
+    "main.js": "/uwb-hacks/static/js/main.2df37360.js",
     "static/js/787.ae14528d.chunk.js": "/uwb-hacks/static/js/787.ae14528d.chunk.js",
     "static/media/husky.svg": "/uwb-hacks/static/media/husky.aa5cb325eb72777a78330527867c3979.svg",
     "static/media/bg3.png": "/uwb-hacks/static/media/bg3.f6cc4123bcbbc11214ed.png",
@@ -9,26 +9,20 @@
     "static/media/acm_white_bg.png": "/uwb-hacks/static/media/acm_white_bg.304d8976df2ebdc4b3c6.png",
     "static/media/Kanit-Regular.ttf": "/uwb-hacks/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
     "static/media/Kanit-Thin.ttf": "/uwb-hacks/static/media/Kanit-Thin.2e32ea46402cf7c9bcb4.ttf",
-    "static/media/entertainment_trackLogo.png": "/uwb-hacks/static/media/entertainment_trackLogo.d7563e91dd0b6c2ed108.png",
     "static/media/entertainment_trackLogo_lightblue.png": "/uwb-hacks/static/media/entertainment_trackLogo_lightblue.3327bf9927c188fdd097.png",
-    "static/media/entertainment_trackLogo_darkblue.png": "/uwb-hacks/static/media/entertainment_trackLogo_darkblue.7c115630bb4409339e8e.png",
-    "static/media/education_trackLogo.png": "/uwb-hacks/static/media/education_trackLogo.b249e123786187e9f558.png",
-    "static/media/education_trackLogo_darkblue.png": "/uwb-hacks/static/media/education_trackLogo_darkblue.c3f243c863c987ac99d3.png",
-    "static/media/sustainability_trackLogo.png": "/uwb-hacks/static/media/sustainability_trackLogo.710e5e094edf2cf9fea2.png",
     "static/media/education_trackLogo_lightblue.png": "/uwb-hacks/static/media/education_trackLogo_lightblue.2d360ade522aa0af5b25.png",
     "static/media/sustainability_trackLogo_lightblue.png": "/uwb-hacks/static/media/sustainability_trackLogo_lightblue.9f384c4b42643e5f3ce5.png",
-    "static/media/sustainability_trackLogo_darkblue.png": "/uwb-hacks/static/media/sustainability_trackLogo_darkblue.079977076ff409e9b85b.png",
     "static/media/FredokaOne-Regular.ttf": "/uwb-hacks/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
     "static/media/Franklin_Gothic_Black_SSi_Black.ttf": "/uwb-hacks/static/media/Franklin_Gothic_Black_SSi_Black.33e8725ab3f584e2b0e9.ttf",
     "static/media/ModernSans-Light.otf": "/uwb-hacks/static/media/ModernSans-Light.bebb6d2d7adb7481905a.otf",
     "static/media/title.svg": "/uwb-hacks/static/media/title.95cc670ea078c2099d004bbf0fd97ef3.svg",
     "index.html": "/uwb-hacks/index.html",
-    "main.aed65dc8.css.map": "/uwb-hacks/static/css/main.aed65dc8.css.map",
-    "main.1cab8ed7.js.map": "/uwb-hacks/static/js/main.1cab8ed7.js.map",
+    "main.7744c9d0.css.map": "/uwb-hacks/static/css/main.7744c9d0.css.map",
+    "main.2df37360.js.map": "/uwb-hacks/static/js/main.2df37360.js.map",
     "787.ae14528d.chunk.js.map": "/uwb-hacks/static/js/787.ae14528d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aed65dc8.css",
-    "static/js/main.1cab8ed7.js"
+    "static/css/main.7744c9d0.css",
+    "static/js/main.2df37360.js"
   ]
 }
