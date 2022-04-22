@@ -18,7 +18,6 @@
 .footer_top_links {
     display: flex;
     flex-direction: column;
-    font-size:1rem;
     letter-spacing: 0.08rem;
     font-family: 'Lucida Sans';
     margin-bottom: 15px;
@@ -27,14 +26,13 @@
 
 .footer_text {
     text-decoration: none;
-    font-size:1rem;
     letter-spacing: 0.08rem;
     font-family: 'Lucida Sans';
 }
 
 .footer_bot_links {
     display: flex;
-    font-size: 2.2em;
+    font-size: 1.6rem;
     vertical-align: middle;
     justify-content: center;
     margin-left:-3%;

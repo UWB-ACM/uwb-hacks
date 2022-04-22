@@ -1,0 +1,41 @@
+.blueOpacity {
+    background-color: hsla(197, 76%, 81%, 0.233);
+    border-radius: 2rem;
+    width: 350px;
+    margin:auto;
+  }
+
+  .formcontainer {
+    text-align: center;
+    backdrop-filter: blur(1.5rem);
+    width:250px;
+    margin:auto;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .formcontainer {
+    width:400px;
+  }
+  .blueOpacity {
+    width: 500px;
+    margin:auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .formcontainer {
+    width: 45rem;
+    border-radius: 1rem;
+    padding: 1rem 5rem 1rem 5rem;
+  }
+
+  .blueOpacity {
+    width: auto
+  }
+}

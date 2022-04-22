@@ -214,7 +214,6 @@ function Register() {
                     <option value="Genderqueer/Nonbinary">
                       Genderqueer/Nonbinary
                     </option>
-                    <option value="Transgender">Transgender</option>
                     <option value="other">Other</option>
                   </select>
                 </label>
@@ -225,6 +224,7 @@ function Register() {
                     placeholder="Other"
                   />
                 )}
+
                 <label className="labelTitle">
                   Is there anything else you would like us to know?
                   <input

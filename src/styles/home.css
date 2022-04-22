@@ -1,25 +1,26 @@
 .uwbacmtitle {
   font-family: "KanitThin";
-  font-size: 2em;
   margin-top: 0.5em;
+  font-size: 1em;
 }
 
 .home .date {
   font-family: "KanitRegular";
-  font-size: 3.5em;
   color: #fadda2;
   /* -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: #6b61ff; */
+    font-size: 1em;
 }
 
 .title {
   transform: scale(1.5);
-  margin-top: 5rem;
+  width: 50%;
 }
 
 .acm_logo {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  height:auto;
+  width: 25%;
 }
 
 /* COUNTDOWN TIMER */
@@ -28,9 +29,9 @@
   margin-top: 1rem;
 }
 .countdown p {
-  font-size: 2.3em;
   font-family: "KanitRegular";
   font-weight: 500;
+  font-size: 1em;
   /* -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: #6b61ff; */
 }
@@ -38,18 +39,19 @@
 .countdown_box {
   padding: 1rem;
   border-radius: 10px;
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   background-color: rgb(107, 97, 255);
   color: #fadda2;
+  width: 350px;
   /* border-color: #6b61ff;
     border-style: solid;
     border-width: 0.25em; */
 }
 
 .countdown_text {
+  font-size: 1em;
   font-family: "KanitThin";
-  font-size: 2.5em;
 }
 
 .track_box {
@@ -63,7 +65,6 @@
 .track_box .bc_header {
   display: flex;
   color: #fadda2;
-  font-size: 2rem;
   line-height: 2.25rem;
   text-shadow: 3px 3px rgb(0 0 0 / 10%);
 }
@@ -72,7 +73,6 @@
   font-family: sans-serif;
   color: rgb(240, 239, 244);
   font-weight: 300;
-  font-size: 1.7rem;
   line-height: 1.75rem;
   text-align: left;
   text-shadow: 2px 2px rgb(0 0 0 / 10%);
@@ -94,15 +94,19 @@
 
 .husky .husky_image {
   z-index: 1;
-  transform: scale(0.9) translateY(2rem);
+  /*transform: scale(0.9) translateY(2rem);*/
   margin-left: auto;
   margin-right: auto;
 }
 
+.husky_image {
+  max-width: 216px;
+  width: 60%;
+  height: auto;
+}
+
 .husky span {
   font-family: FredokaOne;
-  font-size: 3rem;
-  line-height: 2.25rem;
   color: #fadda2;
   text-shadow: 3px 3px rgb(0 0 0 / 10%);
 }
@@ -110,17 +114,14 @@
 .husky .tracks {
   border-radius: 10px;
   background-color: rgb(142 205 230);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .track-img {
   z-index: 0;
-  max-width: 250px;
-  max-height: 250px;
-}
-
-.outer-img {
-  padding-bottom: 1.5rem;
+  max-width: 200px;
+  width: 50%;
+  height: auto;
 }
 
 .horizontalcard {
@@ -139,24 +140,146 @@
 .horizontalblueopacity {
   background-color: hsla(197, 76%, 81%, 0.233);
   border-radius: 2rem;
+  margin:auto;
 }
 
 .horizontalcontent {
   background-color: #8ecde6;
   border-radius: 0rem 2rem 2rem 0rem;
   text-align: left;
+  font-size: 0.7rem;
   padding: 2.5rem;
 }
 
 .horizontalcontent h1 {
   font-family: "FredokaOne";
+  font-size: 1.3rem;
   text-shadow: 3px 3px rgb(0 0 0 / 10%);
   color: #fadda2;
-  font-size: 3rem;
 }
 
 .horizontalcontent p {
     font-family: "ArimoSemiBold";
-    font-size: 1.6rem;
-    margin-top: 0.5rem;
+}
+.outer-img {
+  padding-bottom: 1.5rem;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .countdown_box {
+    width: 320px;
+  }
+  .horizontalblueopacity {
+    width: 85%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .countdown_box {
+    width: 400px;
+  }
+  .countdown p {
+    font-size: 1.5em;
+}
+
+.countdown_text {
+    font-size: 1.2em;
+}
+  .horizontalblueopacity {
+      width: 70%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title {
+      width: 90%;
+      margin-top: 5rem;
+  }
+  
+  .acm_logo {
+    width: 100%;
+  }
+
+  .content{ 
+      margin:auto;
+  }
+
+  .home .date {
+      font-size: 3.5em;
+  }
+
+  .uwbacmtitle {
+      font-size: 2em;
+  }
+
+  .countdown_box {
+    width: 100%;
+  }
+
+  .countdown p {
+      font-size: 2.3em;
+  }
+
+  .countdown_text {
+      font-size: 2.5em;
+  }
+
+  .text_link:hover {
+      /* 3D text effect pop out 
+      position: relative; 
+      top: -3px; 
+      left: -3px; 
+      text-shadow: 1px 1px #66a1ff, 
+                  2px 2px #66a1ff, 
+                  3px 3px #66a1ff, 
+                  4px 4px #66a1ff, 
+                  5px 5px #66a1ff, 
+                  6px 6px #66a1ff;*/
+  }
+
+  .husky span {
+      font-size: 3rem;
+      line-height: 2.25rem;
+  }
+
+  .husky .tracks {
+      padding: 2rem;
+  }
+  .husky_image{
+    width: 100%;
+  }
+  .track-img {
+    width: 100%;
+  }
+
+.outer-img {
+    padding-bottom: 1.5rem;
+  }
+  
+  .horizontalcard {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .horizontalcontent {
+    padding: 2.5rem;
+  }
+  
+  .horizontalcontent h1 {
+    font-size: 2.3rem;
+  }
+  
+  .horizontalcontent p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+  }
+  .track_box .bc_content {
+    font-size: 1.7rem;
+  }
+  .track_box .bc_header {
+    font-size: 2rem;
+  }
+  .horizontalblueopacity {
+    width: 100%;
+  }
 }
