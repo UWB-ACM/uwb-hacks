@@ -2,14 +2,13 @@
 .navbar {
     z-index: 10;
     display:block;
-    position: sticky;
     top:0;
     width:100%;
     font-family: FranklinGothic;
 }
 
 .navbar_wrapper {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between; /* add space between logo/left-side text and other pages */
     text-transform: uppercase;   
@@ -19,18 +18,17 @@
     list-style: none;
 }
 
-.navbar_logo {
+#navbar_logo {
     display: inline-block;
     align-items: center;
     white-space: nowrap; /* prevent text from wrapping when resized larger */
-    
 }
 
 .navbar_links {
-    display:flex;
+    display:grid;
 }
 
-.navbar_link-wrapper {
+#navbar_link-wrapper {
     display:inline-block; /* aligns text side by side */
     
     margin-left: 1rem;
@@ -52,4 +50,78 @@
 }
 .text_link:hover {
     color: #fadda2;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar_wrapper {
+        padding:0.5rem;
+        justify-content: none;
+        text-align: center;
+    }
+    .navbar_links {
+        justify-content: center;
+        display:grid;
+    }
+    .text_link {
+        font-size: 1.7rem;
+        margin-top:1rem;
+    }
+    #navbar_link-wrapper {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .navbar_wrapper {
+        padding:0.5rem;
+        justify-content: none;
+        text-align: center;
+    }
+    .navbar_links {
+        justify-content: center;
+    }
+    .text_link {
+        font-size: 1.7rem;
+        margin-top:1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar_wrapper {
+        padding:0.5rem;
+        justify-content: none;
+        text-align: center;
+    }
+    .navbar_links {
+        justify-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar {
+        position: sticky;
+    }
+    #navbar_logo {
+        font-size: 2.5rem;
+    }
+    .navbar_wrapper {
+        padding:1rem;
+        display: flex;
+    }
+    .text_link {
+        font-size: 2rem;
+    }
+    .navbar_links {
+        display:flex;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

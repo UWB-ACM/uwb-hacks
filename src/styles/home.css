@@ -1,7 +1,7 @@
 .uwbacmtitle {
   font-family: "KanitThin";
   margin-top: 0.5em;
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
 .home .date {
@@ -9,18 +9,20 @@
   color: #fadda2;
   /* -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: #6b61ff; */
-    font-size: 1em;
+    font-size: 1.6em;
 }
 
 .title {
-  transform: scale(1.5);
+  transform: scale(1.7);
+  height: auto;
   width: 50%;
 }
 
 .acm_logo {
-  max-width: 300px;
-  height:auto;
-  width: 25%;
+  max-width: 350px;
+  height: auto;
+  width: 50%;
+  min-width: 250px;
 }
 
 /* COUNTDOWN TIMER */
@@ -31,7 +33,7 @@
 .countdown p {
   font-family: "KanitRegular";
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.5em;
   /* -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: #6b61ff; */
 }
@@ -50,7 +52,7 @@
 }
 
 .countdown_text {
-  font-size: 1em;
+  font-size: 1.7em;
   font-family: "KanitThin";
 }
 
@@ -101,6 +103,7 @@
 
 .husky_image {
   max-width: 216px;
+  min-width: 200px;
   width: 60%;
   height: auto;
 }
@@ -115,6 +118,7 @@
   border-radius: 10px;
   background-color: rgb(142 205 230);
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .track-img {
@@ -147,13 +151,13 @@
   background-color: #8ecde6;
   border-radius: 0rem 2rem 2rem 0rem;
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   padding: 2.5rem;
 }
 
 .horizontalcontent h1 {
   font-family: "FredokaOne";
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-shadow: 3px 3px rgb(0 0 0 / 10%);
   color: #fadda2;
 }
@@ -167,27 +171,44 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .countdown_box {
-    width: 320px;
+    width: 250px;
   }
   .horizontalblueopacity {
     width: 85%;
   }
+  .horizontalcard {
+    grid-template-columns: 100%;
+  }
+  .horizontalcontent {
+    border-radius: 0rem 0rem 2rem 2rem;
+  }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .countdown_box {
-    width: 400px;
-  }
-  .countdown p {
-    font-size: 1.5em;
+.title {
+  transform: scale(1.2);
+}
+.countdown_box {
+  width: 400px;
+}
+.countdown p {
+  font-size: 1.5em;
 }
 
 .countdown_text {
     font-size: 1.2em;
 }
-  .horizontalblueopacity {
-      width: 70%;
-    }
+
+.horizontalblueopacity {
+    width: 70%;
+  }
+  .horizontalcard {
+    grid-template-columns: 100%;
+  }
+  .horizontalcontent {
+    border-radius: 0rem 0rem 2rem 2rem;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -259,10 +280,12 @@
   .horizontalcard {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    grid-template-columns: 50% 50%;
   }
 
   .horizontalcontent {
     padding: 2.5rem;
+    border-radius: 0rem 2rem 2rem 0rem;
   }
   
   .horizontalcontent h1 {

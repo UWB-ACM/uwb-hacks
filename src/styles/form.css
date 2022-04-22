@@ -1,14 +1,14 @@
 .blueOpacity {
     background-color: hsla(197, 76%, 81%, 0.233);
     border-radius: 2rem;
-    width: 350px;
+    width: 250px;
     margin:auto;
   }
 
   .formcontainer {
     text-align: center;
     backdrop-filter: blur(1.5rem);
-    width:250px;
+    width:200px;
     margin:auto;
   }
 
