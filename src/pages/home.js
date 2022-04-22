@@ -1,18 +1,11 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import Countdown from "../components/Countdown";
-import BlueCard from "../components/BlueCard";
 import HuskyCard from "../components/HuskyCard";
 import acm_logo from "../images/acm_white_bg.png";
 import sustain_logo_lb from "../images/sustainability_trackLogo_lightblue.png";
-import sustain_logo_db from "../images/sustainability_trackLogo_darkblue.png";
-import sustain_logo from "../images/sustainability_trackLogo.png";
-import edu_logo from "../images/education_trackLogo.png";
 import edu_logo_lb from "../images/education_trackLogo_lightblue.png";
-import edu_logo_db from "../images/education_trackLogo_darkblue.png";
-import entertain_logo from "../images/entertainment_trackLogo.png";
 import entertain_logo_lb from "../images/entertainment_trackLogo_lightblue.png";
-import entertain_logo_db from "../images/entertainment_trackLogo_darkblue.png";
 import { ReactComponent as Title } from "../images/title.svg";
 import HorizontalCard from "../components/HorizontalCard";
 function Home() {
