@@ -8,21 +8,28 @@
   .formcontainer {
     text-align: center;
     backdrop-filter: blur(1.5rem);
-    width:200px;
+    border-radius: 1rem;
+    width:250px;
     margin:auto;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .formcontainer {
+    width:300px;
+  }
+  .blueOpacity {
+    width: 300px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .formcontainer {
-    width:400px;
+    width: 400px;
   }
   .blueOpacity {
-    width: 500px;
+    width: 400px;
     margin:auto;
   }
 }
@@ -30,7 +37,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .formcontainer {
-    width: 45rem;
+    width: 50rem;
     border-radius: 1rem;
     padding: 1rem 5rem 1rem 5rem;
   }

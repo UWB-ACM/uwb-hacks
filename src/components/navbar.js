@@ -11,6 +11,7 @@ function Navbar() {
                         <div className="navbar_links">
                             <Link className="text_link" id="navbar_link-wrapper" to="/register">Register</Link>
                             <Link className="text_link" id="navbar_link-wrapper" to="/contact">Contact</Link>
+                            <Link className="text_link" id="navbar_link-wrapper" to="/faq">FAQ</Link>
                         </div>
                     
                     </div>

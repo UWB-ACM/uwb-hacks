@@ -1,0 +1,79 @@
+.Collapsible {
+    cursor: pointer;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    background: none;
+	  color: inherit;
+
+	  font: inherit;
+    text-shadow: 3px 3px rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
+  }
+
+.Collapsible__trigger {
+  font-size:1.5rem;
+} 
+  
+.Collapsible__contentInner {
+    font-size: 1.3rem;
+    font-family: "ArimoSemiBold";
+    text-align:left;
+    cursor:default;
+}
+
+.Collapsible:after {
+  /*content: "\276F"; */
+  font-size: 18px;
+}
+
+.Collapsible__trigger:hover{
+  color: #fadda2;
+}
+
+.Collapsible__trigger.is-open {
+  color: #fadda2;
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotate(0.25turn);
+  color: #fadda2;
+}
+
+.Collapsible a, .rule {
+  color:#fadda2;
+  font-size: 1.5rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Collapsible__trigger {
+    font-size:2rem;
+  }
+  .Collapsible__contentInner {
+    font-size: 1.5rem;
+  }
+  .Collapsible a, .rule {
+    color:#fadda2;
+    font-size: 1.7rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

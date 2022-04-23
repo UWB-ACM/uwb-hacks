@@ -77,7 +77,7 @@ h2 {
 }
 
 .page_title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-kerning: none;
     /* 3D text effect */
     letter-spacing: 0.02em;
@@ -103,6 +103,9 @@ h2 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .page_title {
+        font-size: 3em;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
