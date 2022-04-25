@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uwb-hacks/static/css/main.355df893.css",
-    "main.js": "/uwb-hacks/static/js/main.141d187e.js",
+    "main.css": "/uwb-hacks/static/css/main.13df91c9.css",
+    "main.js": "/uwb-hacks/static/js/main.956e0b4a.js",
     "static/js/787.ae14528d.chunk.js": "/uwb-hacks/static/js/787.ae14528d.chunk.js",
     "static/media/husky.svg": "/uwb-hacks/static/media/husky.aa5cb325eb72777a78330527867c3979.svg",
     "static/media/bg3.png": "/uwb-hacks/static/media/bg3.f6cc4123bcbbc11214ed.png",
@@ -17,12 +17,12 @@
     "static/media/ModernSans-Light.otf": "/uwb-hacks/static/media/ModernSans-Light.bebb6d2d7adb7481905a.otf",
     "static/media/title.svg": "/uwb-hacks/static/media/title.95cc670ea078c2099d004bbf0fd97ef3.svg",
     "index.html": "/uwb-hacks/index.html",
-    "main.355df893.css.map": "/uwb-hacks/static/css/main.355df893.css.map",
-    "main.141d187e.js.map": "/uwb-hacks/static/js/main.141d187e.js.map",
+    "main.13df91c9.css.map": "/uwb-hacks/static/css/main.13df91c9.css.map",
+    "main.956e0b4a.js.map": "/uwb-hacks/static/js/main.956e0b4a.js.map",
     "787.ae14528d.chunk.js.map": "/uwb-hacks/static/js/787.ae14528d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.355df893.css",
-    "static/js/main.141d187e.js"
+    "static/css/main.13df91c9.css",
+    "static/js/main.956e0b4a.js"
   ]
 }
