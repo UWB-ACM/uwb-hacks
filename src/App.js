@@ -12,6 +12,7 @@ import "./styles/home.css";
 import "./styles/contact.css";
 import "./styles/register.css";
 import "./styles/form.css";
+import "./styles/faq.css";
 function App() {
   return (
     <div className="container">

@@ -31,8 +31,8 @@
 #navbar_link-wrapper {
     display:inline-block; /* aligns text side by side */
     
-    margin-left: 1rem;
-    margin-right: 0.75rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .text_link {
@@ -115,6 +115,7 @@
     }
     .text_link {
         font-size: 2rem;
+        margin-top:0rem;
     }
     .navbar_links {
         display:flex;

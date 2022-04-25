@@ -37,7 +37,7 @@ function Contact() {
           <div className="blueOpacity">
             <div className="formcontainer">
               <form autoComplete="off" ref={form} onSubmit={sendEmail}>
-                <h1 className="regTitle">Contact Us</h1>
+                <h1 className="page_title">Contact Us</h1>
                 <label className="labelTitle">
                   Email Address
                   <input

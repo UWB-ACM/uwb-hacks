@@ -11,7 +11,7 @@ function Footer() {
         <div className="footerBlur">
           <div className="footer_wrapper">
             <div className="footer_top_links">
-              <a className="footer_link" href="../docs/Code_of_Conduct.pdf" target="_blank" title="Code of Conduct">
+              <a className="footer_link" href="https://drive.google.com/file/d/1Dcj9MHyeKK5Zz9EXmTQlQywLQ_Es9vXJ/view?usp=sharing" target="_blank" title="Code of Conduct">
                 Code of Conduct
               </a>
               <div>

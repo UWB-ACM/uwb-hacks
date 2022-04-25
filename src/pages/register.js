@@ -14,7 +14,7 @@ function Register() {
         <div className="content">
           <div className="blueOpacity">
             <div className="formcontainer">
-              <h1 className="regTitle">Register</h1>
+              <h1 className="page_title">Register</h1>
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
