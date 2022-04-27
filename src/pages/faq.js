@@ -37,7 +37,7 @@ function FAQ() {
                             <Collapsible trigger="How will UWB Hacks the Cloud run?">
                                 <div className="faq_container">
                                     <p>
-                                    We will be holding a limited in person event on the first day, May13th, 
+                                    We will be holding a limited in person event on the first day, May 13th, 
                                     where students can pick swag and find a team if needed. The next two days will be virtual, 
                                     and we will be hosting online events such as workshops and guest speakers through Zoom 
                                     (Schedule coming soon). For teamwork on your project, communication methods are entirely up to you, 
@@ -73,7 +73,7 @@ function FAQ() {
                                     <br></br>
                                     <p>
                                         Please keep discussions relevant to the channel you are in. 
-                                        The '#off-topic' channel in our hackathon discord server is available for whatever 
+                                        The '#off-topic' channel in our hackathon Discord server is available for whatever 
                                         (appropriate) content you may wish to post/discuss.
                                     </p>
                                     <br></br>
@@ -130,8 +130,7 @@ function FAQ() {
                                 <div className="faq_container">
                                     <p>
                                     Please feel free to reach out to event organizers in the “#organizer-discussion” 
-                                    channel of the UWB Hacks the Cloud 
-                                    <a href="https://discord.gg/p7XFsK8rXf" target="_blank" rel="noreferrer">Discord. </a>. 
+                                    channel of the UWB Hacks the Cloud <a href="https://discord.gg/p7XFsK8rXf" target="_blank" rel="noreferrer">Discord</a>. 
                                     </p>
                                 </div>
                             </Collapsible>
