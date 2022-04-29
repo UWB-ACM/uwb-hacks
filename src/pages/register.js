@@ -18,6 +18,8 @@ function Register() {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
+                  var registerButton = document.getElementById("regBtn");
+                  registerButton.disabled = true;
                   setRegisterBtn("Sending...");
                   const form = document.getElementById("rform");
                   const data = new FormData(form);
@@ -32,6 +34,8 @@ function Register() {
                 onChange={(e) => {
                   e.preventDefault();
                   setRegisterBtn("Register!");
+                  var registerButton = document.getElementById("regBtn");
+                  registerButton.disabled = false;
                   var select = document.getElementById("team");
                   var value = select.options[select.selectedIndex].value;
                   if (value === "I have a team") setDispTMField(true);
@@ -84,10 +88,16 @@ function Register() {
                 <label className="labelTitle">
                   You are a... *
                   <select id="youarea" name="You are a...">
-                    <option value="high school student">High School Student</option>
-                    <option value="undergrad student">Undergraduate Student</option>
+                    <option value="high school student">
+                      High School Student
+                    </option>
+                    <option value="undergrad student">
+                      Undergraduate Student
+                    </option>
                     <option value="graduate student">Graduate Student</option>
-                    <option value="working professional">Working Professional</option>
+                    <option value="working professional">
+                      Working Professional
+                    </option>
                   </select>
                 </label>
                 <label className="labelTitle">
@@ -109,7 +119,8 @@ function Register() {
                   />
                 </label>
                 <label className="labelTitle">
-                  What country and timezone (EST, PST, MST...) are you located in? *
+                  What country and timezone (EST, PST, MST...) are you located
+                  in? *
                   <input
                     name="Country and TimeZone"
                     type="text"
@@ -218,11 +229,7 @@ function Register() {
                   </select>
                 </label>
                 {dispGenderField && (
-                  <input
-                    name="GenderOther"
-                    type="text"
-                    placeholder="Other"
-                  />
+                  <input name="GenderOther" type="text" placeholder="Other" />
                 )}
 
                 <label className="labelTitle">
