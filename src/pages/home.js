@@ -99,7 +99,7 @@ function Home() {
             <HorizontalCard
               image={<h1>11:00 AM - 4:00 PM</h1>}
               title={<h1>Merchandise Handout</h1>}
-              content={<p>Location: UW Bothell - 1st floor of ARC - Lobby</p>}
+              content={<p>Location: UW Bothell -  ARC 110</p>}
             />
             <HorizontalCard
               image={<h1>4:00 PM - 4:45 PM</h1>}
@@ -128,7 +128,7 @@ function Home() {
               image={
                   <img src={ryan_russell_profile} alt="Ryan Russell" className="profilePic"/>
               }
-              title={<h1>5:00 PM - 6:00 PM: Guest Speaker: Ryan Russell Software</h1>}
+              title={<h1>5:00 PM - 6:00 PM: Guest Speaker: Ryan Russell</h1>}
               content={<p>Topic: How to get a job with Hackathon Projects</p>}
             />
             <HuskyCard title={<span>Sunday, May 15th</span>} />
