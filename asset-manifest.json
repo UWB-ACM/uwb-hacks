@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/uwb-hacks/static/css/main.13df91c9.css",
-    "main.js": "/uwb-hacks/static/js/main.5b747b38.js",
+    "main.css": "/uwb-hacks/static/css/main.f02435e8.css",
+    "main.js": "/uwb-hacks/static/js/main.73d69018.js",
     "static/js/787.ae14528d.chunk.js": "/uwb-hacks/static/js/787.ae14528d.chunk.js",
     "static/media/husky.svg": "/uwb-hacks/static/media/husky.aa5cb325eb72777a78330527867c3979.svg",
+    "static/media/ryanrussellprofile.jpg": "/uwb-hacks/static/media/ryanrussellprofile.1fcacac27ff5bf5c67b4.jpg",
     "static/media/bg3.png": "/uwb-hacks/static/media/bg3.f6cc4123bcbbc11214ed.png",
     "static/media/Arimo-SemiBold.ttf": "/uwb-hacks/static/media/Arimo-SemiBold.e42418ac393d39450f56.ttf",
     "static/media/acm_white_bg.png": "/uwb-hacks/static/media/acm_white_bg.304d8976df2ebdc4b3c6.png",
     "static/media/Kanit-Regular.ttf": "/uwb-hacks/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
     "static/media/Kanit-Thin.ttf": "/uwb-hacks/static/media/Kanit-Thin.2e32ea46402cf7c9bcb4.ttf",
     "static/media/entertainment_trackLogo_lightblue.png": "/uwb-hacks/static/media/entertainment_trackLogo_lightblue.3327bf9927c188fdd097.png",
+    "static/media/brandonotooleprofile.jpg": "/uwb-hacks/static/media/brandonotooleprofile.1bb2a33ff568422abd38.jpg",
     "static/media/education_trackLogo_lightblue.png": "/uwb-hacks/static/media/education_trackLogo_lightblue.2d360ade522aa0af5b25.png",
     "static/media/sustainability_trackLogo_lightblue.png": "/uwb-hacks/static/media/sustainability_trackLogo_lightblue.9f384c4b42643e5f3ce5.png",
     "static/media/FredokaOne-Regular.ttf": "/uwb-hacks/static/media/FredokaOne-Regular.4aea26dd6637dfac0fac.ttf",
@@ -17,12 +19,12 @@
     "static/media/ModernSans-Light.otf": "/uwb-hacks/static/media/ModernSans-Light.bebb6d2d7adb7481905a.otf",
     "static/media/title.svg": "/uwb-hacks/static/media/title.95cc670ea078c2099d004bbf0fd97ef3.svg",
     "index.html": "/uwb-hacks/index.html",
-    "main.13df91c9.css.map": "/uwb-hacks/static/css/main.13df91c9.css.map",
-    "main.5b747b38.js.map": "/uwb-hacks/static/js/main.5b747b38.js.map",
+    "main.f02435e8.css.map": "/uwb-hacks/static/css/main.f02435e8.css.map",
+    "main.73d69018.js.map": "/uwb-hacks/static/js/main.73d69018.js.map",
     "787.ae14528d.chunk.js.map": "/uwb-hacks/static/js/787.ae14528d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13df91c9.css",
-    "static/js/main.5b747b38.js"
+    "static/css/main.f02435e8.css",
+    "static/js/main.73d69018.js"
   ]
 }
