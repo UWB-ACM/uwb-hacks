@@ -6,6 +6,8 @@ import acm_logo from "../images/acm_white_bg.png";
 import sustain_logo_lb from "../images/sustainability_trackLogo_lightblue.png";
 import edu_logo_lb from "../images/education_trackLogo_lightblue.png";
 import entertain_logo_lb from "../images/entertainment_trackLogo_lightblue.png";
+import ryan_russell_profile from "../images/ryanrussellprofile.jpg";
+import brandon_otoole_profile from "../images/brandonotooleprofile.jpg";
 import { ReactComponent as Title } from "../images/title.svg";
 import HorizontalCard from "../components/HorizontalCard";
 function Home() {
@@ -91,8 +93,73 @@ function Home() {
                 </p>
               }
             />
+            <HuskyCard title={<span>Schedule</span>} />
+            <br />
+            <HuskyCard title={<span>Friday, May 13th</span>} />
+            <HorizontalCard
+              image={<h1>11:00 AM - 4:00 PM</h1>}
+              title={<h1>Merchandise Handout</h1>}
+              content={<p>Location: UW Bothell - 1st floor of ARC - Lobby</p>}
+            />
+            <HorizontalCard
+              image={<h1>4:00 PM - 4:45 PM</h1>}
+              title={<h1>Ice Breaker Game</h1>}
+              content={<p>Wheel of Questions</p>}
+            />
+            <HorizontalCard
+              image={<h1>5:30 PM - 6:00 PM</h1>}
+              title={<h1>Opening Ceremony</h1>}
+            />
+            <HorizontalCard
+              image={<h1>6:00 PM</h1>}
+              title={<h1>Hacking Begins!</h1>}
+            />
+            <HuskyCard title={<span>Saturday, May 14th</span>} />
+            <HorizontalCard
+              image={<h1>2:00 PM - 3:00 PM</h1>}
+              title={<h1>Workshop</h1>}
+              content={<p>EarthHacks - What could go wrong?</p>}
+            />
+            <HorizontalCard
+              image={<h1>4:00 PM - 4:45 PM</h1>}
+              title={<h1>Meet and Greet OR Team Building Activities</h1>}
+            />
+            <HorizontalCard
+              image={
+                  <img src={ryan_russell_profile} alt="Ryan Russell" className="profilePic"/>
+              }
+              title={<h1>5:00 PM - 6:00 PM: Guest Speaker: Ryan Russell Software</h1>}
+              content={<p>Topic: How to get a job with Hackathon Projects</p>}
+            />
+            <HuskyCard title={<span>Sunday, May 15th</span>} />
+            <HorizontalCard
+              image={<img src={brandon_otoole_profile} alt="Brandon O'Toole" className="profilePic"/>}
+              title={
+                <h1>12:00 PM - 1:00 PM: Guest Speaker: Brandon O'Toole</h1>
+              }
+              content={<p>Topic: Start Shipping Today</p>}
+            />
+            <HorizontalCard
+              image={<h1>6:00 PM</h1>}
+              title={<h1>Hacking Ends!</h1>}
+              content={<p>Submissions due on Devpost</p>}
+            />
+            <HorizontalCard
+              image={<h1>6:00 PM - 6:30 PM</h1>}
+              title={<h1>Closing Ceremony</h1>}
+            />
+            <HuskyCard title={<span>Tuesday, May 17th</span>} />
+            <HorizontalCard
+              image={<h1>6:00 PM</h1>}
+              title={<h1>Judging Ends</h1>}
+            />
+            <HorizontalCard
+              image={<h1>6:00 PM</h1>}
+              title={<h1>Awards Decided</h1>}
+              content={<p>Announce winners on Discord</p>}
+            />
+            <HuskyCard title={<span>Stay Tuned For Updates!</span>} />
           </div>
-          <HuskyCard title={<span>Stay Tuned For Updates!</span>} />
         </div>
         <Footer />
       </div>

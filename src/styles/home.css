@@ -9,7 +9,7 @@
   color: #fadda2;
   /* -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: #6b61ff; */
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .title {
@@ -144,7 +144,7 @@
 .horizontalblueopacity {
   background-color: hsla(197, 76%, 81%, 0.233);
   border-radius: 2rem;
-  margin:auto;
+  margin: auto;
 }
 
 .horizontalcontent {
@@ -163,7 +163,7 @@
 }
 
 .horizontalcontent p {
-    font-family: "ArimoSemiBold";
+  font-family: "ArimoSemiBold";
 }
 .outer-img {
   padding-bottom: 1.5rem;
@@ -182,25 +182,30 @@
   .horizontalcontent {
     border-radius: 0rem 0rem 2rem 2rem;
   }
+
+  .profilePic{
+    max-width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.title {
-  transform: scale(1.2);
-}
-.countdown_box {
-  width: 400px;
-}
-.countdown p {
-  font-size: 1.5em;
-}
+  .title {
+    transform: scale(1.2);
+  }
+  .countdown_box {
+    width: 400px;
+  }
+  .countdown p {
+    font-size: 1.5em;
+  }
 
-.countdown_text {
+  .countdown_text {
     font-size: 1.2em;
-}
+  }
 
-.horizontalblueopacity {
+  .horizontalblueopacity {
     width: 70%;
   }
   .horizontalcard {
@@ -209,28 +214,33 @@
   .horizontalcontent {
     border-radius: 0rem 0rem 2rem 2rem;
   }
+
+  .profilePic{
+    max-width: 100%;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .title {
-      width: 90%;
-      margin-top: 5rem;
+    width: 90%;
+    margin-top: 5rem;
   }
-  
+
   .acm_logo {
     width: 100%;
   }
 
-  .content{ 
-      margin:auto;
+  .content {
+    margin: auto;
   }
 
   .home .date {
-      font-size: 3.5em;
+    font-size: 3.5em;
   }
 
   .uwbacmtitle {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   .countdown_box {
@@ -238,15 +248,15 @@
   }
 
   .countdown p {
-      font-size: 2.3em;
+    font-size: 2.3em;
   }
 
   .countdown_text {
-      font-size: 2.5em;
+    font-size: 2.5em;
   }
 
   .text_link:hover {
-      /* 3D text effect pop out 
+    /* 3D text effect pop out 
       position: relative; 
       top: -3px; 
       left: -3px; 
@@ -259,24 +269,24 @@
   }
 
   .husky span {
-      font-size: 3rem;
-      line-height: 2.25rem;
+    font-size: 3rem;
+    line-height: 2.25rem;
   }
 
   .husky .tracks {
-      padding: 2rem;
+    padding: 2rem;
   }
-  .husky_image{
+  .husky_image {
     width: 100%;
   }
   .track-img {
     width: 100%;
   }
 
-.outer-img {
+  .outer-img {
     padding-bottom: 1.5rem;
   }
-  
+
   .horizontalcard {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -287,14 +297,14 @@
     padding: 2.5rem;
     border-radius: 0rem 2rem 2rem 0rem;
   }
-  
+
   .horizontalcontent h1 {
     font-size: 2.3rem;
   }
-  
+
   .horizontalcontent p {
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
   }
   .track_box .bc_content {
     font-size: 1.7rem;
@@ -304,5 +314,10 @@
   }
   .horizontalblueopacity {
     width: 100%;
+  }
+
+  .profilePic{
+    max-width: 100%;
+    border-radius: 2rem 0rem 0rem 2rem;
   }
 }
