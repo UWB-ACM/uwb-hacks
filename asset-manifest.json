@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uwb-hacks/static/css/main.f02435e8.css",
-    "main.js": "/uwb-hacks/static/js/main.5364a0e9.js",
+    "main.css": "/uwb-hacks/static/css/main.52c31655.css",
+    "main.js": "/uwb-hacks/static/js/main.eb6b4aef.js",
     "static/js/787.ae14528d.chunk.js": "/uwb-hacks/static/js/787.ae14528d.chunk.js",
     "static/media/husky.svg": "/uwb-hacks/static/media/husky.aa5cb325eb72777a78330527867c3979.svg",
     "static/media/ryanrussellprofile.jpg": "/uwb-hacks/static/media/ryanrussellprofile.1fcacac27ff5bf5c67b4.jpg",
@@ -18,13 +18,14 @@
     "static/media/Franklin_Gothic_Black_SSi_Black.ttf": "/uwb-hacks/static/media/Franklin_Gothic_Black_SSi_Black.33e8725ab3f584e2b0e9.ttf",
     "static/media/ModernSans-Light.otf": "/uwb-hacks/static/media/ModernSans-Light.bebb6d2d7adb7481905a.otf",
     "static/media/title.svg": "/uwb-hacks/static/media/title.95cc670ea078c2099d004bbf0fd97ef3.svg",
+    "static/media/futureweilogo.png": "/uwb-hacks/static/media/futureweilogo.a59425444123ba94e418.png",
     "index.html": "/uwb-hacks/index.html",
-    "main.f02435e8.css.map": "/uwb-hacks/static/css/main.f02435e8.css.map",
-    "main.5364a0e9.js.map": "/uwb-hacks/static/js/main.5364a0e9.js.map",
+    "main.52c31655.css.map": "/uwb-hacks/static/css/main.52c31655.css.map",
+    "main.eb6b4aef.js.map": "/uwb-hacks/static/js/main.eb6b4aef.js.map",
     "787.ae14528d.chunk.js.map": "/uwb-hacks/static/js/787.ae14528d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f02435e8.css",
-    "static/js/main.5364a0e9.js"
+    "static/css/main.52c31655.css",
+    "static/js/main.eb6b4aef.js"
   ]
 }
