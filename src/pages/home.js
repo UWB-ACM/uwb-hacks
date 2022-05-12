@@ -10,7 +10,11 @@ import ryan_russell_profile from "../images/ryanrussellprofile.jpg";
 import brandon_otoole_profile from "../images/brandonotooleprofile.jpg";
 import { ReactComponent as Title } from "../images/title.svg";
 import HorizontalCard from "../components/HorizontalCard";
+import { useState } from "react";
+
 function Home() {
+  const [startFinished, setStartFinished] = useState(false);
+  const [hackingFinished, setHackingFinished] = useState(false);
   return (
     <>
       <div className="wrapper">
@@ -28,8 +32,11 @@ function Home() {
             </div>
             <div className="countdown">
               <div className="countdown_box">
-                <p>Days Until the UWB Hackathon:</p>
-                <Countdown />
+                {!startFinished && <p>Days Until the UWB Hackathon:</p>}
+                {!startFinished && <Countdown date={new Date(2022, 4, 13, 18)} setFinished={setStartFinished}/>}
+                {startFinished && !hackingFinished && <p>Good Luck Hacking! Hacking Ends In:</p>}
+                {startFinished && !hackingFinished && <Countdown date={new Date(2022, 4, 15, 18)} setFinished={setHackingFinished}/>}
+                {startFinished && hackingFinished && <p>Hackathon is Finished! Thanks for Attending!</p>}
               </div>
             </div>
             <HuskyCard title={<span>Tracks</span>} />
