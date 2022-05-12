@@ -130,7 +130,7 @@ function Home() {
             />
             <HorizontalCard
               image={<h1>4:00 PM - 4:45 PM</h1>}
-              title={<h1>Meet and Greet OR Team Building Activities</h1>}
+              title={<h1>Game Time</h1>}
             />
             <HorizontalCard
               image={
