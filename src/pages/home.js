@@ -8,6 +8,7 @@ import edu_logo_lb from "../images/education_trackLogo_lightblue.png";
 import entertain_logo_lb from "../images/entertainment_trackLogo_lightblue.png";
 import ryan_russell_profile from "../images/ryanrussellprofile.jpg";
 import brandon_otoole_profile from "../images/brandonotooleprofile.jpg";
+import futureweilogo from "../images/futureweilogo.png";
 import { ReactComponent as Title } from "../images/title.svg";
 import HorizontalCard from "../components/HorizontalCard";
 import { useState } from "react";
@@ -165,6 +166,10 @@ function Home() {
               title={<h1>Awards Decided</h1>}
               content={<p>Announce winners on Discord</p>}
             />
+            <HuskyCard title={<span>Our Sponsors</span>} />
+            <br />
+            <img src={futureweilogo} alt="Future Wei Technologies" className="sponsorImg"/>
+            <br />
             <HuskyCard title={<span>Stay Tuned For Updates!</span>} />
           </div>
         </div>
