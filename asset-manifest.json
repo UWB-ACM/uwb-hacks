@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uwb-hacks/static/css/main.52c31655.css",
-    "main.js": "/uwb-hacks/static/js/main.eb6b4aef.js",
+    "main.js": "/uwb-hacks/static/js/main.5bb32c71.js",
     "static/js/787.ae14528d.chunk.js": "/uwb-hacks/static/js/787.ae14528d.chunk.js",
     "static/media/husky.svg": "/uwb-hacks/static/media/husky.aa5cb325eb72777a78330527867c3979.svg",
     "static/media/ryanrussellprofile.jpg": "/uwb-hacks/static/media/ryanrussellprofile.1fcacac27ff5bf5c67b4.jpg",
@@ -21,11 +21,11 @@
     "static/media/futureweilogo.png": "/uwb-hacks/static/media/futureweilogo.a59425444123ba94e418.png",
     "index.html": "/uwb-hacks/index.html",
     "main.52c31655.css.map": "/uwb-hacks/static/css/main.52c31655.css.map",
-    "main.eb6b4aef.js.map": "/uwb-hacks/static/js/main.eb6b4aef.js.map",
+    "main.5bb32c71.js.map": "/uwb-hacks/static/js/main.5bb32c71.js.map",
     "787.ae14528d.chunk.js.map": "/uwb-hacks/static/js/787.ae14528d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52c31655.css",
-    "static/js/main.eb6b4aef.js"
+    "static/js/main.5bb32c71.js"
   ]
 }
