@@ -34,10 +34,24 @@ function Home() {
             <div className="countdown">
               <div className="countdown_box">
                 {!startFinished && <p>Days Until the UWB Hackathon:</p>}
-                {!startFinished && <Countdown date={new Date(2022, 4, 13, 18)} setFinished={setStartFinished}/>}
-                {startFinished && !hackingFinished && <p>Good Luck Hacking! Hacking Ends In:</p>}
-                {startFinished && !hackingFinished && <Countdown date={new Date(2022, 4, 15, 18)} setFinished={setHackingFinished}/>}
-                {startFinished && hackingFinished && <p>Hackathon is Finished! Thanks for Attending!</p>}
+                {!startFinished && (
+                  <Countdown
+                    date={new Date(2022, 4, 13, 18)}
+                    setFinished={setStartFinished}
+                  />
+                )}
+                {startFinished && !hackingFinished && (
+                  <p>Good Luck Hacking! Hacking Ends In:</p>
+                )}
+                {startFinished && !hackingFinished && (
+                  <Countdown
+                    date={new Date(2022, 4, 15, 18)}
+                    setFinished={setHackingFinished}
+                  />
+                )}
+                {startFinished && hackingFinished && (
+                  <p>Hackathon is Finished! Thanks for Attending!</p>
+                )}
               </div>
             </div>
             <HuskyCard title={<span>Tracks</span>} />
@@ -107,7 +121,7 @@ function Home() {
             <HorizontalCard
               image={<h1>11:00 AM - 4:00 PM</h1>}
               title={<h1>Merchandise Handout</h1>}
-              content={<p>Location: UW Bothell -  ARC 110</p>}
+              content={<p>Location: UW Bothell - ARC 110</p>}
             />
             <HorizontalCard
               image={<h1>4:00 PM - 4:45 PM</h1>}
@@ -129,23 +143,37 @@ function Home() {
               content={<p>EarthHacks - What could go wrong?</p>}
             />
             <HorizontalCard
-              image={<h1>4:00 PM - 4:45 PM</h1>}
-              title={<h1>Game Time</h1>}
+              image={<h1>3:00 PM - 4:00 PM</h1>}
+              title={<h1>Networking and Edge Computing</h1>}
             />
             <HorizontalCard
               image={
-                  <img src={ryan_russell_profile} alt="Ryan Russell" className="profilePic"/>
+                <img
+                  src={ryan_russell_profile}
+                  alt="Ryan Russell"
+                  className="profilePic"
+                />
               }
               title={<h1>5:00 PM - 6:00 PM: Guest Speaker: Ryan Russell</h1>}
               content={<p>Topic: How to get a job with Hackathon Projects</p>}
             />
             <HuskyCard title={<span>Sunday, May 15th</span>} />
             <HorizontalCard
-              image={<img src={brandon_otoole_profile} alt="Brandon O'Toole" className="profilePic"/>}
+              image={
+                <img
+                  src={brandon_otoole_profile}
+                  alt="Brandon O'Toole"
+                  className="profilePic"
+                />
+              }
               title={
                 <h1>12:00 PM - 1:00 PM: Guest Speaker: Brandon O'Toole</h1>
               }
               content={<p>Topic: Start Shipping Today</p>}
+            />
+            <HorizontalCard
+              image={<h1>4:00 PM - 4:45 PM</h1>}
+              title={<h1>Game Time</h1>}
             />
             <HorizontalCard
               image={<h1>6:00 PM</h1>}
@@ -168,7 +196,11 @@ function Home() {
             />
             <HuskyCard title={<span>Our Sponsors</span>} />
             <br />
-            <img src={futureweilogo} alt="Future Wei Technologies" className="sponsorImg"/>
+            <img
+              src={futureweilogo}
+              alt="Future Wei Technologies"
+              className="sponsorImg"
+            />
             <br />
             <HuskyCard title={<span>Stay Tuned For Updates!</span>} />
           </div>
