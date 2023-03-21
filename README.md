@@ -1,6 +1,6 @@
 # uwb-hacks [![Build Status](https://travis-ci.com/UWB-ACM/uwb-hacks.svg?branch=master)](https://travis-ci.com/UWB-ACM/uwb-hacks)
 
-Website repo for the [uwbhacks.com](https://uwbhacks.com) website.
+Website repo for the ... website (domain is gone).
 
 ## Archiving Old Content
 
